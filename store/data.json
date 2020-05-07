@@ -1,0 +1,40 @@
+{
+    "tag": [
+        "WEB",
+        "MEDIA",
+        "HARDWARE",
+        "etc..."
+    ],
+    "products": [
+        {
+            "id": "01",
+            "caption": "wordcascade",
+            "tag": [
+                "WEB",
+                "BUZZ"
+            ],
+            "title": "Word Cascade",
+            "desc": "無限に単語が流れるサイト"
+        },
+        {
+            "id": "02",
+            "caption": "ledchecker",
+            "title": "コンセント型LEDチェッカー",
+            "tag": [
+                "BUZZ",
+                "MEDIA"
+            ],
+            "desc": "禁断のLED挿しができるチェッカー"
+        },
+        {
+            "id": "03",
+            "caption": "pushbutton",
+            "title": "押しボタン式押し釦",
+            "tag": [
+                "BUZZ",
+                "MEDIA"
+            ],
+            "desc": "押しボタンを押すためのボタン"
+        }
+    ]
+}
