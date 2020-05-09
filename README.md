@@ -2,6 +2,11 @@
 
 > まいにちものづくりの新しいポートフォリオです
 
+## ページについて
+**pages/index.vue** トップページ
+**pages/_works/_id.vue** 作品個別ページ
+
+
 ## Build Setup
 
 ```bash

@@ -1,4 +1,5 @@
 # ASSETS
+サイトに使われる画像などを保管
 
-**worksData.json**
-製作物一覧のjsonが格納されてる
+**workstxt**
+作品の個別ページのマークダウンファイルを入れるディレクトリ。ファイル名はdata.jsonのcaptionに揃えること。
