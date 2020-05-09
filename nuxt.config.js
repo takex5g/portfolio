@@ -39,6 +39,10 @@ export default {
   */
   modules: [
   ],
+  server: {
+    port: 3000, // デフォルト: 3000
+    host: '192.168.0.50' // デフォルト: localhost
+  },
   /*
   ** Build configuration
   */
@@ -46,7 +50,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend (config, ctx) {
+    extend(config, ctx) {
     }
   }
 }

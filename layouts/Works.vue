@@ -26,4 +26,10 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+}
+a {
+  color: black;
+}
 </style>
