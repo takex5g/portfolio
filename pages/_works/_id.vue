@@ -1,5 +1,8 @@
 <template>
-  <div class="container">ゆうもやだよ ID is {{ $route.params.id }}</div>
+  <div>
+    <div class="container">ゆうもやだよ ID is {{ $route.params.id }}</div>
+    <div v-html="$md.render('html化したいマークダウンのテキスト')"></div>
+  </div>
 </template>
 
 <script>
