@@ -14,9 +14,24 @@ export default {
     return {
       markdown: require("~/assets/workstxt/" + id + ".md")["default"]
     };
+  },
+  mounted() {
+    /**twitterウィジットの埋め込み */
+    let recaptchaScript = document.createElement("script");
+    recaptchaScript.setAttribute(
+      "src",
+      "https://platform.twitter.com/widgets.js"
+    );
+    document.head.appendChild(recaptchaScript);
   }
 };
 </script>
-
-<style >
+<style scoped>
+/** Twitter埋め込みは真ん中に*/
+.twitter-tweet {
+  margin: auto;
+}
+p {
+  color: red;
+}
 </style>
