@@ -41,7 +41,7 @@ export default {
   mounted: function() {
     //window.addEventListener("resize", this.handleResize);
     if (process.browser) {
-      this.styleObject.width = window.innerWidth + "px";
+      this.styleObject.width = window.innerWidth - 10 + "px";
       // this.styleObject.height = window.innerHeight + "px";
       // ここに window とか document を使った処理
     }

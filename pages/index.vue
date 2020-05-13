@@ -84,8 +84,9 @@ export default {
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   grid-auto-rows: minmax(200px, 200px);
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 450px) {
   .works_container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 }
 
@@ -120,6 +121,19 @@ input[type="radio"]:checked + label {
   }
   ul {
     padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /*　画面サイズが480pxまではここを読み込む　*/
+
+  li {
+    padding: 20px 10px;
+    font-size: 15px;
+    padding-left: 0;
+  }
+  ul {
+    padding-left: 5px;
   }
 }
 /**横メニュー 　ココマデ */
