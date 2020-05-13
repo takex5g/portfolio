@@ -13,7 +13,6 @@
 <script>
 import Header from "@/components/Header";
 export default {
-  layout: "Works",
   components: { Header },
   data: function() {
     return {

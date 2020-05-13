@@ -12,7 +12,6 @@
 // import Data from "~/store/data.json";
 import Header from "@/components/Header";
 export default {
-  layout: "Works",
   components: { Header },
   asyncData({ params }) {
     const id = params.id;

@@ -22,7 +22,6 @@ import WorkCard from "~/components/WorkCard.vue";
 import Data from "~/store/data.json";
 import Header from "@/components/Header";
 export default {
-  layout: "Works",
   components: {
     WorkCard,
     Header
