@@ -5,7 +5,7 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: "ゆうもや製作物",
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -38,7 +38,8 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/markdownit'
+    '@nuxtjs/markdownit',
+    'nuxt-webfontloader'
   ],
   server: {
     port: 3000, // デフォルト: 3000
@@ -60,5 +61,10 @@ export default {
     html: true, // HTML タグを有効にする
     linkify: true, // URLに似たテキストをリンクに自動変換する
     typography: true // 言語に依存しないきれいな 置換 + 引用符 を有効にします。
+  },
+  webfontloader: {
+    google: {
+      families: ['Montserrat']
+    }
   },
 }

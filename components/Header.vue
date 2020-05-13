@@ -29,8 +29,12 @@ export default {
 </script>
 <style scoped>
 nav {
+  font-family: "Montserrat";
   display: flex;
   justify-content: flex-end;
+
+  margin-bottom: 15px;
+  margin-top: 10px;
 }
 nav a {
   padding: 10px;

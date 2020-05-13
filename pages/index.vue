@@ -94,6 +94,7 @@ export default {
 .sortmenu {
   /**一番外殻 */
   padding-right: 15px;
+  font-family: "Montserrat";
 }
 ul {
   list-style-type: none;

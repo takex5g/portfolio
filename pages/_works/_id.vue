@@ -4,19 +4,35 @@
     <div class="container">
       <div></div>
       <div v-html="$md.render(markdown)"></div>
+      <div style="padding:20px 0" />
+      <div class="tagcontainer">
+        <div v-for="tag in obj.tag" :key="tag">
+          <a :href="'/?tag='+tag">{{tag}}</a>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-// import Data from "~/store/data.json";
+import Data from "~/store/data.json";
 import Header from "@/components/Header";
 export default {
   components: { Header },
+  data() {
+    return {
+      //今表示している作品の情報が格納される
+      obj: {
+        type: Object
+      }
+    };
+  },
   asyncData({ params }) {
     const id = params.id;
     return {
-      markdown: require("~/assets/workstxt/" + id + ".md")["default"]
+      markdown: require("~/assets/workstxt/" + id + ".md")["default"],
+      products: Data.products,
+      id: id
     };
   },
   mounted() {
@@ -27,11 +43,34 @@ export default {
       "https://platform.twitter.com/widgets.js"
     );
     document.head.appendChild(recaptchaScript);
+  },
+  head() {
+    this.obj = this.products.find(item => item.caption === this.id);
+    return {
+      title: this.obj.title
+    };
   }
 };
 </script>
 <style lang="scss" scoped>
 /*csss*/
+
+/**タグ一覧 */
+.tagcontainer {
+  display: flex;
+}
+.tagcontainer div,
+.tagcontainer a {
+  margin: 5px;
+  padding: 0.1em 0.5em;
+  font-size: 16px;
+  color: #fff;
+  background: #333;
+  // background: rgb(114, 114, 114);
+  border-radius: 4px;
+}
+/**ここまで */
+
 .container {
   padding-top: 30px;
   margin: auto;
