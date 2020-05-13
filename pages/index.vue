@@ -69,7 +69,7 @@ export default {
 };
 </script>
 
-<style >
+<style scoped>
 .container {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -77,8 +77,6 @@ export default {
 .works_container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
   width: 100%;
   display: grid;
   gap: 15px;
@@ -96,7 +94,7 @@ export default {
 
 .sortmenu {
   /**一番外殻 */
-  vertical-align: top;
+  padding-right: 15px;
 }
 ul {
   list-style-type: none;

@@ -53,6 +53,7 @@ export default {
   width: 300px;
   height: 50%;
   text-align: center;
-  margin: auto;
+  margin: 0 auto;
+  margin-top: 20%;
 }
 </style>

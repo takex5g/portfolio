@@ -62,10 +62,16 @@ img {
 .card_content .title {
   font-size: large;
   font-weight: bold;
+  margin-top: 10px;
+
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 a .card_content .desc {
   transition-duration: 0.3s;
   opacity: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .card .box:hover > a .card_content .desc {
   opacity: 1;
