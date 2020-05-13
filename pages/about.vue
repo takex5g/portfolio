@@ -1,16 +1,20 @@
 <template>
-  <div class="container" :style="styleObject">
-    <div class="contents">
-      <img src="~/assets/img/takex5g.png" width="100px" height="100px" alt="ゆうもや" />
-      <p>ゆうもや</p>
+  <div>
+    <Header page="about" />
+    <div class="container" :style="styleObject">
+      <div class="contents">
+        <img src="~/assets/img/takex5g.png" width="100px" height="100px" alt="ゆうもや" />
+        <p>ゆうもや</p>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import Header from "@/components/Header";
 export default {
   layout: "Works",
-  components: {},
+  components: { Header },
   data: function() {
     return {
       styleObject: {

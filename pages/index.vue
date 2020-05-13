@@ -1,26 +1,31 @@
 <template>
-  <div class="container">
-    <div class="sortmenu">
-      <ul>
-        <li v-for="tag in tags" :key="tag">
-          <input type="radio" :value="tag" :id="tag" v-model="picked" class="radio" />
-          <label :for="tag">{{tag}}</label>
-        </li>
-      </ul>
+  <div>
+    <Header page="works" />
+    <div class="container">
+      <div class="sortmenu">
+        <ul>
+          <li v-for="tag in tags" :key="tag">
+            <input type="radio" :value="tag" :id="tag" v-model="picked" class="radio" />
+            <label :for="tag">{{tag}}</label>
+          </li>
+        </ul>
+      </div>
+      <transition-group tag="div" class="works_container" name="card_sort_animations">
+        <WorkCard v-for="product in pickedproducts" :arg="product" :key="product.title" />
+      </transition-group>
     </div>
-    <transition-group tag="div" class="works_container" name="card_sort_animations">
-      <WorkCard v-for="product in pickedproducts" :arg="product" :key="product.title" />
-    </transition-group>
   </div>
 </template>
 
 <script>
 import WorkCard from "~/components/WorkCard.vue";
 import Data from "~/store/data.json";
+import Header from "@/components/Header";
 export default {
   layout: "Works",
   components: {
-    WorkCard
+    WorkCard,
+    Header
   },
   data: function() {
     return {
@@ -34,7 +39,16 @@ export default {
     };
   },
   methods: {},
-  mounted: function() {},
+  mounted: function() {
+    if (this.$route.query.tag != null) {
+      for (var i = 0; i < this.tags.length; i++) {
+        if (this.tags[i] == this.$route.query.tag) {
+          this.picked = this.$route.query.tag;
+          return;
+        }
+      }
+    }
+  },
   computed: {
     pickedproducts() {
       var newList = [];
@@ -57,26 +71,31 @@ export default {
 
 <style >
 .container {
-  display: table;
+  display: grid;
+  grid-template-columns: auto 1fr;
 }
 .works_container {
-  display: table-cell;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-
-  display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  justify-content: flex-start;
+  width: 100%;
+  display: grid;
+  gap: 15px;
+  /* grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); */
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-auto-rows: minmax(200px, 200px);
+}
+@media screen and (max-width: 1080px) {
+  .works_container {
+  }
 }
 
 /**横のメニュー */
 
 .sortmenu {
   /**一番外殻 */
-  display: table-cell;
   vertical-align: top;
 }
 ul {
@@ -93,6 +112,17 @@ li {
 input[type="radio"]:checked + label {
   /**チェックボックスラベル */
   font-weight: bold;
+}
+@media screen and (max-width: 807px) {
+  /*　画面サイズが480pxまではここを読み込む　*/
+
+  li {
+    padding: 20px 10px;
+    font-size: 20px;
+  }
+  ul {
+    padding-left: 10px;
+  }
 }
 /**横メニュー 　ココマデ */
 
@@ -115,5 +145,15 @@ input[type="radio"]:checked + label {
 }
 .card_sort_animations-move {
   transition: transform 0.5s;
+}
+@media screen and (max-width: 400px) {
+  /*　スマホ対応　*/
+  .works_container {
+    justify-content: center;
+    padding: 0; /**とにかく詰める。外殻の余白なくす */
+  }
+  .card {
+    /**カードについてはカードコンポーネント */
+  }
 }
 </style>

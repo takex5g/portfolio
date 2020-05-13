@@ -1,10 +1,10 @@
 <template>
   <nav>
     <n-link to="/" prefetch>
-      <div>Works</div>
+      <div :class="{bold : page=='works'}">Works</div>
     </n-link>
     <n-link to="/about" prefetch>
-      <div>About</div>
+      <div :class="{bold : page=='about'}">About</div>
     </n-link>
     <a href="https://mononichi.com/">
       <div>BLOG</div>
@@ -14,12 +14,11 @@
 
 <script>
 export default {
-  /*props: {
-    value: {
-      type: Number,
-      required: true
+  props: {
+    page: {
+      type: String
     }
-  },*/
+  }
   /* data() {
     return {
       animated_number: 0
@@ -36,5 +35,8 @@ nav {
 nav a {
   padding: 10px;
   padding-right: 20px;
+}
+.bold {
+  font-weight: bold;
 }
 </style>

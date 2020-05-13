@@ -40,24 +40,37 @@ img {
   width: 100%;
   height: 100%;
   position: relative;
+  overflow: hidden;
 }
 .card {
-  border: solid;
-  border-color: black;
-  width: 250px;
-  height: 200px;
-  margin: 10px;
+  /* border: 1px solid black; */
+  border-radius: 2px;
+  overflow: hidden;
+  /* width: 100px;
+  height: 100px; */
 }
 .card_content {
   position: absolute;
   z-index: 1;
   width: 100%;
-
-  bottom: 0;
-  height: 80px;
+  padding-left: 5px;
+  height: 100%;
+  top: 160px;
+  transition-duration: 0.3s;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .card_content .title {
   font-size: large;
   font-weight: bold;
+}
+a .card_content .desc {
+  transition-duration: 0.3s;
+  opacity: 0;
+}
+.card .box:hover > a .card_content .desc {
+  opacity: 1;
+}
+.card .box:hover > a .card_content {
+  transform: translate(0px, -50px);
 }
 </style>
