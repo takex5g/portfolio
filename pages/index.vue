@@ -81,8 +81,8 @@ export default {
   gap: 15px;
   /* grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); */
   /* grid-template-columns: repeat(4, 1fr); */
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-auto-rows: minmax(200px, 200px);
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 200px;
 }
 
 /**横のメニュー */
