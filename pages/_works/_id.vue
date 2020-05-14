@@ -3,10 +3,14 @@
     <Header page="works" />
     <div class="container">
       <div></div>
-      <div v-html="$md.render(markdown)"></div>
+      <div class="md" v-html="$md.render(markdown)"></div>
       <div style="padding:20px 0" />
       <div class="tagcontainer">
-        <n-link :to="'/?tag='+tag" prefetch v-for="tag in obj.tag" :key="tag">
+        <n-link to="/" prefetch class="back">
+          <div class="circle" />
+          <p>戻る</p>
+        </n-link>
+        <n-link :to="'/?tag='+tag" prefetch v-for="tag in obj.tag" :key="tag" class="tag">
           <div>{{tag}}</div>
         </n-link>
       </div>
@@ -59,8 +63,9 @@ export default {
 .tagcontainer {
   font-family: "Montserrat";
   display: flex;
+  align-items: center;
 }
-.tagcontainer a {
+.tagcontainer .tag {
   margin: 5px;
   padding: 0.1em 0.5em;
   font-size: 16px;
@@ -68,6 +73,63 @@ export default {
   border: 1px solid black;
   border-radius: 4px;
 }
+.tagcontainer > * {
+  transition: 0.3s;
+}
+.tagcontainer .tag:hover {
+  color: white;
+  background: black;
+}
+.tagcontainer .back {
+  position: relative;
+}
+.tagcontainer .back .circle {
+  transition: 0.3s;
+  margin-right: 15px;
+}
+.tagcontainer .back p {
+  margin: 0;
+  padding: 0;
+  margin-left: 4px;
+  position: absolute;
+  top: 18px;
+  font-size: 10px;
+}
+
+.tagcontainer .back:hover > .circle {
+  background: black;
+}
+.tagcontainer .back:hover > .circle::before,
+.tagcontainer .back:hover > .circle::after {
+  background: white;
+}
+/**CSSだけで作る自作戻るボタン */
+.circle {
+  width: 25px;
+  height: 25px;
+  border: 2px solid black;
+  border-radius: 50%; /*角丸*/
+}
+.circle::before {
+  transition: 0.3s;
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 10px;
+  background: black;
+  transform: translateX(10px) translateY(5px) rotate(45deg);
+}
+.circle::after {
+  transition: 0.3s;
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 10px;
+  background: black;
+  transform: translateX(10px) translateY(10px) rotate(-45deg);
+}
+/**戻るボタンココマデ */
+
 /**ここまで */
 
 .container {
@@ -96,10 +158,10 @@ export default {
   padding: 20px 0;
 }
 
-/deep/ img {
+/deep/ .md img {
   transition: 0.3s;
 }
-/deep/ img:hover {
+/deep/ .md img:hover {
   opacity: 0.8;
 }
 </style>

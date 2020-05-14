@@ -2,7 +2,7 @@
   <div>
     <Header page="works" />
     <div class="container">
-      <div class="sortmenu">
+      <div class="sortmenu Montserrat">
         <ul>
           <li v-for="tag in tags" :key="tag">
             <input type="radio" :value="tag" :id="tag" v-model="picked" class="radio" />
@@ -90,7 +90,6 @@ export default {
 .sortmenu {
   /**一番外殻 */
   padding-right: 15px;
-  font-family: "Montserrat";
 }
 ul {
   list-style-type: none;
@@ -105,7 +104,7 @@ li {
 }
 input[type="radio"]:checked + label {
   /**チェックボックスラベル */
-  font-weight: bold;
+  font-weight: 700;
 }
 @media screen and (max-width: 807px) {
   /*　画面サイズが480pxまではここを読み込む　*/

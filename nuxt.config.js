@@ -1,6 +1,6 @@
 
 export default {
-  mode: 'spa',//universal
+  mode: 'universal',//universal
   /*
   ** Headers of the page
   */
@@ -65,7 +65,7 @@ export default {
   },
   webfontloader: {
     google: {
-      families: ['Montserrat']
+      families: ['Montserrat&display=swap', 'Noto+Sans+JP:wght@500;700&display=swap']
     }
   },
 }

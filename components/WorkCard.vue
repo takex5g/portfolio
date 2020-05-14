@@ -61,7 +61,7 @@ img {
 }
 .card_content .title {
   font-size: large;
-  font-weight: bold;
+  font-weight: 700;
   margin-top: 10px;
 
   margin-top: 5px;
