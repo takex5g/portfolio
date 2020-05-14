@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@nuxtjs/markdownit": "^1.2.9",
+    "normalize.css": "^8.0.1",
     "nuxt": "^2.0.0",
     "nuxt-webfontloader": "^1.1.0"
   },
