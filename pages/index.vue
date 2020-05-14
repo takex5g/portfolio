@@ -81,13 +81,8 @@ export default {
   gap: 15px;
   /* grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); */
   /* grid-template-columns: repeat(4, 1fr); */
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-auto-rows: minmax(200px, 200px);
-}
-@media screen and (max-width: 450px) {
-  .works_container {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  }
 }
 
 /**横のメニュー */
@@ -114,7 +109,6 @@ input[type="radio"]:checked + label {
 }
 @media screen and (max-width: 807px) {
   /*　画面サイズが480pxまではここを読み込む　*/
-
   li {
     padding: 20px 10px;
     font-size: 20px;
@@ -123,10 +117,8 @@ input[type="radio"]:checked + label {
     padding-left: 10px;
   }
 }
-
+/* 
 @media screen and (max-width: 450px) {
-  /*　画面サイズが480pxまではここを読み込む　*/
-
   li {
     padding: 20px 10px;
     font-size: 15px;
@@ -135,7 +127,8 @@ input[type="radio"]:checked + label {
   ul {
     padding-left: 5px;
   }
-}
+} */
+
 /**横メニュー 　ココマデ */
 
 /**カードのソートアニメーション */
@@ -158,11 +151,29 @@ input[type="radio"]:checked + label {
 .card_sort_animations-move {
   transition: transform 0.5s;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   /*　スマホ対応　*/
+  .container {
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr;
+  }
+  ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  ul li {
+    padding: 0;
+    font-size: small;
+  }
+
   .works_container {
-    justify-content: center;
-    padding: 0; /**とにかく詰める。外殻の余白なくす */
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-auto-rows: 200px;
   }
   .card {
     /**カードについてはカードコンポーネント */
