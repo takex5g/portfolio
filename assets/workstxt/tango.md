@@ -12,7 +12,7 @@
 Vtuberなどにも使っていただいています。
 <div style="text-align: center; padding :10px;">
 <a href="https://youtu.be/ycr6rHAJirI" target="_brank">
-<img style="width: 100%; height:auto; transition:0.3s" width="1294" height="691" src="/img/vtuber.png"/>
+<img style="width: 100%; height:auto;" width="1294" height="691" src="/img/vtuber.png"/>
 </a>
 </div>
 

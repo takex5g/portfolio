@@ -6,9 +6,9 @@
       <div v-html="$md.render(markdown)"></div>
       <div style="padding:20px 0" />
       <div class="tagcontainer">
-        <div v-for="tag in obj.tag" :key="tag">
-          <a :href="'/?tag='+tag">{{tag}}</a>
-        </div>
+        <n-link :to="'/?tag='+tag" prefetch v-for="tag in obj.tag" :key="tag">
+          <div>{{tag}}</div>
+        </n-link>
       </div>
     </div>
   </div>
@@ -57,16 +57,15 @@ export default {
 
 /**タグ一覧 */
 .tagcontainer {
+  font-family: "Montserrat";
   display: flex;
 }
-.tagcontainer div,
 .tagcontainer a {
   margin: 5px;
   padding: 0.1em 0.5em;
   font-size: 16px;
-  color: #fff;
-  background: #333;
-  // background: rgb(114, 114, 114);
+  color: black;
+  border: 1px solid black;
   border-radius: 4px;
 }
 /**ここまで */
@@ -87,12 +86,20 @@ export default {
 }
 /deep/ .hatenablogcard {
   /**はてなブログ埋め込みの横幅調整 */
-  padding: 0 20px;
+  padding: 20px 0;
 }
 
 /deep/ .twitter-tweet {
   /** Twitter埋め込みは真ん中に*/
   margin: auto;
-  padding: 20px;
+
+  padding: 20px 0;
+}
+
+/deep/ img {
+  transition: 0.3s;
+}
+/deep/ img:hover {
+  opacity: 0.8;
 }
 </style>
