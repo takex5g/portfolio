@@ -96,6 +96,12 @@ export default {
   font-size: 10px;
 }
 
+@media screen and (max-width: 450px) {
+  .tagcontainer .back {
+    margin-left: 10px;
+  }
+}
+
 .tagcontainer .back:hover > .circle {
   background: black;
 }

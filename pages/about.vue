@@ -76,12 +76,13 @@ export default {
   border-radius: 50%;
   margin: auto;
   overflow: hidden;
-  transition: 1s;
+  transition: 0.8s;
   position: relative;
+  z-index: 1;
 }
 .yumoya img {
   left: 0px;
-  transition: 1s;
+  transition: 0.8s;
   top: 0px;
   position: absolute;
 }

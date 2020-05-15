@@ -104,6 +104,9 @@ li {
   padding: 20px 10px;
   font-size: 30px;
 }
+li label {
+  cursor: pointer;
+}
 .radio {
   /**ラジオボタンの丸を消す */
   display: none;
