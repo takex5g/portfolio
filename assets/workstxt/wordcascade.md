@@ -10,5 +10,4 @@
   width="300" height="150" frameborder="0" scrolling="no">
 </iframe>
 サイトのフレームワークにNuxt.jsを使っています。また改善を施して誰が見ても同じ言葉が流れる全端末同時落下になりました。
-<!-- ![フクロウ](/worksimg/wordcascade.png) -->
 

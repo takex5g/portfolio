@@ -1,3 +1,12 @@
 # BPMカウンター
 最高に使いやすいを目指したBPMカウンター
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">禁断のLED挿し <a href="https://t.co/xLrCadaIv2">pic.twitter.com/xLrCadaIv2</a></p>&mdash; ゆうもや (@takex5g) <a href="https://twitter.com/takex5g/status/1254792719458635776?ref_src=twsrc%5Etfw">April 27, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<iframe 
+  class="hatenablogcard" 
+  style="width:100%;height:155px;max-width:680px;" 
+  title="リズムに合わせてタップするだけでBPMが測定できます" 
+  src="https://hatenablog-parts.com/embed?url=https://bpm.mononichi.com/" 
+  width="300" height="150" frameborder="0" scrolling="no">
+</iframe>
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">最高に使いやすいBPMカウンタを作りました。<a href="https://t.co/a8PLNz8L5u">https://t.co/a8PLNz8L5u</a> <a href="https://t.co/pGvpwikEDF">pic.twitter.com/pGvpwikEDF</a></p>&mdash; ゆうもや (@takex5g) <a href="https://twitter.com/takex5g/status/1257643133535318016?ref_src=twsrc%5Etfw">May 5, 2020</a></blockquote>
