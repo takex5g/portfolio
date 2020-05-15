@@ -43,11 +43,8 @@ img {
   overflow: hidden;
 }
 .card {
-  /* border: 1px solid black; */
   border-radius: 2px;
   overflow: hidden;
-  /* width: 100px;
-  height: 100px; */
 }
 .card_content {
   position: absolute;
@@ -57,7 +54,7 @@ img {
   height: 100%;
   top: 160px;
   transition-duration: 0.3s;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 .card_content .title {
   font-size: large;
@@ -78,5 +75,15 @@ a .card_content .desc {
 }
 .card .box:hover > a .card_content {
   transform: translate(0px, -50px);
+}
+
+@media screen and (max-width: 450px) {
+  .card_content .title {
+    margin-top: 2px;
+  }
+  .card_content {
+    padding-left: 1px;
+    top: 155px;
+  }
 }
 </style>

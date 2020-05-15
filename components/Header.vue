@@ -6,7 +6,7 @@
     <n-link to="/about" prefetch>
       <div :class="{bold : page=='about'}">About</div>
     </n-link>
-    <a href="https://mononichi.com/">
+    <a href="https://mononichi.com/blog">
       <div>BLOG</div>
     </a>
   </nav>

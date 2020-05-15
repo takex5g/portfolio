@@ -21,7 +21,8 @@ html {
   font-family: "Noto Sans JP", "Arial", YuGothic, "Yu Gothic",
     "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo,
     "ＭＳ ゴシック", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
+  overflow: auto;
 }
 a {
   text-decoration: none;
@@ -30,6 +31,6 @@ a {
   color: black;
 }
 .Montserrat {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
 }
 </style>

@@ -26,6 +26,12 @@ export default {
     WorkCard,
     Header
   },
+  head() {
+    return {
+      title: "ゆうもや",
+      titleTemplate: ""
+    };
+  },
   data: function() {
     return {
       picked: "ALL"
@@ -116,18 +122,6 @@ input[type="radio"]:checked + label {
     padding-left: 10px;
   }
 }
-/* 
-@media screen and (max-width: 450px) {
-  li {
-    padding: 20px 10px;
-    font-size: 15px;
-    padding-left: 0;
-  }
-  ul {
-    padding-left: 5px;
-  }
-} */
-
 /**横メニュー 　ココマデ */
 
 /**カードのソートアニメーション */
@@ -153,19 +147,23 @@ input[type="radio"]:checked + label {
 @media screen and (max-width: 450px) {
   /*　スマホ対応　*/
   .container {
+    /**カラムの組み方を変更 */
     grid-template-columns: auto;
     grid-template-rows: auto 1fr;
   }
   ul {
+    /**ソートメニューを横並びに */
     display: flex;
     justify-content: space-around;
   }
   ul li {
+    /**余白を消してフォントサイズを小さく */
     padding: 0;
     font-size: small;
   }
 
   .works_container {
+    /*真ん中にして　グリッドの大きさ組み換え*/
     margin-right: auto;
     margin-left: auto;
     width: 100%;

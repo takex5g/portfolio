@@ -1,15 +1,23 @@
 
 export default {
-  mode: 'universal',//universal
+  mode: 'spa',//universal
   /*
   ** Headers of the page
   */
   head: {
-    title: "ゆうもや製作物",
+    titleTemplate: 'ゆうもや | %s',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: '作ってきたりバズってきた作品など' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'ゆうもや' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:url', property: 'og:url', content: 'https://mononichi.com/' },
+      { hid: 'og:title', property: 'og:title', content: 'ゆうもや' },
+      { hid: 'og:description', property: 'og:description', content: '作ってきたりバズってきた作品など' },
+      { hid: 'og:image', property: 'og:image', content: 'https://mononichi.com/ogpimg.png' },
+      { name: 'twitter:card', content: 'summary' },
+      { name: 'twitter:site', content: '@takex5g' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -65,7 +73,22 @@ export default {
   },
   webfontloader: {
     google: {
-      families: ['Montserrat&display=swap', 'Noto+Sans+JP:wght@500;700&display=swap']
-    }
+      families: ['Montserrat&display=swap', 'Noto+Sans+JP:wght@400;700&display=swap']
+    },
   },
+  generate: {
+    routes: [
+      '/works/bpm',
+      '/works/chara',
+      '/works/firstbreak',
+      '/works/ice',
+      '/works/ledchecker',
+      '/works/pushbutton',
+      '/works/shake',
+      '/works/tango',
+      '/works/unko',
+      '/works/wordcascade',
+      '/works/yobirin',
+    ]
+  }
 }
