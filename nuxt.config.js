@@ -5,7 +5,7 @@ export default {
   ** Headers of the page
   */
   head: {
-    titleTemplate: 'ゆうもや | %s',
+    titleTemplate: 'まいにちものづくり | %s',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -89,6 +89,8 @@ export default {
       '/works/unko',
       '/works/wordcascade',
       '/works/yobirin',
+      '/works/mono',
+      '/works/wiiu',
     ]
   }
 }

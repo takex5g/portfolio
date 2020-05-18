@@ -47,7 +47,7 @@
                 "SOFTWARE",
                 "etc.."
             ],
-            "desc": "一人称視点のブロック崩し"
+            "desc": "一人称視点のVRブロック崩し"
         },
         {
             "id": "05",
@@ -111,6 +111,24 @@
                 "etc.."
             ],
             "desc": "3Dプリンタで印刷したサメのクリップ"
+        },
+        {
+            "id": "12",
+            "caption": "wiiu",
+            "title": "WiiUラジコン",
+            "tag": [
+                "HARDWARE"
+            ],
+            "desc": "WiiUとRaspberryPiを使ったやつ"
+        },
+        {
+            "id": "13",
+            "caption": "mono",
+            "title": "まいにちものづくり",
+            "tag": [
+                "WEB"
+            ],
+            "desc": "ポートフォリオと技術ブログ"
         }
     ]
 }

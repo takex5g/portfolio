@@ -28,8 +28,7 @@ export default {
   },
   head() {
     return {
-      title: "ゆうもや",
-      titleTemplate: ""
+      title: "ゆうもや"
     };
   },
   data: function() {

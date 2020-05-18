@@ -11,7 +11,7 @@
 
 Vtuberにも使っていただいています。
 <div style="text-align: center; padding :10px;">
-<a href="https://youtu.be/ycr6rHAJirI" target="_brank">
+<a href="https://youtu.be/ycr6rHAJirI" target="_brank" class="link">
 <img style="width: 100%; height:auto;" width="1294" height="691" src="/img/vtuber.png"/>
 </a>
 </div>

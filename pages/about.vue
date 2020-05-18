@@ -52,14 +52,14 @@ export default {
       var self = this;
       setTimeout(function() {
         self.anime = false;
-      }, (Math.floor(Math.random() * 3) + 1) * 1000);
+      }, (Math.floor(Math.random() * 2) + 0.8) * 1000);
     },
     yumoanime() {
       var self = this;
       setTimeout(function() {
         self.doanime();
         self.yumoanime();
-      }, (Math.floor(Math.random() * 10) + 5) * 1000);
+      }, (Math.floor(Math.random() * 10) + 2) * 1000);
     }
   },
   mounted() {

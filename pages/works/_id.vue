@@ -164,10 +164,10 @@ export default {
   padding: 20px 0;
 }
 
-/deep/ .md img {
+/deep/ .md .link {
   transition: 0.3s;
 }
-/deep/ .md img:hover {
+/deep/ .md .link:hover {
   opacity: 0.8;
 }
 </style>

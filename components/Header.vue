@@ -61,6 +61,11 @@ nav img {
     height: 40px;
   }
 }
+@media screen and (max-width: 365px) {
+  nav a {
+    padding: 13px 13px;
+  }
+}
 
 .bold {
   font-weight: 700;
