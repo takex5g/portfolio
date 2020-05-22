@@ -48,7 +48,8 @@ export default {
   */
   modules: [
     '@nuxtjs/markdownit',
-    'nuxt-webfontloader'
+    'nuxt-webfontloader',
+    "@nuxtjs/google-analytics"
   ],
   server: {
     port: 3000, // デフォルト: 3000
@@ -75,6 +76,9 @@ export default {
     google: {
       families: ['Montserrat&display=swap', 'Noto+Sans+JP:wght@400;700&display=swap']
     },
+  },
+  googleAnalytics: {
+    id: 'UA-115898188-2'
   },
   generate: {
     routes: [
