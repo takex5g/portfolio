@@ -55,6 +55,7 @@ nav img {
 @media screen and (max-width: 450px) {
   nav {
     font-size: 19px;
+    margin-bottom: 15px;
   }
   nav img {
     width: 40px;

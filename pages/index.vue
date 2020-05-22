@@ -157,6 +157,7 @@ input[type="radio"]:checked + label {
     /**ソートメニューを横並びに */
     display: flex;
     justify-content: space-around;
+    margin-bottom: 15px;
   }
   ul li {
     /**余白を消してフォントサイズを小さく */
@@ -173,9 +174,6 @@ input[type="radio"]:checked + label {
     gap: 15px;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     grid-auto-rows: 200px;
-  }
-  .card {
-    /**カードについてはカードコンポーネント */
   }
 }
 </style>
