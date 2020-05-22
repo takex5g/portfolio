@@ -49,7 +49,8 @@ export default {
   modules: [
     '@nuxtjs/markdownit',
     'nuxt-webfontloader',
-    "@nuxtjs/google-analytics"
+    "@nuxtjs/google-analytics",
+    '@nuxtjs/sitemap'
   ],
   server: {
     port: 3000, // デフォルト: 3000
@@ -79,6 +80,11 @@ export default {
   },
   googleAnalytics: {
     id: 'UA-115898188-2'
+  },
+  sitemap: {
+    path: '/sitemap.xml',
+    hostname: 'https://mononichi.com',
+    exclude: [],
   },
   generate: {
     routes: [
