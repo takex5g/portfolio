@@ -2,8 +2,8 @@
 WiiUとRaspberry Piで動くラジコン。WiiUを動かすとラジコンカメラも左右に動きます。
 
 左右のジョイスティックで操作、WiiUを傾けることでカメラのサーボを動かすことが出来ます。
-<div style="margin:auto; text-align: center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/W4vP6ZirhpU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style="margin:auto; text-align: center; width:100%;">
+<iframe style="width:100%; height:315px" width="560" height="315" src="https://www.youtube.com/embed/W4vP6ZirhpU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 
