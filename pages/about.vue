@@ -14,6 +14,7 @@
         </div>
         <p class="name">ゆうもや</p>
         <p>ハードウェアからWEBまで。ゆるふわものづくりをやってます</p>
+        <p>大学生です</p>
         <div style="padding:10px" />メールはこちら
         <p class="Montserrat">{{takex5g}}🐌monnichi.com</p>
         <div class="social">
@@ -23,8 +24,12 @@
               <span>Twitter</span>
             </a>
           </div>
-          <!--  <div class="icon">何</div>
-          <div class="icon">何</div>-->
+          <div class="icon Montserrat">
+            <a href="https://www.tiktok.com/@takex5g" target="_brank">
+              <img src="~/assets/img/tiktok.svg" width="20px" height="20px" alt="tiktok" />
+              <span>TikTok</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -105,7 +110,7 @@ export default {
 }
 .social {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-top: 50px;
   transition: 0.3s;
 }
@@ -115,5 +120,8 @@ export default {
 
 .social .icon * {
   vertical-align: middle;
+}
+.icon {
+  margin: 20px;
 }
 </style>
