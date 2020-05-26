@@ -101,6 +101,8 @@ export default {
       '/works/yobirin',
       '/works/mono',
       '/works/wiiu',
+      '/works/lan',
+      '/works/wordgenerator',
     ]
   }
 }
