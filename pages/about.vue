@@ -5,7 +5,7 @@
       <div class="contents">
         <div class="yumoya">
           <img
-            :class="{'yumoyaanime': anime}"
+            :style="yumoyaanime"
             src="~/assets/img/takex5g_transparent.png"
             width="100px"
             height="100px"
@@ -48,27 +48,41 @@ export default {
   data: function() {
     return {
       takex5g: "takex5g",
-      anime: false
+      anime: 0
     };
   },
   methods: {
     doanime() {
-      this.anime = true;
       var self = this;
+      this.anime = Math.floor(Math.random() * 3);
       setTimeout(function() {
-        self.anime = false;
-      }, (Math.floor(Math.random() * 2) + 0.8) * 1000);
+        self.anime = Math.floor(Math.random() * 3);
+      }, 1 * 1000);
+      setTimeout(function() {
+        self.anime = Math.floor(Math.random() * 2);
+      }, 1 * 2000);
     },
     yumoanime() {
       var self = this;
       setTimeout(function() {
         self.doanime();
         self.yumoanime();
-      }, (Math.floor(Math.random() * 10) + 2) * 1000);
+      }, (Math.floor(Math.random() * 9) + 3) * 1000);
     }
   },
   mounted() {
     this.yumoanime();
+  },
+  computed: {
+    yumoyaanime: function() {
+      var pos = 0;
+      if (this.anime == 0) pos = 0;
+      else if (this.anime == 1) pos = 40;
+      else if (this.anime == 2) pos = 85;
+      return {
+        transform: "translate(0px, " + pos + "px)"
+      };
+    }
   }
 };
 </script>
@@ -91,9 +105,7 @@ export default {
   top: 0px;
   position: absolute;
 }
-.yumoyaanime {
-  transform: translate(0px, 40px);
-}
+
 .container {
   margin-top: 10%;
   margin: auto;
