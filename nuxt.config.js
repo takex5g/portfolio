@@ -103,6 +103,7 @@ export default {
       '/works/wiiu',
       '/works/lan',
       '/works/wordgenerator',
+      '/works/kinotake',
     ]
   }
 }
