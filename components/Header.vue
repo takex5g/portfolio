@@ -1,6 +1,12 @@
 <template>
   <nav class="Montserrat">
-    <img src="~/assets/img/monologo.png" width="50px" height="50px" alt="まいにちものづくり" />
+    <img
+      src="~/assets/img/monologo.png"
+      width="50px"
+      height="50px"
+      @click="$emit('click-event')"
+      alt="まいにちものづくり"
+    />
     <n-link to="/" prefetch>
       <div :class="{bold : page=='works'}">Works</div>
     </n-link>

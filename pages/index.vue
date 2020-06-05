@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header page="works" />
+    <Header page="works" v-on:click-event="shuffle" />
     <div class="container">
       <div class="sortmenu Montserrat">
         <ul>
@@ -14,6 +14,14 @@
         <WorkCard v-for="product in pickedproducts" :arg="product" :key="product.title" />
       </transition-group>
     </div>
+
+    <transition name="fade">
+      <div class="displayMode" v-show="show_dispMode">
+        <div>
+          <p>{{displayMode_txt}}</p>
+        </div>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -33,16 +41,31 @@ export default {
   },
   data: function() {
     return {
-      picked: "ALL"
+      picked: "ALL",
+      displayMode: 0, //0:初期,1:製作日順,2:シャッフル
+      show_dispMode: false
     };
   },
   asyncData(context) {
     return {
-      products: Data.products,
+      raw_products: Data.products,
       tags: Data.tag
     };
   },
-  methods: {},
+  methods: {
+    shuffle() {
+      this.show_dispMode = true;
+      let self = this;
+      setTimeout(function() {
+        self.show_dispMode = false;
+      }, 500);
+      if (this.displayMode == 2) {
+        this.displayMode = 0;
+        return;
+      }
+      this.displayMode++;
+    }
+  },
   mounted: function() {
     if (this.$route.query.tag != null) {
       for (var i = 0; i < this.tags.length; i++) {
@@ -66,6 +89,45 @@ export default {
       }
       // 絞り込み後のリストを返す
       return newList;
+    },
+    products() {
+      if (this.displayMode == 0) {
+        //ノーマル
+        return this.raw_products;
+      } else if (this.displayMode == 1) {
+        //日付順
+        var sortarr = this.raw_products.slice();
+        const sortfunc = function compare(a, b) {
+          let comparison = 0;
+          if (a.date > b.date) {
+            comparison = -1;
+          } else if (a.date < b.date) {
+            comparison = 1;
+          }
+          return comparison;
+        };
+        sortarr.sort(sortfunc);
+        return sortarr;
+      } else if (this.displayMode == 2) {
+        //シャッフル
+        const shuffle = ([...array]) => {
+          for (let i = array.length - 1; i >= 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+          }
+          return array;
+        };
+        return shuffle(this.raw_products);
+      }
+    },
+    displayMode_txt() {
+      if (this.displayMode == 0) {
+        return "ノーマル";
+      } else if (this.displayMode == 1) {
+        return "製作日順";
+      } else if (this.displayMode == 2) {
+        return "シャッフル";
+      }
     }
   },
   watch: {},
@@ -125,6 +187,48 @@ input[type="radio"]:checked + label {
   }
 }
 /**横メニュー 　ココマデ */
+
+/**ディスプレイモード(モーダル画面) */
+.displayMode {
+  width: 300px;
+  height: 100px;
+  text-align: center;
+  font-size: 50px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 3;
+}
+.displayMode div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.displayMode div p {
+  width: 100%;
+  height: 60px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  position: absolute;
+  margin: auto;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+/**ディスプレイモード ココマデ */
 
 /**カードのソートアニメーション */
 .card_sort_animations-leave-active {
