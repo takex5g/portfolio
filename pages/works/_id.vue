@@ -3,6 +3,10 @@
     <Header page="works" />
     <div class="container">
       <div></div>
+      <h1 class="title">{{obj.title}}</h1>
+      <h2 class="desc">{{obj.desc}}</h2>
+      <img src="~/assets/img/clock.svg" width="13px" height="13px" />
+      <p class="date">{{date[0]}}/{{date[1]}}/{{date[2]}}</p>
       <div class="md" v-html="$md.render(markdown)"></div>
       <div style="padding:20px 0" />
       <div class="tagcontainer">
@@ -48,6 +52,12 @@ export default {
     );
     document.head.appendChild(recaptchaScript);
   },
+  computed: {
+    date() {
+      var date = String(this.obj.date);
+      return [date.substring(0, 4), date.substring(4, 6), date.substring(6, 8)];
+    }
+  },
   head() {
     this.obj = this.products.find(item => item.caption === this.id);
     return {
@@ -58,7 +68,19 @@ export default {
 </script>
 <style lang="scss" scoped>
 /*csss*/
-
+/**タイトル,日付,説明*/
+.desc {
+  font-weight: normal;
+  font-size: 1.1em;
+}
+.date {
+  display: inline;
+  font-weight: normal;
+  font-size: 15px;
+  margin: 0;
+  color: #a8abb1;
+}
+/**ここまで */
 /**タグ一覧 */
 .tagcontainer {
   font-family: "Montserrat";
@@ -109,6 +131,7 @@ export default {
 .tagcontainer .back:hover > .circle::after {
   background: white;
 }
+/**ここまで */
 /**CSSだけで作る自作戻るボタン */
 .circle {
   width: 25px;
@@ -135,8 +158,6 @@ export default {
   transform: translateX(10px) translateY(10px) rotate(-45deg);
 }
 /**戻るボタンココマデ */
-
-/**ここまで */
 
 .container {
   padding-top: 30px;
