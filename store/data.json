@@ -10,16 +10,18 @@
     "products": [
         {
             "caption": "wordcascade",
+            "title": "Word Cascade",
+            "date": 20200426,
             "tag": [
                 "WEB",
                 "BUZZ"
             ],
-            "title": "Word Cascade",
             "desc": "無限に単語が流れるサイト"
         },
         {
             "caption": "ledchecker",
             "title": "コンセント型LEDチェッカー",
+            "date": 20200428,
             "tag": [
                 "BUZZ",
                 "MEDIA",
@@ -30,6 +32,7 @@
         {
             "caption": "pushbutton",
             "title": "押しボタン式押しボタン",
+            "date": 20200505,
             "tag": [
                 "BUZZ",
                 "MEDIA"
@@ -39,6 +42,7 @@
         {
             "caption": "firstbreak",
             "title": "一人称ブロック崩し",
+            "date": 20191030,
             "tag": [
                 "SOFTWARE",
                 "etc.."
@@ -48,6 +52,7 @@
         {
             "caption": "unko",
             "title": "本格派うんこ",
+            "date": 20200505,
             "tag": [
                 "etc.."
             ],
@@ -56,6 +61,7 @@
         {
             "caption": "bpm",
             "title": "BPMカウンター",
+            "date": 20200505,
             "tag": [
                 "WEB"
             ],
@@ -64,6 +70,7 @@
         {
             "caption": "ice",
             "title": "スプーン印刷した",
+            "date": 20191030,
             "tag": [
                 "BUZZ"
             ],
@@ -72,6 +79,7 @@
         {
             "caption": "tango",
             "title": "ランダム単語ガチャ",
+            "date": 20180708,
             "tag": [
                 "WEB"
             ],
@@ -80,6 +88,7 @@
         {
             "caption": "chara",
             "title": "キャラデザお題ガチャ",
+            "date": 20200401,
             "tag": [
                 "WEB"
             ],
@@ -88,6 +97,7 @@
         {
             "caption": "lan",
             "title": "LANケーブル実際に挿してみた",
+            "date": 20200525,
             "tag": [
                 "BUZZ"
             ],
@@ -96,6 +106,7 @@
         {
             "caption": "yobirin",
             "title": "IoT呼び鈴",
+            "date": 20200428,
             "tag": [
                 "HARDWARE"
             ],
@@ -104,6 +115,7 @@
         {
             "caption": "wordgenerator",
             "title": "ランダムワード生成器",
+            "date": 20200222,
             "tag": [
                 "WEB"
             ],
@@ -112,6 +124,7 @@
         {
             "caption": "shake",
             "title": "サメ型クリップ",
+            "date": 20190102,
             "tag": [
                 "etc.."
             ],
@@ -120,6 +133,7 @@
         {
             "caption": "kinotake",
             "title": "きのこたけのこで揉めんな",
+            "date": 20200530,
             "tag": [
                 "MEDIA",
                 "BUZZ"
@@ -129,6 +143,7 @@
         {
             "caption": "wiiu",
             "title": "WiiUラジコン",
+            "date": 20170111,
             "tag": [
                 "HARDWARE"
             ],
@@ -137,6 +152,7 @@
         {
             "caption": "mono",
             "title": "まいにちものづくり",
+            "date": 20200515,
             "tag": [
                 "WEB"
             ],
