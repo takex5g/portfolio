@@ -56,6 +56,7 @@ nav img {
   margin-right: auto;
   margin-bottom: 5px;
   margin-left: 3px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 450px) {
