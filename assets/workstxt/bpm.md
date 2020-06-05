@@ -1,6 +1,3 @@
-# BPMカウンター
-最高に使いやすいを目指したBPMカウンター
-
 <iframe 
   class="hatenablogcard" 
   style="width:100%;height:155px;max-width:680px;" 

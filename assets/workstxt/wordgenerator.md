@@ -1,5 +1,3 @@
-# ランダムワード生成器
-100万語からランダムに5単語を表示するWEBサービス
 <iframe 
   class="hatenablogcard" 
   style="width:100%;height:155px;max-width:680px;" 

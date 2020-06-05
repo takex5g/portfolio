@@ -1,5 +1,3 @@
-# ランダム単語ガチャ
-ランダムに単語を排出するWEBサービス
 <iframe 
   class="hatenablogcard" 
   style="width:100%;height:155px;max-width:680px;" 

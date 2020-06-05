@@ -1,6 +1,3 @@
-# 「LANケーブルっぽい建物」実際に挿してみた
-LANな建物に実際に挿しに行ってきました
-
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">「LANケーブルっぽい建物」に実際に挿しに行ってみた <a href="https://t.co/6Y1hgeX0ur">pic.twitter.com/6Y1hgeX0ur</a></p>&mdash; ゆうもや (@takex5g) <a href="https://twitter.com/takex5g/status/1264844152367222786?ref_src=twsrc%5Etfw">May 25, 2020</a></blockquote>
 
 
