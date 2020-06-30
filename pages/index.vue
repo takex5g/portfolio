@@ -58,7 +58,7 @@ export default {
       let self = this;
       setTimeout(function() {
         self.show_dispMode = false;
-      }, 500);
+      }, 800);
       if (this.displayMode == 2) {
         this.displayMode = 0;
         return;

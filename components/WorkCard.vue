@@ -49,7 +49,7 @@ img {
 .card_content {
   position: absolute;
   z-index: 1;
-  width: 100%;
+  width: calc(100% - 5px);
   padding-left: 5px;
   height: 100%;
   top: 160px;
@@ -82,7 +82,8 @@ a .card_content .desc {
     margin-top: 2px;
   }
   .card_content {
-    padding-left: 1px;
+    padding-left: 3px;
+    width: calc(100% - 3px);
     top: 155px;
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header page="works" />
+    <Header page="works" v-on:click-event="$router.push('/')" />
     <div class="container">
       <div></div>
       <h1 class="title">{{obj.title}}</h1>

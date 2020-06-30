@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header page="about" />
+    <Header page="about" v-on:click-event="$router.push('/')" />
     <div class="container">
       <div class="contents">
         <div class="yumoya">
@@ -14,7 +14,7 @@
         </div>
         <p class="name">ゆうもや</p>
         <p>ハードウェアからWEBまで。ゆるふわものづくりをやってます</p>
-        <p>大学生です</p>
+        <p></p>
         <div style="padding:10px" />メールはこちら
         <p class="Montserrat">{{takex5g}}🐌monnichi.com</p>
         <div class="social">
