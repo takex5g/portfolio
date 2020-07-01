@@ -104,6 +104,7 @@ export default {
       '/works/lan',
       '/works/wordgenerator',
       '/works/kinotake',
+      '/works/wordcascadevr',
     ]
   }
 }
