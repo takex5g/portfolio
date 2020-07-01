@@ -30,6 +30,12 @@
               <span>TikTok</span>
             </a>
           </div>
+          <div class="icon Montserrat">
+            <a href="https://note.com/takex5g" target="_brank">
+              <img src="~/assets/img/note.png" width="20px" height="20px" alt="note" />
+              <span>note</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
