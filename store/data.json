@@ -45,6 +45,7 @@
             "date": 20191030,
             "tag": [
                 "SOFTWARE",
+                "VR",
                 "etc.."
             ],
             "desc": "一人称視点のVRブロック崩し"
@@ -108,7 +109,8 @@
             "title": "Word Cascade VR",
             "date": 20200629,
             "tag": [
-                "WEB"
+                "WEB",
+                "VR"
             ],
             "desc": "全方向から単語を浴びれるWEB VR"
         },
