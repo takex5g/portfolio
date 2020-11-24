@@ -52,10 +52,10 @@ export default {
     "@nuxtjs/google-analytics",
     '@nuxtjs/sitemap'
   ],
-  server: {
+  /*server: {
     port: 3000, // デフォルト: 3000
     host: '192.168.0.50' // デフォルト: localhost
-  },
+  },*/
   /*
   ** Build configuration
   */
@@ -105,6 +105,7 @@ export default {
       '/works/wordgenerator',
       '/works/kinotake',
       '/works/wordcascadevr',
+      '/works/themeslot',
     ]
   }
 }
