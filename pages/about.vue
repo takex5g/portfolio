@@ -15,24 +15,40 @@
         <p class="name">ゆうもや</p>
         <p>ハードウェアからWEBまで。ゆるふわものづくりをやってます</p>
         <p></p>
-        <div style="padding:10px" />メールはこちら
-        <p class="Montserrat">{{takex5g}}🐌monnichi.com</p>
+        <div style="padding: 10px" />
+        メールはこちら
+        <p class="Montserrat">{{ takex5g }}🐌mononichi.com</p>
         <div class="social">
           <div class="icon Montserrat">
             <a href="https://twitter.com/takex5g" target="_brank">
-              <img src="~/assets/img/twitter.svg" width="20px" height="20px" alt="twitter" />
+              <img
+                src="~/assets/img/twitter.svg"
+                width="20px"
+                height="20px"
+                alt="twitter"
+              />
               <span>Twitter</span>
             </a>
           </div>
           <div class="icon Montserrat">
             <a href="https://www.tiktok.com/@takex5g" target="_brank">
-              <img src="~/assets/img/tiktok.svg" width="20px" height="20px" alt="tiktok" />
+              <img
+                src="~/assets/img/tiktok.svg"
+                width="20px"
+                height="20px"
+                alt="tiktok"
+              />
               <span>TikTok</span>
             </a>
           </div>
           <div class="icon Montserrat">
             <a href="https://note.com/takex5g" target="_brank">
-              <img src="~/assets/img/note.png" width="20px" height="20px" alt="note" />
+              <img
+                src="~/assets/img/note.png"
+                width="20px"
+                height="20px"
+                alt="note"
+              />
               <span>note</span>
             </a>
           </div>
@@ -48,48 +64,48 @@ export default {
   components: { Header },
   head() {
     return {
-      title: "About"
+      title: "About",
     };
   },
-  data: function() {
+  data: function () {
     return {
       takex5g: "takex5g",
-      anime: 0
+      anime: 0,
     };
   },
   methods: {
     doanime() {
       var self = this;
       this.anime = Math.floor(Math.random() * 3);
-      setTimeout(function() {
+      setTimeout(function () {
         self.anime = Math.floor(Math.random() * 3);
       }, 1 * 1000);
-      setTimeout(function() {
+      setTimeout(function () {
         self.anime = Math.floor(Math.random() * 2);
       }, 1 * 2000);
     },
     yumoanime() {
       var self = this;
-      setTimeout(function() {
+      setTimeout(function () {
         self.doanime();
         self.yumoanime();
       }, (Math.floor(Math.random() * 9) + 3) * 1000);
-    }
+    },
   },
   mounted() {
     this.yumoanime();
   },
   computed: {
-    yumoyaanime: function() {
+    yumoyaanime: function () {
       var pos = 0;
       if (this.anime == 0) pos = 0;
       else if (this.anime == 1) pos = 40;
       else if (this.anime == 2) pos = 85;
       return {
-        transform: "translate(0px, " + pos + "px)"
+        transform: "translate(0px, " + pos + "px)",
       };
-    }
-  }
+    },
+  },
 };
 </script>
 
