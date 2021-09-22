@@ -166,29 +166,29 @@ export default {
   max-width: 600px;
   margin-bottom: 30px;
 }
-/deep/ p {
+::v-deep p {
   font-size: 18px;
   line-height: 36px;
 }
-/deep/ h1 {
+::v-deep h1 {
   font-size: 32px;
 }
-/deep/ .hatenablogcard {
+::v-deep .hatenablogcard {
   /**はてなブログ埋め込みの横幅調整 */
   padding: 20px 0;
 }
 
-/deep/ .twitter-tweet {
+::v-deep .twitter-tweet {
   /** Twitter埋め込みは真ん中に*/
   margin: auto;
 
   padding: 20px 0;
 }
 
-/deep/ .md .link {
+::v-deep .md .link {
   transition: 0.3s;
 }
-/deep/ .md .link:hover {
+::v-deep .md .link:hover {
   opacity: 0.8;
 }
 </style>

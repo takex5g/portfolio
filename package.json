@@ -16,11 +16,11 @@
     "@nuxtjs/sitemap": "^2.4.0",
     "normalize.css": "^8.0.1",
     "nuxt": "^2.13.3",
-    "nuxt-webfontloader": "^1.1.0"
+    "nuxt-webfontloader": "^1.1.0",
+    "sass": "^1.42.1",
+    "sass-loader": "^10.2.0"
   },
   "devDependencies": {
-    "node-sass": "^6.0.0",
-    "sass-loader": "^9.0.2",
-    "webpack": "^4.44.2"
+    "webpack": "^4.46.0"
   }
 }
