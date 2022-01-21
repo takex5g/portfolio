@@ -12,19 +12,27 @@
               :id="tag"
               v-model="picked"
               class="radio"
-              @click="taginfo=false"
+              @click="taginfo = false"
             />
-            <label :for="tag">{{tag}}</label>
+            <label :for="tag">{{ tag }}</label>
           </li>
         </ul>
       </div>
       <div>
         <div class="taginfo" v-if="taginfo">
           タグ絞り込み:
-          <span class="Montserrat">{{picked}}</span>
+          <span class="Montserrat">{{ picked }}</span>
         </div>
-        <transition-group tag="div" class="works_container" name="card_sort_animations">
-          <WorkCard v-for="product in pickedproducts" :arg="product" :key="product.title" />
+        <transition-group
+          tag="div"
+          class="works_container"
+          name="card_sort_animations"
+        >
+          <WorkCard
+            v-for="product in pickedproducts"
+            :arg="product"
+            :key="product.title"
+          />
         </transition-group>
       </div>
     </div>
@@ -32,7 +40,7 @@
     <transition name="fade">
       <div class="displayMode" v-show="show_dispMode">
         <div>
-          <p>{{displayMode_txt}}</p>
+          <p>{{ displayMode_txt }}</p>
         </div>
       </div>
     </transition>
@@ -46,26 +54,26 @@ import Header from "@/components/Header";
 export default {
   components: {
     WorkCard,
-    Header
+    Header,
   },
   head() {
     return {
-      title: "ゆうもや"
+      title: "ゆうもや",
     };
   },
-  data: function() {
+  data: function () {
     return {
       picked: "ALL", //チェックしているタグ
       displayMode: 0, //0:初期,1:製作日順,2:シャッフル
       show_dispMode: false, //状態遷移表示
-      taginfo: false
+      taginfo: false,
     };
   },
   asyncData(context) {
     //jsonからデータを読みだし
     return {
       raw_products: Data.products, //生データ
-      tags: Data.tag //左に表示されるタグ一覧
+      tags: Data.tag, //左に表示されるタグ一覧
     };
   },
   methods: {
@@ -73,7 +81,7 @@ export default {
     shuffle() {
       this.show_dispMode = true; //遷移表示
       let self = this;
-      setTimeout(function() {
+      setTimeout(function () {
         self.show_dispMode = false; //nミリ秒後遷移非表示
       }, 800);
       if (this.displayMode == 2) {
@@ -82,9 +90,9 @@ export default {
         return;
       }
       this.displayMode++;
-    }
+    },
   },
-  mounted: function() {
+  mounted: function () {
     //パラメーターのtagがタグリストにあればtaginfoを非表示
     let count_picked = false; //pickedに存在するか確かめる変数
     //パラメーターがあるか
@@ -160,10 +168,10 @@ export default {
       } else if (this.displayMode == 2) {
         return "シャッフル";
       }
-    }
+    },
   },
   watch: {},
-  filters: {}
+  filters: {},
 };
 </script>
 

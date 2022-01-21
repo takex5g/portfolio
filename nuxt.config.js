@@ -1,112 +1,119 @@
-
 export default {
   //mode: 'spa',//universal
   ssr: false,
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
-    titleTemplate: 'まいにちものづくり | %s',
+    titleTemplate: "まいにちものづくり | %s",
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '作ってきたりバズってきた作品など' },
-      { hid: 'og:site_name', property: 'og:site_name', content: 'ゆうもや' },
-      { hid: 'og:type', property: 'og:type', content: 'website' },
-      { hid: 'og:url', property: 'og:url', content: 'https://mononichi.com/' },
-      { hid: 'og:title', property: 'og:title', content: 'ゆうもや' },
-      { hid: 'og:description', property: 'og:description', content: '作ってきたりバズってきた作品など' },
-      { hid: 'og:image', property: 'og:image', content: 'https://mononichi.com/ogpimg.png' },
-      { name: 'twitter:card', content: 'summary' },
-      { name: 'twitter:site', content: '@takex5g' },
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        hid: "description",
+        name: "description",
+        content: "作ってきたりバズってきた作品など",
+      },
+      { hid: "og:site_name", property: "og:site_name", content: "ゆうもや" },
+      { hid: "og:type", property: "og:type", content: "website" },
+      { hid: "og:url", property: "og:url", content: "https://mononichi.com/" },
+      { hid: "og:title", property: "og:title", content: "ゆうもや" },
+      {
+        hid: "og:description",
+        property: "og:description",
+        content: "作ってきたりバズってきた作品など",
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content: "https://mononichi.com/ogpimg.png",
+      },
+      { name: "twitter:card", content: "summary" },
+      { name: "twitter:site", content: "@takex5g" },
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
   /*
-  ** Customize the progress-bar color
-  */
-  loading: { color: '#fff' },
+   ** Customize the progress-bar color
+   */
+  loading: { color: "#fff" },
   /*
-  ** Global CSS
-  */
-  css: [
-    'normalize.css'
-  ],
+   ** Global CSS
+   */
+  css: ["normalize.css"],
   /*
-  ** Plugins to load before mounting the App
-  */
-  plugins: [
-  ],
+   ** Plugins to load before mounting the App
+   */
+  plugins: [],
   /*
-  ** Nuxt.js dev-modules
-  */
-  buildModules: [
-  ],
+   ** Nuxt.js dev-modules
+   */
+  buildModules: [],
   /*
-  ** Nuxt.js modules
-  */
+   ** Nuxt.js modules
+   */
   modules: [
-    '@nuxtjs/markdownit',
-    'nuxt-webfontloader',
+    "@nuxtjs/markdownit",
+    "nuxt-webfontloader",
     "@nuxtjs/google-analytics",
-    '@nuxtjs/sitemap'
+    "@nuxtjs/sitemap",
   ],
   /*server: {
     port: 3000, // デフォルト: 3000
     host: '192.168.0.50' // デフォルト: localhost
   },*/
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   build: {
     /*
-    ** You can extend webpack config here
-    */
-    extend(config, ctx) {
-    }
+     ** You can extend webpack config here
+     */
+    extend(config, ctx) {},
   },
   markdownit: {
     injected: true, // $mdを利用してmarkdownをhtmlにレンダリングする
     breaks: true, // 改行コードに変換する
     html: true, // HTML タグを有効にする
     linkify: true, // URLに似たテキストをリンクに自動変換する
-    typography: true // 言語に依存しないきれいな 置換 + 引用符 を有効にします。
+    typography: true, // 言語に依存しないきれいな 置換 + 引用符 を有効にします。
   },
   webfontloader: {
     google: {
-      families: ['Montserrat&display=swap', 'Noto+Sans+JP:wght@400;700&display=swap']
+      families: [
+        "Montserrat&display=swap",
+        "Noto+Sans+JP:wght@400;700&display=swap",
+      ],
     },
   },
   googleAnalytics: {
-    id: 'UA-115898188-2'
+    id: "UA-115898188-2",
   },
   sitemap: {
-    path: '/sitemap.xml',
-    hostname: 'https://mononichi.com',
+    path: "/sitemap.xml",
+    hostname: "https://mononichi.com",
     exclude: [],
   },
   generate: {
     routes: [
-      '/works/bpm',
-      '/works/chara',
-      '/works/firstbreak',
-      '/works/ice',
-      '/works/ledchecker',
-      '/works/pushbutton',
-      '/works/shake',
-      '/works/tango',
-      '/works/unko',
-      '/works/wordcascade',
-      '/works/yobirin',
-      '/works/mono',
-      '/works/wiiu',
-      '/works/lan',
-      '/works/wordgenerator',
-      '/works/kinotake',
-      '/works/wordcascadevr',
-      '/works/themeslot',
-    ]
-  }
-}
+      "/works/bpm",
+      "/works/chara",
+      "/works/firstbreak",
+      "/works/ice",
+      "/works/ledchecker",
+      "/works/pushbutton",
+      "/works/shake",
+      "/works/tango",
+      "/works/unko",
+      "/works/wordcascade",
+      "/works/yobirin",
+      "/works/mono",
+      "/works/wiiu",
+      "/works/lan",
+      "/works/wordgenerator",
+      "/works/kinotake",
+      "/works/wordcascadevr",
+      "/works/themeslot",
+    ],
+  },
+};
