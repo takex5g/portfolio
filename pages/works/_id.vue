@@ -3,19 +3,25 @@
     <Header page="works" v-on:click-event="$router.push('/')" />
     <div class="container">
       <div></div>
-      <h1 class="title">{{obj.title}}</h1>
-      <h2 class="desc">{{obj.desc}}</h2>
+      <h1 class="title">{{ obj.title }}</h1>
+      <h2 class="desc">{{ obj.desc }}</h2>
       <img src="~/assets/img/clock.svg" width="13px" height="13px" />
-      <p class="date">{{date[0]}}/{{date[1]}}/{{date[2]}}</p>
+      <p class="date">{{ date[0] }}/{{ date[1] }}/{{ date[2] }}</p>
       <div class="md" v-html="$md.render(markdown)"></div>
-      <div style="padding:20px 0" />
+      <div style="padding: 20px 0" />
       <div class="tagcontainer">
         <n-link to="/" prefetch class="back">
           <div class="circle" />
           <p>戻る</p>
         </n-link>
-        <n-link :to="'/?tag='+tag" prefetch v-for="tag in obj.tag" :key="tag" class="tag">
-          <div>{{tag}}</div>
+        <n-link
+          :to="'/?tag=' + tag"
+          prefetch
+          v-for="tag in obj.tag"
+          :key="tag"
+          class="tag"
+        >
+          <div>{{ tag }}</div>
         </n-link>
       </div>
     </div>
@@ -31,8 +37,8 @@ export default {
     return {
       //今表示している作品の情報が格納される
       obj: {
-        type: Object
-      }
+        type: Object,
+      },
     };
   },
   asyncData({ params }) {
@@ -40,7 +46,7 @@ export default {
     return {
       markdown: require("~/assets/workstxt/" + id + ".md")["default"],
       products: Data.products,
-      id: id
+      id: id,
     };
   },
   mounted() {
@@ -56,14 +62,14 @@ export default {
     date() {
       var date = String(this.obj.date);
       return [date.substring(0, 4), date.substring(4, 6), date.substring(6, 8)];
-    }
+    },
   },
   head() {
-    this.obj = this.products.find(item => item.caption === this.id);
+    this.obj = this.products.find((item) => item.caption === this.id);
     return {
-      title: this.obj.title
+      title: this.obj.title,
     };
-  }
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -165,6 +171,10 @@ export default {
   display: block;
   max-width: 600px;
   margin-bottom: 30px;
+}
+
+::v-deep video {
+  width: 100%;
 }
 ::v-deep p {
   font-size: 18px;
