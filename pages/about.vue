@@ -30,7 +30,7 @@
               <span>Twitter</span>
             </a>
           </div>
-          <div class="icon Montserrat">
+          <!-- <div class="icon Montserrat">
             <a href="https://www.tiktok.com/@takex5g" target="_brank">
               <img
                 src="~/assets/img/tiktok.svg"
@@ -40,7 +40,7 @@
               />
               <span>TikTok</span>
             </a>
-          </div>
+          </div> -->
           <div class="icon Montserrat">
             <a href="https://note.com/takex5g" target="_brank">
               <img

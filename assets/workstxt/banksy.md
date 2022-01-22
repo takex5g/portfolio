@@ -1,0 +1,6 @@
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">何回も遊べるバンクシー作った <a href="https://t.co/Y3Hjd4u2T2">pic.twitter.com/Y3Hjd4u2T2</a></p>&mdash; ゆうもや (@takex5g) <a href="https://twitter.com/takex5g/status/1440244409052794893?ref_src=twsrc%5Etfw">September 21, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+仕組みについては、このツイートに沢山ぶら下げています。
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【仕組み】<br>ローラーを回転させて、未裁断、裁断済の紙を同時に巻き取り、送り出しています。<br>裏面は制御マイコンとモーター、センサ類が載っています。部品の多くは3Dプリンタで印刷しました。 <a href="https://t.co/sbiJPn6oNz">pic.twitter.com/sbiJPn6oNz</a></p>&mdash; ゆうもや (@takex5g) <a href="https://twitter.com/takex5g/status/1440249224570957838?ref_src=twsrc%5Etfw">September 21, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">オークションハンマーは赤外線リモコンとして機能。圧電素子で振動検知。<br>外装は3Dプリンターで印刷して塗装。裏面のアクリルはレーザーカッター。 <a href="https://t.co/fzr2IcUr6y">pic.twitter.com/fzr2IcUr6y</a></p>&mdash; ゆうもや (@takex5g) <a href="https://twitter.com/takex5g/status/1440256094115295242?ref_src=twsrc%5Etfw">September 21, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
