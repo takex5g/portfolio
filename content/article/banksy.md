@@ -1,6 +1,6 @@
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">何回も遊べるバンクシー作った <a href="https://t.co/Y3Hjd4u2T2">pic.twitter.com/Y3Hjd4u2T2</a></p>&mdash; ゆうもや (@takex5g) <a href="https://twitter.com/takex5g/status/1440244409052794893?ref_src=twsrc%5Etfw">September 21, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-テレ朝ニュースのYoutubeが200万再生以上を突破しました。(現時点で非公開になってしまいました。悲しい)
+テレ朝ニュースYoutubeチャンネルでの動画が200万再生以上を突破ていました。(権利問題なのか、非公開になり閲覧不可です。悲しい)
 
 仕組みについては、このツイートに沢山ぶら下げています。
 
@@ -12,10 +12,10 @@
 オークションハンマーと額縁の通信は赤外線通信を使っています。「なぜ今の時代に赤外線リモコン？」というのは、展示会で安定的に動くようにするためです。
 
 ### メディア紹介
-TBS「あさチャン」
-TBS「Nスタ」
-テレビ朝日「グッド！モーニング」
-テレビ朝日系 「ANN news」, 「ABEMA」 等
+TBS「あさチャン」  
+TBS「Nスタ」  
+テレビ朝日「グッド！モーニング」  
+テレビ朝日系 「ANN news」, 「ABEMA」 等  
 ### 紹介記事
 
 <iframe 
