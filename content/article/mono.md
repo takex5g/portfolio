@@ -1,22 +1,6 @@
 ## ■ポートフォリオ
-このポートフォリオはNuxt.jsで開発しました。SPA(シングルページアプリケーション)です。
-
-トップページの一覧はjsonファイルで管理をしています。
-<div style="text-align: center">
-<img style="width: 60%; height:auto; margin:auto" width="791" height="856" src="/img/json.png"/>
-</div>
-
-
-また、この個別ページはMarkDown形式で書いており、.md拡張子ファイルで管理をしています。
-<div style="text-align: center">
-<img style="width: 60%; height:auto; margin:auto" width="791" height="856" src="/img/markdown.png"/>
-</div>
-
-Google InsightsによるWEB表示スピード測定の結果,トップページはモバイルの場合**90点** パソコンの場合**99点**となりました。
-(この個別ページのスコアはそんな高くないです。)
-
-WEBデザインも一から行いました。ソート型のポートフォリオってあまり見かけないと思っているのですがどうなんでしょうか
-
-
+このサイトです。
+Next.jsを使っています。
+作った当時よりフロントの知識がかなりついたため、TypeScript移行を含め、治したい所が沢山あります。
 ## ■ブログ
-技術ブログはWordPressを用いています。読み込み速度遅い、更新頻度が遅い(書くのがめんどくさい)、デザインを全くカスタマイズしていない、などとても満足していないブログです。今年中に新しくしたいと思っていて、ローカル環境にwordpressの環境だけ作りました。
+WordPressの[技術ブログ](https://mononichi.com/blog/)がありますが、全然使っていません。

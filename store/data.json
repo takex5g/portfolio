@@ -1,202 +1,159 @@
 {
-    "tag": [
-        "ALL",
-        "WEB",
-        "MEDIA",
-        "HARDWARE",
-        "BUZZ",
-        "etc.."
-    ],
-    "products": [
-        {
-            "caption": "wordcascade",
-            "title": "Word Cascade",
-            "date": 20200426,
-            "tag": [
-                "WEB",
-                "BUZZ"
-            ],
-            "desc": "無限に単語が流れるサイト"
-        },
-        {
-            "caption": "ledchecker",
-            "title": "コンセント型LEDチェッカー",
-            "date": 20200428,
-            "tag": [
-                "BUZZ",
-                "MEDIA",
-                "HARDWARE"
-            ],
-            "desc": "禁断のLED挿しができるチェッカー"
-        },
-        {
-            "caption": "pushbutton",
-            "title": "押しボタン式押しボタン",
-            "date": 20200505,
-            "tag": [
-                "BUZZ",
-                "MEDIA"
-            ],
-            "desc": "押しボタンを押すためのボタン"
-        },
-        {
-            "caption": "firstbreak",
-            "title": "一人称ブロック崩し",
-            "date": 20191030,
-            "tag": [
-                "SOFTWARE",
-                "VR",
-                "etc.."
-            ],
-            "desc": "一人称視点のVRブロック崩し"
-        },
-        {
-            "caption": "banksy",
-            "title": "無限バンクシー",
-            "date": 20210921,
-            "tag": [
-                "HARDWARE",
-                "BUZZ"
-            ],
-            "desc": "何回も遊べるバンクシー"
-        },
-        {
-            "caption": "unko",
-            "title": "本格派うんこ",
-            "date": 20200505,
-            "tag": [
-                "etc.."
-            ],
-            "desc": "3Dプリンターでウンコ型を作ってチョコ作りました。"
-        },
-        {
-            "caption": "bpm",
-            "title": "BPMカウンター",
-            "date": 20200505,
-            "tag": [
-                "WEB"
-            ],
-            "desc": "最高に使いやすいを目指したBPMカウンター"
-        },
-        {
-            "caption": "ice",
-            "title": "スプーン印刷した",
-            "date": 20191030,
-            "tag": [
-                "BUZZ"
-            ],
-            "desc": "アイス買ったけどスプーン無かったから印刷した"
-        },
-        {
-            "caption": "tango",
-            "title": "ランダム単語ガチャ",
-            "date": 20180708,
-            "tag": [
-                "WEB"
-            ],
-            "desc": "ランダムに単語を排出するWEBサービス"
-        },
-        {
-            "caption": "chara",
-            "title": "キャラデザお題ガチャ",
-            "date": 20200401,
-            "tag": [
-                "WEB"
-            ],
-            "desc": "キャラクタデザイン補助サービス"
-        },
-        {
-            "caption": "lan",
-            "title": "LANケーブル実際に挿してみた",
-            "date": 20200525,
-            "tag": [
-                "BUZZ"
-            ],
-            "desc": "「LANケーブルっぽい建物」に実際に挿しに行ってみた"
-        },
-        {
-            "caption": "rapbot",
-            "title": "ラップBot",
-            "date": 20210916,
-            "tag": [
-                "BUZZ",
-                "etc.."
-            ],
-            "desc": "ラップで返信するTwitterBot"
-        },
-        {
-            "caption": "wordcascadevr",
-            "title": "Word Cascade VR",
-            "date": 20200629,
-            "tag": [
-                "WEB",
-                "VR"
-            ],
-            "desc": "全方向から単語を浴びれるWEB VR"
-        },
-        {
-            "caption": "yobirin",
-            "title": "IoT呼び鈴",
-            "date": 20200428,
-            "tag": [
-                "HARDWARE"
-            ],
-            "desc": "呼び鈴型のIoTボタン"
-        },
-        {
-            "caption": "wordgenerator",
-            "title": "ランダムワード生成器",
-            "date": 20200222,
-            "tag": [
-                "WEB"
-            ],
-            "desc": "100万語からランダムに5単語表示するWEBサービス"
-        },
-        {
-            "caption": "shake",
-            "title": "サメ型クリップ",
-            "date": 20190102,
-            "tag": [
-                "etc.."
-            ],
-            "desc": "3Dプリンタで印刷したサメのクリップ"
-        },
-        {
-            "caption": "kinotake",
-            "title": "きのこたけのこ如きで揉めんな",
-            "date": 20200530,
-            "tag": [
-                "MEDIA",
-                "BUZZ"
-            ],
-            "desc": "きのこの山たけのこの里を使った15秒動画"
-        },
-        {
-            "caption": "themeslot",
-            "title": "創作お題スロット",
-            "date": 20200915,
-            "tag": [
-                "WEB"
-            ],
-            "desc": "創作に使えそうな単語をスロットするサービス"
-        },
-        {
-            "caption": "wiiu",
-            "title": "WiiUラジコン",
-            "date": 20170111,
-            "tag": [
-                "HARDWARE"
-            ],
-            "desc": "WiiUとRaspberryPiを使ったやつ"
-        },
-        {
-            "caption": "mono",
-            "title": "まいにちものづくり",
-            "date": 20200515,
-            "tag": [
-                "WEB"
-            ],
-            "desc": "ポートフォリオと技術ブログ"
-        }
-    ]
+  "tag": ["ALL", "WEB", "HARDWARE", "SOFTWARE", "BUZZ", "etc.."],
+  "products": [
+    {
+      "caption": "wordcascade",
+      "title": "Word Cascade",
+      "date": 20200426,
+      "tag": ["WEB", "BUZZ"],
+      "desc": "無限に単語が流れるサイト"
+    },
+    {
+      "caption": "banksy",
+      "title": "無限バンクシー",
+      "date": 20210921,
+      "tag": ["HARDWARE", "BUZZ"],
+      "desc": "何回も遊べるバンクシー"
+    },
+    {
+      "caption": "firstbreak",
+      "title": "一人称ブロック崩し",
+      "date": 20191030,
+      "tag": ["SOFTWARE", "SOFTWARE", "VR"],
+      "desc": "一人称視点のVRブロック崩し"
+    },
+    {
+      "caption": "unko",
+      "title": "本格派うんこ",
+      "date": 20200505,
+      "tag": ["etc.."],
+      "desc": "3Dプリンターでウンコ型を作ってチョコ作りました。"
+    },
+    {
+      "caption": "bpm",
+      "title": "BPMカウンター",
+      "date": 20200505,
+      "tag": ["WEB"],
+      "desc": "最高に使いやすいを目指したBPMカウンター"
+    },
+    {
+      "caption": "rapbot",
+      "title": "ラップBot",
+      "date": 20210916,
+      "tag": ["BUZZ", "SOFTWARE"],
+      "desc": "ラップで返信するTwitterBot"
+    },
+    {
+      "caption": "ice",
+      "title": "スプーン印刷した",
+      "date": 20191030,
+      "tag": ["BUZZ"],
+      "desc": "アイス買ったけどスプーン無かったから印刷した"
+    },
+    {
+      "caption": "tango",
+      "title": "ランダム単語ガチャ",
+      "date": 20180708,
+      "tag": ["WEB"],
+      "desc": "ランダムに単語を排出するWEBサービス"
+    },
+    {
+      "caption": "chara",
+      "title": "キャラデザお題ガチャ",
+      "date": 20200401,
+      "tag": ["WEB"],
+      "desc": "キャラクタデザイン補助サービス"
+    },
+    {
+      "caption": "lan",
+      "title": "LANケーブル実際に挿してみた",
+      "date": 20200525,
+      "tag": ["BUZZ"],
+      "desc": "「LANケーブルっぽい建物」に実際に挿しに行ってみた"
+    },
+    {
+      "caption": "wordcascadevr",
+      "title": "Word Cascade VR",
+      "date": 20200629,
+      "tag": ["WEB", "VR"],
+      "desc": "全方向から単語を浴びれるWEB VR"
+    },
+    {
+      "caption": "sushidj",
+      "title": "寿司DJ",
+      "date": 20210308,
+      "tag": ["HARDWARE"],
+      "desc": "DJができる寿司"
+    },
+    {
+      "caption": "demoncore",
+      "title": "デーモンコア風ゼリー",
+      "date": 20210308,
+      "tag": ["etc.."],
+      "desc": "スプーンを抜いたらヤバいやつ"
+    },
+    {
+      "caption": "yobirin",
+      "title": "IoT呼び鈴",
+      "date": 20200428,
+      "tag": ["HARDWARE"],
+      "desc": "呼び鈴型のIoTボタン"
+    },
+    {
+      "caption": "ledchecker",
+      "title": "コンセント型LEDチェッカー",
+      "date": 20200428,
+      "tag": ["BUZZ", "HARDWARE"],
+      "desc": "禁断のLED挿しができるチェッカー"
+    },
+    {
+      "caption": "pushbutton",
+      "title": "押しボタン式押しボタン",
+      "date": 20200505,
+      "tag": ["BUZZ"],
+      "desc": "押しボタンを押すためのボタン"
+    },
+    {
+      "caption": "wordgenerator",
+      "title": "ランダムワード生成器",
+      "date": 20200222,
+      "tag": ["WEB"],
+      "desc": "100万語からランダムに5単語表示するWEBサービス"
+    },
+    {
+      "caption": "shake",
+      "title": "サメ型クリップ",
+      "date": 20190102,
+      "tag": ["etc.."],
+      "desc": "3Dプリンタで印刷したサメのクリップ"
+    },
+    {
+      "caption": "kinotake",
+      "title": "きのこたけのこ如きで揉めんな",
+      "date": 20200530,
+      "tag": ["BUZZ"],
+      "desc": "きのこの山たけのこの里を使った15秒動画"
+    },
+    {
+      "caption": "themeslot",
+      "title": "創作お題スロット",
+      "date": 20200915,
+      "tag": ["WEB"],
+      "desc": "創作に使えそうな単語をスロットするサービス"
+    },
+    {
+      "caption": "wiiu",
+      "title": "WiiUラジコン",
+      "date": 20170111,
+      "tag": ["HARDWARE"],
+      "desc": "WiiUとRaspberryPiを使ったやつ"
+    },
+    {
+      "caption": "mono",
+      "title": "まいにちものづくり",
+      "date": 20200515,
+      "tag": ["WEB"],
+      "desc": "ポートフォリオと技術ブログ"
+    }
+  ]
 }
