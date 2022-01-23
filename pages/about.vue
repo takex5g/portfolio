@@ -16,17 +16,12 @@
         <p>ハードウェアからWEBまで。ゆるふわものづくりをやってます</p>
         <p></p>
         <div style="padding: 10px" />
-        メールはこちら
+        メール
         <p class="Montserrat">{{ takex5g }}🐌mononichi.com</p>
         <div class="social">
           <div class="icon Montserrat">
             <a href="https://twitter.com/takex5g" target="_brank">
-              <img
-                src="~/assets/img/twitter.svg"
-                width="20px"
-                height="20px"
-                alt="twitter"
-              />
+              <img src="~/assets/img/twitter.svg" alt="twitter" />
               <span>Twitter</span>
             </a>
           </div>
@@ -34,21 +29,21 @@
             <a href="https://www.tiktok.com/@takex5g" target="_brank">
               <img
                 src="~/assets/img/tiktok.svg"
-                width="20px"
-                height="20px"
+                
                 alt="tiktok"
               />
               <span>TikTok</span>
             </a>
           </div> -->
           <div class="icon Montserrat">
+            <a href="https://github.com/takex5g" target="_brank">
+              <img src="~/assets/img/github.svg" alt="github" />
+              <span>GitHub</span>
+            </a>
+          </div>
+          <div class="icon Montserrat">
             <a href="https://note.com/takex5g" target="_brank">
-              <img
-                src="~/assets/img/note.png"
-                width="20px"
-                height="20px"
-                alt="note"
-              />
+              <img src="~/assets/img/note.png" alt="note" />
               <span>note</span>
             </a>
           </div>
@@ -77,19 +72,19 @@ export default {
     doanime() {
       var self = this;
       this.anime = Math.floor(Math.random() * 3);
-      setTimeout(function () {
+      setTimeout(() => {
         self.anime = Math.floor(Math.random() * 3);
       }, 1 * 1000);
-      setTimeout(function () {
+      setTimeout(() => {
         self.anime = Math.floor(Math.random() * 2);
       }, 1 * 2000);
     },
     yumoanime() {
       var self = this;
-      setTimeout(function () {
+      setTimeout(() => {
         self.doanime();
         self.yumoanime();
-      }, (Math.floor(Math.random() * 9) + 3) * 1000);
+      }, (Math.floor(Math.random() * 10) + 5) * 1000);
     },
   },
   mounted() {
@@ -129,13 +124,12 @@ export default {
 }
 
 .container {
-  margin-top: 10%;
   margin: auto;
   margin-top: 60px;
+  padding: 0 20px 0 20px;
 }
 .contents {
-  width: 80%;
-  height: 50%;
+  width: 100%;
   text-align: center;
   margin: 0 auto;
 }
@@ -147,6 +141,10 @@ export default {
   justify-content: center;
   margin-top: 50px;
   transition: 0.3s;
+
+  a {
+    text-decoration: none;
+  }
 }
 .social:hover {
   opacity: 0.8;
@@ -157,5 +155,9 @@ export default {
 }
 .icon {
   margin: 20px;
+  img {
+    width: 22px;
+    height: 22px;
+  }
 }
 </style>
