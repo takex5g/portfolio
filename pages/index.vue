@@ -64,7 +64,7 @@ export default {
   data: function () {
     return {
       picked: "ALL", //チェックしているタグ
-      displayMode: 0, //0:初期,1:製作日順,2:シャッフル
+      displayMode: 0, //0:製作日順,1:おすすめ,2:シャッフル
       show_dispMode: false, //状態遷移表示
       taginfo: false,
     };
@@ -92,7 +92,7 @@ export default {
       this.displayMode++;
     },
   },
-  mounted: function () {
+  mounted() {
     //パラメーターのtagがタグリストにあればtaginfoを非表示
     let count_picked = false; //pickedに存在するか確かめる変数
     //パラメーターがあるか
@@ -131,10 +131,10 @@ export default {
     },
     products() {
       //ソートしたプロダクトデータを返す
-      if (this.displayMode == 0) {
-        //ノーマル
+      if (this.displayMode == 1) {
+        //おすすめ順
         return this.raw_products;
-      } else if (this.displayMode == 1) {
+      } else if (this.displayMode == 0) {
         //日付順
         var sortarr = this.raw_products.slice();
         const sortfunc = function compare(a, b) {
@@ -162,9 +162,9 @@ export default {
     },
     displayMode_txt() {
       if (this.displayMode == 0) {
-        return "ノーマル";
-      } else if (this.displayMode == 1) {
         return "製作日順";
+      } else if (this.displayMode == 1) {
+        return "おすすめ順";
       } else if (this.displayMode == 2) {
         return "シャッフル";
       }

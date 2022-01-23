@@ -92,6 +92,9 @@ export default {
   font-family: "Montserrat";
   display: flex;
   align-items: center;
+  a {
+    text-decoration: none;
+  }
 }
 .tagcontainer .tag {
   margin: 5px;
@@ -175,6 +178,9 @@ export default {
 
 ::v-deep video {
   width: 100%;
+}
+::v-deep a {
+  text-decoration: underline;
 }
 ::v-deep p {
   font-size: 18px;

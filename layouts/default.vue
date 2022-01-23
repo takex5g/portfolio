@@ -24,9 +24,6 @@ html {
   overflow: auto;
 }
 a {
-  text-decoration: none;
-}
-a {
   color: black;
 }
 .Montserrat {
