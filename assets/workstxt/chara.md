@@ -6,4 +6,8 @@
   width="300" height="150" frameborder="0" scrolling="no">
 </iframe>
 
-Firebaseを使ったTwitter提携保存機能が追加されました。
+Nuxt.js の習作として制作しました。Firebase AuthでTwitterログイン機能。Firebase Cloud Storeでデータ保存機能をつけました。
+
+### 使用技術
+
+Nuxt.js, Vue.js, Firebase
