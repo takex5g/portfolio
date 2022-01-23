@@ -11,9 +11,11 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxt/content": "^1.15.1",
     "@nuxtjs/google-analytics": "^2.4.0",
-    "@nuxtjs/markdownit": "^1.2.10",
+    "@nuxtjs/markdownit": "^2.0.0",
     "@nuxtjs/sitemap": "^2.4.0",
+    "markdown-it-link-attributes": "^4.0.0",
     "normalize.css": "^8.0.1",
     "nuxt": "^2.13.3",
     "nuxt-webfontloader": "^1.1.0",

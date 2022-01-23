@@ -7,7 +7,9 @@
       <h2 class="desc">{{ obj.desc }}</h2>
       <img src="~/assets/img/clock.svg" width="13px" height="13px" />
       <p class="date">{{ date[0] }}/{{ date[1] }}/{{ date[2] }}</p>
-      <div class="md" v-html="$md.render(markdown)"></div>
+      <!-- <div class="md" v-html="$md.render(markdown)"></div> -->
+
+      <NuxtContent :document="markdown" />
       <div style="padding: 20px 0" />
       <div class="tagcontainer">
         <n-link to="/" prefetch class="back">
@@ -41,10 +43,12 @@ export default {
       },
     };
   },
-  asyncData({ params }) {
+  async asyncData({ $content, params }) {
     const id = params.id;
+
+    const article = await $content("article", params.id).fetch();
     return {
-      markdown: require("~/assets/workstxt/" + id + ".md")["default"],
+      markdown: article,
       products: Data.products,
       id: id,
     };
