@@ -48,6 +48,21 @@
             </a>
           </div>
         </div>
+        <!-- <div>
+          <h2>使用技術</h2>
+          <p>Nuxt.js,</p>
+        </div> -->
+        <div class="award">
+          <h2>受賞・出展など</h2>
+          <table>
+            <tbody>
+              <tr v-for="(content, index) in award" :key="index">
+                <th>{{ content.date }}</th>
+                <td v-html="$md.render(content.detail)" />
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </div>
@@ -55,11 +70,18 @@
 
 <script>
 import Header from "@/components/Header";
+import award from "~/store/award.json";
 export default {
   components: { Header },
   head() {
     return {
       title: "About",
+    };
+  },
+  asyncData(context) {
+    //jsonからデータを読みだし
+    return {
+      award: award.award, //生データ
     };
   },
   data: function () {
@@ -104,7 +126,29 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+.award {
+  /*受賞歴等 */
+  max-width: 700px;
+  margin: auto;
+  padding: 90px 0 30px 0;
+  table {
+    text-align: left;
+    th {
+      //見出し
+      font-weight: bold;
+      padding: 10px 15px 10px 0;
+    }
+    td {
+      //文章
+      font-weight: normal;
+      &::v-deep * {
+        margin: 0;
+      }
+    }
+  }
+}
+
 .yumoya {
   width: 100px;
   height: 100px;
