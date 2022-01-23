@@ -1,11 +1,7 @@
 # portfolio
 
-> まいにちものづくりの新しいポートフォリオです
-
-## ページについて
-**pages/index.vue** トップページ
-**pages/_works/_id.vue** 作品個別ページ
-
+> まいにちものづくりの新しいポートフォリオ
+https://mononichi.com/
 
 ## Build Setup
 
@@ -23,5 +19,3 @@ $ npm run start
 # generate static project
 $ npm run generate
 ```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

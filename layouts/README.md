@@ -11,5 +11,3 @@
 Profileとかに使うと思う
 
 
-追記：WorksSingleとDefaultとWorks全部Defaultでええんちゃう？？
-
