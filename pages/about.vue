@@ -17,7 +17,7 @@
         <p></p>
         <div style="padding: 10px" />
         メール
-        <p class="Montserrat">{{ takex5g }}🐌mononichi.com</p>
+        <p class="Montserrat">{{ takex5g }}@mononichi.com</p>
         <div class="social">
           <div class="icon Montserrat">
             <a href="https://twitter.com/takex5g" target="_brank">
@@ -138,6 +138,8 @@ export default {
       //見出し
       font-weight: bold;
       padding: 10px 15px 10px 0;
+      font-family: "Montserrat";
+      font-size: 0.9rem;
     }
     td {
       //文章
