@@ -1,3 +1,4 @@
+const contents = require("./store/data.json");
 export default {
   //mode: 'spa',//universal
   ssr: false,
@@ -95,25 +96,10 @@ export default {
     exclude: [],
   },
   generate: {
-    routes: [
-      "/works/bpm",
-      "/works/chara",
-      "/works/firstbreak",
-      "/works/ice",
-      "/works/ledchecker",
-      "/works/pushbutton",
-      "/works/shake",
-      "/works/tango",
-      "/works/unko",
-      "/works/wordcascade",
-      "/works/yobirin",
-      "/works/mono",
-      "/works/wiiu",
-      "/works/lan",
-      "/works/wordgenerator",
-      "/works/kinotake",
-      "/works/wordcascadevr",
-      "/works/themeslot",
-    ],
+    routes() {
+      return contents.products.map((product) => {
+        return `works/${product.caption}`;
+      });
+    },
   },
 };
