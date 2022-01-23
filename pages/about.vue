@@ -137,13 +137,15 @@ export default {
     th {
       //見出し
       font-weight: bold;
-      padding: 10px 15px 10px 0;
+      padding: 0 15px 0 0;
       font-family: "Montserrat";
       font-size: 0.9rem;
     }
     td {
       //文章
+      line-height: 1.3rem;
       font-weight: normal;
+      padding: 12px 0 12px 0;
       &::v-deep * {
         margin: 0;
       }
