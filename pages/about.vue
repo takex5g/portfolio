@@ -16,8 +16,14 @@
         <p>ハードウェアからWEBまで。ゆるふわものづくりをやってます</p>
         <p></p>
         <div style="padding: 10px" />
-        メール
-        <p class="Montserrat">{{ takex5g }}@mononichi.com</p>
+        <div class="contact">
+          <p class="mail">メール</p>
+          <p class="adress Montserrat">{{ takex5g }}@mononichi.com</p>
+          <p class="twdm">
+            （<a href="https://twitter.com/takex5g" target="_brank">Twitter</a
+            >のDMもお使いください）
+          </p>
+        </div>
         <div class="social">
           <div class="icon Montserrat">
             <a href="https://twitter.com/takex5g" target="_brank">
@@ -127,6 +133,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.contact {
+  .adress {
+    margin-bottom: 8px;
+  }
+  .twdm {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+}
 .award {
   /*受賞歴等 */
   max-width: 700px;
@@ -206,6 +221,8 @@ export default {
   img {
     width: 22px;
     height: 22px;
+    margin-bottom: 3px;
+    margin-top: 3px;
   }
 }
 </style>
