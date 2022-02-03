@@ -37,14 +37,6 @@ TBS「Nスタ」
 <iframe 
   class="hatenablogcard" 
   style="width:100%;height:155px;max-width:680px;" 
-  title="《バンクシーのアレ》を無限ループできる発明に反響「天才すぎる」「本家より尊いｗ」" 
-  src="https://hatenablog-parts.com/embed?url=https://getnews.jp/archives/3121499" 
-  width="300" height="150" frameborder="0" scrolling="no">
-</iframe>
-
-<iframe 
-  class="hatenablogcard" 
-  style="width:100%;height:155px;max-width:680px;" 
   title="咦？被破壞的圖復原了？DIY道具還原《氣球女孩》拍賣現場" 
   src="https://hatenablog-parts.com/embed?url=https://news.ltn.com.tw/news/life/breakingnews/3689115" 
   width="300" height="150" frameborder="0" scrolling="no">
