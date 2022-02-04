@@ -149,11 +149,25 @@
       "desc": "WiiUとRaspberryPiを使ったやつ"
     },
     {
+      "caption": "wearon",
+      "title": "Wear ON!!",
+      "date": 20180713,
+      "tag": ["HARDWARE"],
+      "desc": "ウェアラブルワイヤレス通信装置"
+    },
+    {
       "caption": "mono",
       "title": "このWEBサイト",
       "date": 20200515,
       "tag": ["WEB"],
       "desc": "ポートフォリオと技術ブログ"
+    },
+    {
+      "caption": "etc",
+      "title": "その他",
+      "date": null,
+      "tag": ["etc.."],
+      "desc": "作品以外の活動"
     }
   ]
 }
