@@ -5,8 +5,10 @@
       <div></div>
       <h1 class="title">{{ obj.title }}</h1>
       <h2 class="desc">{{ obj.desc }}</h2>
-      <img src="~/assets/img/clock.svg" width="13px" height="13px" />
-      <p class="date">{{ date[0] }}/{{ date[1] }}/{{ date[2] }}</p>
+      <div v-if="date">
+        <img src="~/assets/img/clock.svg" width="13px" height="13px" />
+        <p class="date">{{ date[0] }}/{{ date[1] }}/{{ date[2] }}</p>
+      </div>
       <!-- <div class="md" v-html="$md.render(markdown)"></div> -->
 
       <NuxtContent :document="markdown" />
@@ -39,8 +41,8 @@ export default {
     return {
       //今表示している作品の情報が格納される
       obj: {
-        type: Object,
-      },
+        type: Object
+      }
     };
   },
   async asyncData({ $content, params }) {
@@ -50,7 +52,7 @@ export default {
     return {
       markdown: article,
       products: Data.products,
-      id: id,
+      id: id
     };
   },
   mounted() {
@@ -64,16 +66,17 @@ export default {
   },
   computed: {
     date() {
+      if (!this.obj.date) return null;
       var date = String(this.obj.date);
       return [date.substring(0, 4), date.substring(4, 6), date.substring(6, 8)];
-    },
+    }
   },
   head() {
-    this.obj = this.products.find((item) => item.caption === this.id);
+    this.obj = this.products.find(item => item.caption === this.id);
     return {
-      title: this.obj.title,
+      title: this.obj.title
     };
-  },
+  }
 };
 </script>
 <style lang="scss" scoped>
