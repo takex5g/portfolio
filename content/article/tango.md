@@ -13,6 +13,7 @@ QuizKnockサブチャンネルで伊沢さんに使っていただきました�
 <a href="https://youtu.be/BCnLTaJ4jw4" target="_brank" class="link">
 <img style="width: 100%; height:auto;" width="1224" height="680" src="/img/izawa.png"/>
 </a>
+</div>
 
 Vtuberにも使っていただいています。
 <div style="text-align: center; padding :10px;">
