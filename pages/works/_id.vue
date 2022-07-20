@@ -41,8 +41,8 @@ export default {
     return {
       //今表示している作品の情報が格納される
       obj: {
-        type: Object
-      }
+        type: Object,
+      },
     };
   },
   async asyncData({ $content, params }) {
@@ -52,7 +52,7 @@ export default {
     return {
       markdown: article,
       products: Data.products,
-      id: id
+      id: id,
     };
   },
   mounted() {
@@ -69,14 +69,14 @@ export default {
       if (!this.obj.date) return null;
       var date = String(this.obj.date);
       return [date.substring(0, 4), date.substring(4, 6), date.substring(6, 8)];
-    }
+    },
   },
   head() {
-    this.obj = this.products.find(item => item.caption === this.id);
+    this.obj = this.products.find((item) => item.caption === this.id);
     return {
-      title: this.obj.title
+      title: `${this.obj.title} - ${this.obj.desc}`,
     };
-  }
+  },
 };
 </script>
 <style lang="scss" scoped>

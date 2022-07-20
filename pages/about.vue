@@ -13,8 +13,12 @@
           />
         </div>
         <p class="name">ゆうもや</p>
-        <p>ハードウェアからWEBまで。ゆるふわものづくりをやってます</p>
-        <p></p>
+        <div class="about-description">
+          <p>ハードウェアからWEBまで。ゆるふわものづくりをやってます</p>
+          <p>
+            様々なソフトウェアやハードウェア、時には最先端技術を使って創作を行い、<br />ユーモアセンスの溢れる面白いモノを作ります
+          </p>
+        </div>
         <div style="padding: 10px" />
         <div class="contact">
           <p class="mail">メール</p>
@@ -47,12 +51,12 @@
               <span>GitHub</span>
             </a>
           </div>
-          <div class="icon Montserrat">
+          <!-- <div class="icon Montserrat">
             <a href="https://note.com/takex5g" target="_brank">
               <img src="~/assets/img/note.png" alt="note" />
               <span>note</span>
             </a>
-          </div>
+          </div> -->
         </div>
         <!-- <div>
           <h2>使用技術</h2>
@@ -133,6 +137,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.about-description {
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.7;
+}
 .contact {
   .adress {
     margin-bottom: 8px;
