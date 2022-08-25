@@ -8,7 +8,14 @@ TBS「[THE TIME](https://www.tbs.co.jp/thetime_tbs/)」に生出演し、安住�
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">🐥VRゲームの練習風景<br><br>🐥.｡oO（リハーサルの時はうまくできたらしいw）<a href="https://twitter.com/hashtag/thetime_tbs?src=hash&amp;ref_src=twsrc%5Etfw">#thetime_tbs</a><a href="https://twitter.com/hashtag/%E3%82%A2%E3%82%BA%E3%83%9F?src=hash&amp;ref_src=twsrc%5Etfw">#アズミ</a><a href="https://twitter.com/hashtag/%E5%AE%89%E4%BD%8F%E7%B4%B3%E4%B8%80%E9%83%8E?src=hash&amp;ref_src=twsrc%5Etfw">#安住紳一郎</a> <a href="https://t.co/BRpU9su05r">pic.twitter.com/BRpU9su05r</a></p>&mdash; TBS『THE TIME, 』 (@THETIME_TBS) <a href="https://twitter.com/THETIME_TBS/status/1541652134303006720?ref_src=twsrc%5Etfw">June 28, 2022</a></blockquote> 
 BSフジ「プレスク」に出演した際もハマオカモトさん、甲田まひるさんに体験していただきました。
 
+
+日本テレビ「[スッキリ](https://www.ntv.co.jp/sukkiri/)」にて、加藤浩次さんとテニスプレイヤーの杉山愛さんに生放送でプレイしていただきました。
+
+<img style="width: 100%; height:auto;" width="1024" height="561" src="/img/sukkiri.jpg"/>
+
+
 VR勉強会[xR Tech Tokyo](https://vrtokyo.connpass.com/event/151017/)に出展を行いました。
+
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">なるほど評判の良かった、ゆうもや <a href="https://twitter.com/takex5g?ref_src=twsrc%5Etfw">@takex5g</a> さんの「一人称ブロック崩し」良かったです！これは次回喋る方もお願いしたい！ <a href="https://twitter.com/hashtag/xRTech?src=hash&amp;ref_src=twsrc%5Etfw">#xRTech</a> <a href="https://t.co/QqOYIC3gFz">pic.twitter.com/QqOYIC3gFz</a></p>&mdash; HEAVEN ちゃん (@ikkou) <a href="https://twitter.com/ikkou/status/1203329135109521408?ref_src=twsrc%5Etfw">December 7, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
@@ -23,8 +30,9 @@ VR勉強会[xR Tech Tokyo](https://vrtokyo.connpass.com/event/151017/)に出展�
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">一人称視点のVRブロック崩しを作りました。ゲームの進度に応じてBGMがインタラクティブに変化します。 <a href="https://t.co/Fjs3SeU7o0">pic.twitter.com/Fjs3SeU7o0</a></p>&mdash; ゆうもや (@takex5g) <a href="https://twitter.com/takex5g/status/1189552453953314816?ref_src=twsrc%5Etfw">October 30, 2019</a></blockquote>
 
 ### メディア紹介
-BSフジ「プレスク」
-TBS「THE TIME」
+BSフジ「プレスク」  
+TBS「THE TIME」  
+日本テレビ「スッキリ」  
 
 
 ### 紹介記事
