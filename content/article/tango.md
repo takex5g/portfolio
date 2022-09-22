@@ -6,6 +6,8 @@
   width="300" height="150" frameborder="0" scrolling="no">
 </iframe>
 
+サイトの実装を行いました。監修は[フロクロ](https://twitter.com/2r96)です。
+
 企画やアイデアの種として多くの方に使っていただいています。
 
 QuizKnockサブチャンネルで伊沢さんに使っていただきました。
@@ -15,10 +17,5 @@ QuizKnockサブチャンネルで伊沢さんに使っていただきました�
 </a>
 </div>
 
-Vtuberにも使っていただいています。
-<div style="text-align: center; padding :10px;">
-<a href="https://youtu.be/ycr6rHAJirI" target="_brank" class="link">
-<img style="width: 100%; height:auto;" width="1294" height="691" src="/img/vtuber.png"/>
-</a>
 </div>
 
