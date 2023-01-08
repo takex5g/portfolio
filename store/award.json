@@ -1,6 +1,22 @@
 {
   "award": [
     {
+      "date": "2022/12/32",
+      "detail": "[ねとらぼ](https://nlab.itmedia.co.jp/nl/articles/2212/31/news018.html)にて、[おもちゃのTwitter](/works/toytter)が紹介されました。"
+    },
+    {
+      "date": "2022/12/17",
+      "detail": "ABEMA news「[週刊BUZZ動画](https://abema.tv/video/episode/89-106_s1_p1300)」にて、[おもちゃのTwitter](/works/toytter)が紹介されました。"
+    },
+    {
+      "date": "2022/10/31",
+      "detail": "[ねとらぼ](https://nlab.itmedia.co.jp/nl/articles/2210/31/news059.html)にて、[新宿3D猫っぽくなる箱](/works/sinjukuneko)が紹介されました。"
+    },
+    {
+      "date": "2022/09/03",
+      "detail": "Maker Faire Tokyo 2022に出展しました。"
+    },
+    {
       "date": "2022/07/25",
       "detail": "日本テレビ「[スッキリ](https://www.ntv.co.jp/sukkiri/)」にて、生放送で[一人称ブロック崩し](/works/firstbreak)を体験していただきました。"
     },
@@ -11,6 +27,10 @@
     {
       "date": "2022/06/28",
       "detail": "TBS「[THE TIME](https://www.tbs.co.jp/thetime_tbs)」に出演し、生放送で[一人称ブロック崩し](/works/firstbreak)を体験していただきました。"
+    },
+    {
+      "date": "2022/04/30",
+      "detail": "Maker Meeting for Maker Faire Kyoto 2022に出展しました。"
     },
     {
       "date": "2022/04/24",
@@ -58,7 +78,7 @@
     },
     {
       "date": "2018/08/04",
-      "detail": "Maker Faire2018に出展しました。"
+      "detail": "Maker Faire Tokyo 2018に出展しました。"
     }
   ]
 }
