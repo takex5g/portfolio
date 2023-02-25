@@ -22,7 +22,7 @@
         <div style="padding: 10px" />
         <div class="contact">
           <p class="mail">メール</p>
-          <p class="adress Montserrat">{{ takex5g }}@gmail.com</p>
+          <p class="adress Montserrat">{{ takex5g }}@mononichi.com</p>
           <p class="twdm">
             （<a href="https://twitter.com/takex5g" target="_brank">Twitter</a
             >のDMもお使いください）
