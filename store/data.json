@@ -39,6 +39,25 @@
       "desc": "何回も遊べるバンクシー"
     },
     {
+      "caption": "youtubemachine",
+      "title": "Youtube再生速度マシン",
+      "date": 20230520,
+      "tag": [
+        "HARDWARE",
+        "BUZZ"
+      ],
+      "desc": "Youtubeの再生速度を変えられるガジェット"
+    },
+    {
+      "caption": "asobelt",
+      "title": "誰でもDJベルト",
+      "date": 20230426,
+      "tag": [
+        "HARDWARE"
+      ],
+      "desc": "シートベルトに取り付けてDJできるベルト"
+    },
+    {
       "caption": "firstbreak",
       "title": "一人称ブロック崩し",
       "date": 20191030,

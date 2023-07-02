@@ -1,12 +1,12 @@
 <template>
   <div class="card">
     <div class="box">
-      <n-link :to="'/works/'+arg.caption" prefetch>
+      <n-link :to="'/works/' + arg.caption" prefetch>
         <!--個々の背景に画像 -->
-        <img :src="'worksimg/'+arg.caption+'.png'" />
+        <img :src="'worksimg/' + arg.caption + '.png'" loading="lazy" />
         <div class="card_content">
-          <p class="title">{{arg.title}}</p>
-          <p class="desc">{{arg.desc}}</p>
+          <p class="title">{{ arg.title }}</p>
+          <p class="desc">{{ arg.desc }}</p>
         </div>
       </n-link>
     </div>
@@ -18,13 +18,13 @@ export default {
   props: {
     arg: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
   },
   data() {
     return {};
   },
-  mounted() {}
+  mounted() {},
 };
 </script>
 <style scoped>
