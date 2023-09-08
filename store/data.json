@@ -39,6 +39,16 @@
       "desc": "何回も遊べるバンクシー"
     },
     {
+      "caption": "twitterx-machine",
+      "title": "Twitter訂正WEBマシン",
+      "date": 20230803,
+      "tag": [
+        "WEB",
+        "BUZZ"
+      ],
+      "desc": "会話に「Twitter」が含まれてるとXに訂正してくれるマシン"
+    },
+    {
       "caption": "youtubemachine",
       "title": "Youtube再生速度マシン",
       "date": 20230520,
@@ -67,6 +77,16 @@
         "VR"
       ],
       "desc": "一人称視点のVRブロック崩し"
+    },
+    {
+      "caption": "twitterx",
+      "title": "Twitter訂正Xパンチ装置",
+      "date": 20230731,
+      "tag": [
+        "HARDWARE",
+        "BUZZ"
+      ],
+      "desc": "エックスをパンチできる装置"
     },
     {
       "caption": "unko",
