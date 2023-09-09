@@ -21,6 +21,15 @@ Web音声認識API(SpeechRecognition)を使っています。Webkitも対応し�
   width="300" height="150" frameborder="0" scrolling="no">
 </iframe>
 
+<iframe 
+  class="hatenablogcard" 
+  style="width:100%;height:155px;max-width:680px;" 
+  title="Twitterの名称変更に慣れない人集まれ〜！「Twitter」と言うと「エックス！！！！」と訂正してくれるマシンがこちら" 
+  src="https://hatenablog-parts.com/embed?url=https://www.buzzfeed.com/jp/koharukitagawa/twittter-x" 
+  width="300" height="150" frameborder="0" scrolling="no">
+</iframe>
+
+
 
 
 ### 使用技術

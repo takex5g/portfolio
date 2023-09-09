@@ -1,6 +1,22 @@
 {
   "award": [
     {
+      "date": "2023/09/02",
+      "detail": "アプリハッカソン「SPAJAM2023」東京予選にて最優秀賞を受賞しました。"
+    },
+    {
+      "date": "2023/08/14",
+      "detail": "[BuzzFeed](https://www.buzzfeed.com/jp/koharukitagawa/twittter-x)にて、[会話に「Twitter」が含まれてると直してくれるマシン](/works/twitterx-machine)が紹介されました。"
+    },
+    {
+      "date": "2023/08/12",
+      "detail": "ABEMA news「[週刊BUZZ動画](https://abema.tv/video/episode/89-106_s1_p1850)」にて、[会話に「Twitter」が含まれてると直してくれるマシン](/works/twitterx-machine)が紹介されました。"
+    },
+    {
+      "date": "2023/08/07",
+      "detail": "[Gigazine](https://nlab.itmedia.co.jp/nl/articles/2308/04/news033.html)にて、[会話に「Twitter」が含まれてると直してくれるマシン](/works/twitterx-machine)が紹介されました。"
+    },
+    {
       "date": "2023/08/04",
       "detail": "[ねとらぼ](https://nlab.itmedia.co.jp/nl/articles/2308/04/news033.html)にて、[Twitter訂正Xパンチ装置](/works/twitterx)が紹介されました。"
     },
