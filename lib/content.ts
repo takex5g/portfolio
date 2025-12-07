@@ -3,8 +3,6 @@ import path from 'path'
 import matter from 'gray-matter'
 import { remark } from 'remark'
 import html from 'remark-html'
-import remarkRehype from 'remark-rehype'
-import rehypeStringify from 'rehype-stringify'
 
 const worksDirectory = path.join(process.cwd(), 'content/works')
 
@@ -72,7 +70,7 @@ export async function getWorkBySlug(slug: string): Promise<Work | null> {
       image: data.image,
       contentHtml,
     } as Work
-  } catch (error) {
+  } catch {
     return null
   }
 }

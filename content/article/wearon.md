@@ -8,4 +8,5 @@
 <video src="https://mononichi.com/blog/wp-content/uploads/2018/07/wearON_Trim.mp4" controls></video>
 
 ## 使用技術
+
 Android, Arduino, 基板設計

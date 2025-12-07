@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation'
 
 export default function Header() {
   const pathname = usePathname()
-  const currentPage = pathname === '/' ? 'works' : (pathname?.split('/')[1] || '')
+  const currentPage = pathname === '/' ? 'works' : pathname?.split('/')[1] || ''
 
   const handleLogoClick = () => {
     // ロゴクリック時の処理（必要に応じて）
@@ -29,17 +29,13 @@ export default function Header() {
         href="/"
         className="py-3 px-5 transition-all duration-300 relative inline-block no-underline hover:bg-black/[0.075] xs:px-3"
       >
-        <div className={currentPage === 'works' ? 'font-bold' : ''}>
-          Works
-        </div>
+        <div className={currentPage === 'works' ? 'font-bold' : ''}>Works</div>
       </Link>
       <Link
         href="/about"
         className="py-3 px-5 transition-all duration-300 relative inline-block no-underline hover:bg-black/[0.075] xs:px-3"
       >
-        <div className={currentPage === 'about' ? 'font-bold' : ''}>
-          About
-        </div>
+        <div className={currentPage === 'about' ? 'font-bold' : ''}>About</div>
       </Link>
       <a
         href="https://mononichi.com/blog"

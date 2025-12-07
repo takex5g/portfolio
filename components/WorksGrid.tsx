@@ -87,8 +87,8 @@ export default function WorksGrid({ initialWorks, tags }: WorksGridProps) {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0, position: 'absolute' }}
                 transition={{
-                  opacity: { duration: 1 },
-                  layout: { duration: 0.5, ease: 'easeInOut' },
+                  opacity: { duration: 0.3, ease: 'easeInOut' },
+                  layout: { duration: 0.3, ease: 'easeInOut' },
                 }}
                 className="h-full"
               >

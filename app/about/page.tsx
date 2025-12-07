@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import fs from 'fs'
 import path from 'path'
-import matter from 'gray-matter'
 
 export const metadata: Metadata = {
   title: 'About | まいにちものづくり',

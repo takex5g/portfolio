@@ -4,9 +4,9 @@
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">仕組みです <a href="https://t.co/e3qev1SwLa">pic.twitter.com/e3qev1SwLa</a></p>&mdash; ゆうもや (@takex5g) <a href="https://twitter.com/takex5g/status/1659880895057391616?ref_src=twsrc%5Etfw">May 20, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-
 ### メディア紹介
-ABEMA「abema news」 
+
+ABEMA「abema news」
 
 ### 紹介記事
 
@@ -19,4 +19,5 @@ ABEMA「abema news」
 </iframe>
 
 ### 使用技術
+
 Fusion360, Arduino

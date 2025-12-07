@@ -3,6 +3,7 @@
 一時Yahoo!ニュースの「話題」トップに浮上しました。これが初めてのバズでした。
 
 トゥギャッチさんに紹介して頂きました。
+
 <iframe 
   class="hatenablogcard" 
   style="width:100%;height:155px;max-width:680px;" 
@@ -10,5 +11,3 @@
   src="https://hatenablog-parts.com/embed?url=https://ch.togetter.com/2019/11/07/75493" 
   width="300" height="150" frameborder="0" scrolling="no">
 </iframe>
-
-

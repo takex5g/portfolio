@@ -50,9 +50,7 @@ export default async function WorkPage({ params }: WorkPageProps) {
   return (
     <article className="max-w-4xl mx-auto py-8">
       <header className="mb-8">
-        <h1 className="text-4xl font-bold mb-4 font-display">
-          {work.title}
-        </h1>
+        <h1 className="text-4xl font-bold mb-4 font-display">{work.title}</h1>
         <div className="flex flex-wrap gap-2 mb-4">
           {work.tags.map((tag) => (
             <Link

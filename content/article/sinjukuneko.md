@@ -4,7 +4,9 @@
 そこで、最初から歪んでる箱を作りました。身の回りのフィギアがなんでも新宿猫になります。
 
 3Dっぽく見える2Dディスプレイを3Dプリンターで立体にしたら意味ないやん..!っていうのがおもしろポイントです。(ちょっと難しい)
+
 ### 紹介記事
+
 <iframe 
   class="hatenablogcard" 
   style="width:100%;height:155px;max-width:680px;" 
@@ -13,7 +15,6 @@
   width="300" height="150" frameborder="0" scrolling="no">
 </iframe>
 
-
-
 ### 使用技術
+
 3Dプリンター
