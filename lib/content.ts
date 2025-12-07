@@ -10,6 +10,7 @@ import {
 } from './remark-blogcard'
 
 const worksDirectory = path.join(process.cwd(), 'content/works')
+const contentDirectory = path.join(process.cwd(), 'content')
 
 export interface WorkMetadata {
   slug: string
@@ -97,4 +98,40 @@ export function getAllTags(): string[] {
     work.tags.forEach((tag) => tags.add(tag))
   })
   return Array.from(tags).sort()
+}
+
+export interface Award {
+  date: string
+  detail: string
+}
+
+export function getAwards(): Award[] {
+  const fullPath = path.join(contentDirectory, 'awards.md')
+  const fileContents = fs.readFileSync(fullPath, 'utf8')
+  const { content } = matter(fileContents)
+
+  const awards: Award[] = []
+  const lines = content.split('\n')
+
+  let currentDate = ''
+  let currentDetail = ''
+
+  for (const line of lines) {
+    const dateMatch = line.match(/^## (\d{4}\/\d{2}\/\d{2})/)
+    if (dateMatch) {
+      if (currentDate && currentDetail) {
+        awards.push({ date: currentDate, detail: currentDetail.trim() })
+      }
+      currentDate = dateMatch[1]
+      currentDetail = ''
+    } else if (currentDate && line.trim()) {
+      currentDetail += line.trim() + ' '
+    }
+  }
+
+  if (currentDate && currentDetail) {
+    awards.push({ date: currentDate, detail: currentDetail.trim() })
+  }
+
+  return awards
 }

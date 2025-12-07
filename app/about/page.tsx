@@ -1,61 +1,21 @@
-'use client'
-
+import type { Metadata } from 'next'
 import Image from 'next/image'
-import { useState, useEffect } from 'react'
-import awards from '@/store/award.json'
+import { getAwards } from '@/lib/content'
+import YumoyaIcon from '@/components/YumoyaIcon'
 
-interface Award {
-  date: string
-  detail: string
+export const metadata: Metadata = {
+  title: 'About | まいにちものづくり',
+  description: 'ゆうもやのプロフィールページ',
 }
 
 export default function AboutPage() {
-  const [animePos, setAnimePos] = useState(0)
-
-  const doAnime = () => {
-    setAnimePos(Math.floor(Math.random() * 3))
-  }
-
-  useEffect(() => {
-    const yumoanime = () => {
-      const timeout = setTimeout(
-        () => {
-          doAnime()
-          yumoanime()
-        },
-        (Math.floor(Math.random() * 6) + 5) * 1000
-      )
-      return timeout
-    }
-
-    const timeout = yumoanime()
-    return () => clearTimeout(timeout)
-  }, [])
-
-  const getTransformY = () => {
-    if (animePos === 0) return 0
-    if (animePos === 1) return 40
-    return 85
-  }
+  const awards = getAwards()
 
   return (
     <div className="container mx-auto max-w-4xl">
       <div className="py-8">
         <div className="flex justify-center mb-4">
-          <div
-            className="w-[100px] h-[100px] rounded-full overflow-hidden relative cursor-pointer"
-            style={{ backgroundColor: '#b6d55d' }}
-            onClick={doAnime}
-          >
-            <Image
-              src="/images/takex5g_transparent.png"
-              width={100}
-              height={100}
-              alt="ゆうもや"
-              className="absolute left-0 transition-transform duration-[800ms]"
-              style={{ transform: `translateY(${getTransformY()}px)` }}
-            />
-          </div>
+          <YumoyaIcon />
         </div>
         <h1 className="text-3xl font-bold text-center mb-6 font-display">
           ゆうもや
@@ -123,7 +83,7 @@ export default function AboutPage() {
           </h2>
           <table className="w-full">
             <tbody>
-              {(awards.award as Award[]).map((award, index) => (
+              {awards.map((award, index) => (
                 <tr key={index} className="border-b border-gray-200">
                   <th className="py-3 px-2 text-left align-top font-normal text-sm whitespace-nowrap">
                     {award.date}

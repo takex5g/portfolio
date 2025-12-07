@@ -3,7 +3,8 @@
     "allow": [
       "Bash(node scripts/migrate-awards.js:*)",
       "Bash(yarn build:*)",
-      "Bash(yarn add:*)"
+      "Bash(yarn add:*)",
+      "Bash(rm:*)"
     ],
     "deny": [],
     "ask": []
