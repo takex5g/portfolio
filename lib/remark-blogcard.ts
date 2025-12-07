@@ -64,7 +64,11 @@ export async function prefetchOgpData(
   return results
 }
 
-// remarkプラグイン: hatena iframe をブログカードHTMLに変換
+// Twitter埋め込みからscriptタグを除去する正規表現
+const TWITTER_SCRIPT_REGEX =
+  /<script[^>]*src="https:\/\/platform\.twitter\.com\/widgets\.js"[^>]*><\/script>/g
+
+// remarkプラグイン: hatena iframe をブログカードHTMLに変換 + Twitter scriptタグ除去
 export const remarkBlogcard: Plugin<
   [{ ogpCache: Map<string, OgpData> }],
   Root
@@ -74,6 +78,8 @@ export const remarkBlogcard: Plugin<
   return (tree) => {
     visit(tree, 'html', (node: Html) => {
       let newValue = node.value
+
+      // hatena iframe をブログカードに変換
       let match
       const regex = new RegExp(HATENA_IFRAME_REGEX.source, 'g')
 
@@ -87,6 +93,9 @@ export const remarkBlogcard: Plugin<
           newValue = newValue.replace(fullMatch, blogcardHtml)
         }
       }
+
+      // Twitter widgets.js の script タグを除去（クライアント側で動的に読み込む）
+      newValue = newValue.replace(TWITTER_SCRIPT_REGEX, '')
 
       node.value = newValue
     })

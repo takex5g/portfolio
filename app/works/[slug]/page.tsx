@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getWorkBySlug, getAllWorks } from '@/lib/content'
+import ArticleContent from '@/components/ArticleContent'
 
 interface WorkPageProps {
   params: Promise<{
@@ -66,10 +67,7 @@ export default async function WorkPage({ params }: WorkPageProps) {
         <time className="text-sm text-gray-500">{work.date}</time>
       </header>
 
-      <div
-        className="prose prose-lg max-w-none"
-        dangerouslySetInnerHTML={{ __html: work.contentHtml }}
-      />
+      <ArticleContent html={work.contentHtml} />
     </article>
   )
 }
