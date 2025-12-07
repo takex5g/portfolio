@@ -17,14 +17,18 @@ export default function Header() {
 
   return (
     <nav className="flex justify-end items-end mb-7 mt-3 text-2xl border-b-2 border-black font-display md:text-base sm:mb-4">
-      <Image
-        src="/images/monologo.png"
-        width={50}
-        height={50}
-        alt="まいにちものづくり"
-        className="mr-auto mb-1.5 ml-1 cursor-pointer md:w-10 md:h-10"
+      <Link
+        href="/"
         onClick={handleLogoClick}
-      />
+        className="mr-auto mb-1.5 ml-1 cursor-pointer md:w-10 md:h-10"
+      >
+        <Image
+          src="/images/monologo.png"
+          width={50}
+          height={50}
+          alt="まいにちものづくり"
+        />
+      </Link>
       <Link
         href="/"
         className="py-3 px-5 transition-all duration-300 relative inline-block no-underline hover:bg-black/[0.075] xs:px-3"
