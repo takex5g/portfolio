@@ -3,6 +3,11 @@ import path from 'path'
 import matter from 'gray-matter'
 import { remark } from 'remark'
 import html from 'remark-html'
+import {
+  remarkBlogcard,
+  extractBlogcardUrls,
+  prefetchOgpData,
+} from './remark-blogcard'
 
 const worksDirectory = path.join(process.cwd(), 'content/works')
 
@@ -55,8 +60,13 @@ export async function getWorkBySlug(slug: string): Promise<Work | null> {
     const fileContents = fs.readFileSync(fullPath, 'utf8')
     const { data, content } = matter(fileContents)
 
-    // マークダウンをHTMLに変換
+    // ブログカードのURLを抽出してOGPを事前取得
+    const blogcardUrls = extractBlogcardUrls(content)
+    const ogpCache = await prefetchOgpData(blogcardUrls)
+
+    // マークダウンをHTMLに変換（ブログカードプラグイン付き）
     const processedContent = await remark()
+      .use(remarkBlogcard, { ogpCache })
       .use(html, { sanitize: false })
       .process(content)
     const contentHtml = processedContent.toString()
