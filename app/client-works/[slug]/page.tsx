@@ -1,6 +1,5 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
-import Link from 'next/link'
 import { getClientWorkBySlug, getAllClientWorks } from '@/lib/content'
 import ArticleContent from '@/components/ArticleContent'
 
@@ -52,17 +51,6 @@ export default async function ClientWorkPage({ params }: ClientWorkPageProps) {
     <article className="max-w-4xl mx-auto py-8">
       <header className="mb-8">
         <h1 className="text-4xl font-bold mb-4 font-display">{work.title}</h1>
-        <div className="flex flex-wrap gap-2 mb-4">
-          {work.tags.map((tag) => (
-            <Link
-              key={tag}
-              href={`/client-works?tag=${tag}`}
-              className="px-3 py-1 bg-gray-200 hover:bg-gray-300 rounded-full text-sm font-display transition-colors"
-            >
-              {tag}
-            </Link>
-          ))}
-        </div>
         <p className="text-gray-600 mb-2">{work.description}</p>
         <time className="text-sm text-gray-500">{work.date}</time>
       </header>
