@@ -20,7 +20,7 @@ BSフジ「プレスク」に出演した際もハマオカモトさん、甲田
 
 日本テレビ「[スッキリ](https://www.ntv.co.jp/sukkiri/)」にて、加藤浩次さんとテニスプレイヤーの杉山愛さんに生放送でプレイしていただきました。
 
-<img style="width: 100%; height:auto;" width="1024" height="561" src="/img/sukkiri.jpg"/>
+<img style="width: 100%; height:auto;" width="1024" height="561" src="/images/article/sukkiri.jpg"/>
 
 
 VR勉強会[xR Tech Tokyo](https://vrtokyo.connpass.com/event/151017/)に出展を行いました。

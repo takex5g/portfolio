@@ -34,14 +34,5 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 
-# old files
-pages/
-layouts/
-nuxt.config.js
-store/
-static/
-
-# generated
-content/works/
-content/awards.md
-scripts/
+# cache
+.cache/
