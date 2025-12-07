@@ -12,7 +12,9 @@ function ClientWorksGridWrapper() {
 export default function ClientWorksPage() {
   return (
     <>
-      <Suspense fallback={<div className="text-center py-8">読み込み中...</div>}>
+      <Suspense
+        fallback={<div className="text-center py-8">読み込み中...</div>}
+      >
         <ClientWorksGridWrapper />
       </Suspense>
 
@@ -28,9 +30,9 @@ export default function ClientWorksPage() {
         </div>
         <div className="text-center sm:text-left">
           <p className="mb-4 leading-relaxed">
-            面白法人カヤックに勤めています
+            現在、面白法人カヤックで働いています。
             <br />
-            カヤックでの制作実績はこちらをご覧ください。カヤックでの仕事もお待ちしています
+            会社での制作実績もぜひご覧ください。会社でのお仕事のご依頼もお待ちしております。
           </p>
           <a
             href="https://www.kayac.com/team/hirokawa-takemaru"
