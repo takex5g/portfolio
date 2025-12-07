@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { getWorkBySlug, getAllWorks } from '@/lib/content'
 
 interface WorkPageProps {
@@ -54,12 +55,13 @@ export default async function WorkPage({ params }: WorkPageProps) {
         </h1>
         <div className="flex flex-wrap gap-2 mb-4">
           {work.tags.map((tag) => (
-            <span
+            <Link
               key={tag}
-              className="px-3 py-1 bg-gray-200 rounded-full text-sm font-display"
+              href={`/?tag=${tag}`}
+              className="px-3 py-1 bg-gray-200 hover:bg-gray-300 rounded-full text-sm font-display transition-colors"
             >
               {tag}
-            </span>
+            </Link>
           ))}
         </div>
         <p className="text-gray-600 mb-2">{work.description}</p>

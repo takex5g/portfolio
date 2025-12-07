@@ -1,6 +1,7 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useSearchParams, useRouter } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import WorkCard from './WorkCard'
 import type { WorkMetadata } from '@/lib/content'
@@ -11,7 +12,17 @@ interface WorksGridProps {
 }
 
 export default function WorksGrid({ initialWorks, tags }: WorksGridProps) {
+  const searchParams = useSearchParams()
+  const router = useRouter()
   const [selectedTag, setSelectedTag] = useState('ALL')
+
+  // URLパラメータからタグを読み取る
+  useEffect(() => {
+    const tagFromUrl = searchParams?.get('tag')
+    if (tagFromUrl && tags.includes(tagFromUrl)) {
+      setSelectedTag(tagFromUrl)
+    }
+  }, [searchParams, tags])
 
   const filteredWorks =
     selectedTag === 'ALL'
@@ -33,7 +44,16 @@ export default function WorksGrid({ initialWorks, tags }: WorksGridProps) {
                 value={tag}
                 id={tag}
                 checked={selectedTag === tag}
-                onChange={(e) => setSelectedTag(e.target.value)}
+                onChange={(e) => {
+                  const newTag = e.target.value
+                  setSelectedTag(newTag)
+                  // URLを更新
+                  if (newTag === 'ALL') {
+                    router.push('/')
+                  } else {
+                    router.push(`/?tag=${newTag}`)
+                  }
+                }}
                 className="hidden"
               />
               <label
