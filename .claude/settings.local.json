@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node scripts/migrate-awards.js:*)",
+      "Bash(yarn build:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
