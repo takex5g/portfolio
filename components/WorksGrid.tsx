@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useSearchParams, useRouter } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import WorkCard from './WorkCard'
@@ -15,13 +15,24 @@ export default function WorksGrid({ initialWorks, tags }: WorksGridProps) {
   const searchParams = useSearchParams()
   const router = useRouter()
   const [selectedTag, setSelectedTag] = useState('ALL')
+  // タグメニューからクリックして遷移した場合はtrue（ラベル非表示）
+  const [isFromMenu, setIsFromMenu] = useState(false)
+  const isInitialMount = useRef(true)
 
   // URLパラメータからタグを読み取る
   useEffect(() => {
     const tagFromUrl = searchParams?.get('tag')
     if (tagFromUrl && tags.includes(tagFromUrl)) {
       setSelectedTag(tagFromUrl)
+      // 初回マウント時（URLから直接アクセス）はisFromMenuをfalseのままにする
+      if (isInitialMount.current) {
+        setIsFromMenu(false)
+      }
+    } else if (!tagFromUrl) {
+      setSelectedTag('ALL')
+      setIsFromMenu(false)
     }
+    isInitialMount.current = false
   }, [searchParams, tags])
 
   const filteredWorks =
@@ -47,6 +58,8 @@ export default function WorksGrid({ initialWorks, tags }: WorksGridProps) {
                 onChange={(e) => {
                   const newTag = e.target.value
                   setSelectedTag(newTag)
+                  // タグメニューからの遷移フラグを立てる
+                  setIsFromMenu(true)
                   // URLを更新
                   if (newTag === 'ALL') {
                     router.push('/')
@@ -70,7 +83,7 @@ export default function WorksGrid({ initialWorks, tags }: WorksGridProps) {
 
       {/* 作品グリッド */}
       <div>
-        {selectedTag !== 'ALL' && (
+        {selectedTag !== 'ALL' && !isFromMenu && (
           <div className="text-[19px] py-[15px] sm:text-2xl">
             タグ絞り込み:
             <span className="font-bold font-display">{selectedTag}</span>
