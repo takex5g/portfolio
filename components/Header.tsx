@@ -36,19 +36,19 @@ export default function Header() {
         <div className={currentPage === 'works' ? 'font-bold' : ''}>Works</div>
       </Link>
       <Link
+        href="/client-works"
+        className="py-3 px-5 transition-all duration-300 relative inline-block no-underline hover:bg-black/[0.075] xs:px-3"
+      >
+        <div className={currentPage === 'client-works' ? 'font-bold' : ''}>
+          Client Works
+        </div>
+      </Link>
+      <Link
         href="/about"
         className="py-3 px-5 transition-all duration-300 relative inline-block no-underline hover:bg-black/[0.075] xs:px-3"
       >
         <div className={currentPage === 'about' ? 'font-bold' : ''}>About</div>
       </Link>
-      <a
-        href="https://mononichi.com/blog"
-        className="py-3 px-5 transition-all duration-300 relative inline-block no-underline hover:bg-black/[0.075] xs:px-3"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <div>BLOG</div>
-      </a>
     </nav>
   )
 }

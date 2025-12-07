@@ -10,6 +10,7 @@ import {
 } from './remark-blogcard'
 
 const worksDirectory = path.join(process.cwd(), 'content/works')
+const clientWorksDirectory = path.join(process.cwd(), 'content/client-works')
 const contentDirectory = path.join(process.cwd(), 'content')
 
 export interface WorkMetadata {
@@ -93,6 +94,77 @@ export function getWorksByTag(tag: string): WorkMetadata[] {
 
 export function getAllTags(): string[] {
   const allWorks = getAllWorks()
+  const tags = new Set<string>()
+  allWorks.forEach((work) => {
+    work.tags.forEach((tag) => tags.add(tag))
+  })
+  return Array.from(tags).sort()
+}
+
+// Client Works 関連の関数
+export function getAllClientWorks(): WorkMetadata[] {
+  if (!fs.existsSync(clientWorksDirectory)) {
+    return []
+  }
+  const fileNames = fs.readdirSync(clientWorksDirectory)
+  const allWorks = fileNames
+    .filter((fileName) => fileName.endsWith('.md'))
+    .map((fileName) => {
+      const slug = fileName.replace(/\.md$/, '')
+      const fullPath = path.join(clientWorksDirectory, fileName)
+      const fileContents = fs.readFileSync(fullPath, 'utf8')
+      const { data } = matter(fileContents)
+
+      return {
+        slug,
+        title: data.title,
+        date: data.date,
+        tags: data.tags || [],
+        description: data.description,
+        image: data.image,
+      } as WorkMetadata
+    })
+
+  return allWorks.sort((a, b) => {
+    if (a.date < b.date) {
+      return 1
+    } else {
+      return -1
+    }
+  })
+}
+
+export async function getClientWorkBySlug(slug: string): Promise<Work | null> {
+  try {
+    const fullPath = path.join(clientWorksDirectory, `${slug}.md`)
+    const fileContents = fs.readFileSync(fullPath, 'utf8')
+    const { data, content } = matter(fileContents)
+
+    const blogcardUrls = extractBlogcardUrls(content)
+    const ogpCache = await prefetchOgpData(blogcardUrls)
+
+    const processedContent = await remark()
+      .use(remarkBlogcard, { ogpCache })
+      .use(html, { sanitize: false })
+      .process(content)
+    const contentHtml = processedContent.toString()
+
+    return {
+      slug,
+      title: data.title,
+      date: data.date,
+      tags: data.tags || [],
+      description: data.description,
+      image: data.image,
+      contentHtml,
+    } as Work
+  } catch {
+    return null
+  }
+}
+
+export function getAllClientWorkTags(): string[] {
+  const allWorks = getAllClientWorks()
   const tags = new Set<string>()
   allWorks.forEach((work) => {
     work.tags.forEach((tag) => tags.add(tag))
