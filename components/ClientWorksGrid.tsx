@@ -1,7 +1,7 @@
 'use client'
 
 import { motion, AnimatePresence } from 'framer-motion'
-import ClientWorkCard from './ClientWorkCard'
+import WorkCard from './WorkCard'
 import type { WorkMetadata } from '@/lib/content'
 
 interface ClientWorksGridProps {
@@ -25,7 +25,7 @@ export default function ClientWorksGrid({ initialWorks }: ClientWorksGridProps) 
             }}
             className="h-full"
           >
-            <ClientWorkCard work={work} />
+            <WorkCard work={work} basePath="client-works" />
           </motion.div>
         ))}
       </AnimatePresence>
