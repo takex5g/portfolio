@@ -92,15 +92,3 @@ export async function fetchOgp(url: string): Promise<OgpData> {
   }
 }
 
-// 複数URLを並列で取得
-export async function fetchMultipleOgp(
-  urls: string[]
-): Promise<Map<string, OgpData>> {
-  const results = new Map<string, OgpData>()
-  const promises = urls.map(async (url) => {
-    const data = await fetchOgp(url)
-    results.set(url, data)
-  })
-  await Promise.all(promises)
-  return results
-}

@@ -87,11 +87,6 @@ export async function getWorkBySlug(slug: string): Promise<Work | null> {
   }
 }
 
-export function getWorksByTag(tag: string): WorkMetadata[] {
-  const allWorks = getAllWorks()
-  return allWorks.filter((work) => work.tags.includes(tag))
-}
-
 export function getAllTags(): string[] {
   const allWorks = getAllWorks()
   const tags = new Set<string>()
@@ -161,15 +156,6 @@ export async function getClientWorkBySlug(slug: string): Promise<Work | null> {
   } catch {
     return null
   }
-}
-
-export function getAllClientWorkTags(): string[] {
-  const allWorks = getAllClientWorks()
-  const tags = new Set<string>()
-  allWorks.forEach((work) => {
-    work.tags.forEach((tag) => tags.add(tag))
-  })
-  return Array.from(tags).sort()
 }
 
 export interface Award {
