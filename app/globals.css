@@ -1,6 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Noto Sans JP', sans-serif;
+  --font-display: 'Montserrat', sans-serif;
+  --breakpoint-xs: 365px;
+  --breakpoint-sm: 450px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+}
 
 :root {
   --background: #ffffff;
