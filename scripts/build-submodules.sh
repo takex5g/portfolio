@@ -11,7 +11,7 @@ git submodule update --init --recursive
 echo "Building twitterXmachine..."
 
 cd twitterXmachine
-npm install
+npm install --include=dev
 npm run build
 cd ..
 
