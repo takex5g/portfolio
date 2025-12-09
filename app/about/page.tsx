@@ -3,6 +3,15 @@ import Image from 'next/image'
 import { getAwards } from '@/lib/content'
 import YumoyaIcon from '@/components/YumoyaIcon'
 
+const categoryColors: Record<string, string> = {
+  受賞: 'bg-yellow-100 text-yellow-800',
+  テレビ出演: 'bg-red-100 text-red-800',
+  メディア掲載: 'bg-blue-100 text-blue-800',
+  イベント出展: 'bg-green-100 text-green-800',
+  企業コラボ: 'bg-purple-100 text-purple-800',
+  リリース: 'bg-gray-100 text-gray-800',
+}
+
 export const metadata: Metadata = {
   title: 'About | まいにちものづくり',
   description: 'ゆうもやのプロフィールページ',
@@ -88,15 +97,23 @@ export default function AboutPage() {
                   <th className="py-3 px-2 text-left align-top font-normal text-sm whitespace-nowrap">
                     {award.date}
                   </th>
-                  <td
-                    className="py-3 px-2 text-sm"
-                    dangerouslySetInnerHTML={{
-                      __html: award.detail.replace(
-                        /\[([^\]]+)\]\(([^)]+)\)/g,
-                        '<a href="$2" class="text-blue-600 hover:underline">$1</a>'
-                      ),
-                    }}
-                  />
+                  <td className="py-3 px-2 text-sm">
+                    {award.category && (
+                      <span
+                        className={`inline-block px-2 py-0.5 text-xs rounded mr-2 ${categoryColors[award.category] || 'bg-gray-100 text-gray-800'}`}
+                      >
+                        {award.category}
+                      </span>
+                    )}
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: award.detail.replace(
+                          /\[([^\]]+)\]\(([^)]+)\)/g,
+                          '<a href="$2" class="text-blue-600 hover:underline">$1</a>'
+                        ),
+                      }}
+                    />
+                  </td>
                 </tr>
               ))}
             </tbody>

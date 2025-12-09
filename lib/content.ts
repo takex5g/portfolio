@@ -160,6 +160,7 @@ export async function getClientWorkBySlug(slug: string): Promise<Work | null> {
 
 export interface Award {
   date: string
+  category: string
   detail: string
 }
 
@@ -172,24 +173,49 @@ export function getAwards(): Award[] {
   const lines = content.split('\n')
 
   let currentDate = ''
+  let currentCategory = ''
   let currentDetail = ''
 
   for (const line of lines) {
     const dateMatch = line.match(/^## (\d{4}\/\d{2}\/\d{2})/)
+    const categoryMatch = line.match(/^category:\s*(.+)/)
+
     if (dateMatch) {
       if (currentDate && currentDetail) {
-        awards.push({ date: currentDate, detail: currentDetail.trim() })
+        awards.push({
+          date: currentDate,
+          category: currentCategory,
+          detail: currentDetail.trim(),
+        })
       }
       currentDate = dateMatch[1]
+      currentCategory = ''
       currentDetail = ''
-    } else if (currentDate && line.trim()) {
+    } else if (categoryMatch) {
+      currentCategory = categoryMatch[1].trim()
+    } else if (currentDate && line.trim() && !line.startsWith('#')) {
       currentDetail += line.trim() + ' '
     }
   }
 
   if (currentDate && currentDetail) {
-    awards.push({ date: currentDate, detail: currentDetail.trim() })
+    awards.push({
+      date: currentDate,
+      category: currentCategory,
+      detail: currentDetail.trim(),
+    })
   }
 
   return awards
+}
+
+export function getAwardCategories(): string[] {
+  const awards = getAwards()
+  const categories = new Set<string>()
+  awards.forEach((award) => {
+    if (award.category) {
+      categories.add(award.category)
+    }
+  })
+  return Array.from(categories)
 }
