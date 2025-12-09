@@ -4,7 +4,7 @@ slug: "twitterx-machine"
 date: "2023-08-03"
 tags: ["WEB","BUZZ"]
 description: "会話に「Twitter」が含まれてるとXに訂正してくれるマシン"
-image: "/images/works/twitterx-machine.png"
+image: "/images/works/twitterx-machine.webp"
 ---
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">会話に「Twitter」が含まれてると訂正してくれるマシン、自分で作っときながらオモロすぎる <a href="https://t.co/kHlELDFC5v">pic.twitter.com/kHlELDFC5v</a></p>&mdash; ゆうもや (@takex5g) <a href="https://twitter.com/takex5g/status/1687066700183949313?ref_src=twsrc%5Etfw">August 3, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

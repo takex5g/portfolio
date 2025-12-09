@@ -4,7 +4,7 @@ slug: "mono"
 date: "2020-05-15"
 tags: ["WEB"]
 description: "ポートフォリオと技術ブログ"
-image: "/images/works/mono.png"
+image: "/images/works/mono.webp"
 ---
 
 ## ■ポートフォリオ

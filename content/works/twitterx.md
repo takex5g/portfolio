@@ -4,7 +4,7 @@ slug: "twitterx"
 date: "2023-07-31"
 tags: ["HARDWARE","BUZZ"]
 description: "エックスをパンチできる装置"
-image: "/images/works/twitterx.png"
+image: "/images/works/twitterx.webp"
 ---
 
 「Twitter」という言葉を発すると、Xに訂正してくれるハードウェア装置を作りました。

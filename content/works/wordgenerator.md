@@ -4,7 +4,7 @@ slug: "wordgenerator"
 date: "2020-02-22"
 tags: ["WEB"]
 description: "100万語からランダムに5単語表示するWEBサービス"
-image: "/images/works/wordgenerator.png"
+image: "/images/works/wordgenerator.webp"
 ---
 
 <iframe 

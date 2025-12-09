@@ -4,7 +4,7 @@ slug: "youtubemachine"
 date: "2023-05-20"
 tags: ["HARDWARE","BUZZ"]
 description: "Youtubeの再生速度を変えられるガジェット"
-image: "/images/works/youtubemachine.png"
+image: "/images/works/youtubemachine.webp"
 ---
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">講義動画、わかってるところは飛ばしたいけどいざ飛ばすと何故かもうわからなくなってることが多すぎるので、こまめに再生速度変更できるガジェットを作りました。2週間使ってみた感想は本当に便利。 <a href="https://t.co/AA8ni702Bb">pic.twitter.com/AA8ni702Bb</a></p>&mdash; ゆうもや (@takex5g) <a href="https://twitter.com/takex5g/status/1659798766306852865?ref_src=twsrc%5Etfw">May 20, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

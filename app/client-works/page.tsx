@@ -1,7 +1,8 @@
 import { Suspense } from 'react'
-import Image from 'next/image'
 import ClientWorksGrid from '@/components/ClientWorksGrid'
 import { getAllClientWorks } from '@/lib/content'
+import OptimizedImage from '@/components/OptimizedImage'
+import { IMAGES } from '@/lib/images'
 
 function ClientWorksGridWrapper() {
   const works = getAllClientWorks()
@@ -20,11 +21,10 @@ export default function ClientWorksPage() {
 
       <div className="mt-12 bg-gray-200 rounded-2xl p-8 flex flex-col sm:flex-row items-center gap-6 sm:gap-10">
         <div className="flex-shrink-0">
-          <Image
-            src="/images/kayac.png"
+          <OptimizedImage
+            src={IMAGES.KAYAC}
             alt="面白法人カヤック"
-            width={250}
-            height={120}
+            sizePreset="COMPANY_LOGO"
             className="w-[200px] sm:w-[250px]"
           />
         </div>

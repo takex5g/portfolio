@@ -4,7 +4,7 @@ slug: "themeslot"
 date: "2020-09-15"
 tags: ["WEB"]
 description: "創作に使えそうな単語をスロットするサービス"
-image: "/images/works/themeslot.png"
+image: "/images/works/themeslot.webp"
 ---
 
 <iframe 

@@ -4,7 +4,7 @@ slug: "banksy"
 date: "2021-09-21"
 tags: ["HARDWARE","BUZZ"]
 description: "何回も遊べるバンクシー"
-image: "/images/works/banksy.png"
+image: "/images/works/banksy.webp"
 ---
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">何回も遊べるバンクシー作った <a href="https://t.co/Y3Hjd4u2T2">pic.twitter.com/Y3Hjd4u2T2</a></p>&mdash; ゆうもや (@takex5g) <a href="https://twitter.com/takex5g/status/1440244409052794893?ref_src=twsrc%5Etfw">September 21, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

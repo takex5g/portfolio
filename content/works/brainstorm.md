@@ -4,7 +4,7 @@ slug: "brainstorm"
 date: "2022-09-21"
 tags: ["WEB"]
 description: "アイデア出しや企画作りに"
-image: "/images/works/brainstorm.png"
+image: "/images/works/brainstorm.webp"
 ---
 
 <iframe 

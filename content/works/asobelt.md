@@ -4,7 +4,7 @@ slug: "asobelt"
 date: "2023-04-26"
 tags: ["HARDWARE"]
 description: "シートベルトに取り付けてDJできるベルト"
-image: "/images/works/asobelt.png"
+image: "/images/works/asobelt.webp"
 ---
 
 イーデザイン損保 アンディーさまの案件として製作しました。

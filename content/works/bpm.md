@@ -4,7 +4,7 @@ slug: "bpm"
 date: "2020-05-05"
 tags: ["WEB"]
 description: "最高に使いやすいを目指したBPMカウンター"
-image: "/images/works/bpm.png"
+image: "/images/works/bpm.webp"
 ---
 
 <iframe 

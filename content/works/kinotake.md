@@ -4,7 +4,7 @@ slug: "kinotake"
 date: "2020-05-30"
 tags: ["BUZZ"]
 description: "きのこの山たけのこの里を使った15秒動画"
-image: "/images/works/kinotake.png"
+image: "/images/works/kinotake.webp"
 ---
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">きのこたけのこ如きで揉めんな <a href="https://t.co/qtHGHeDjEw">pic.twitter.com/qtHGHeDjEw</a></p>&mdash; ゆうもや (@takex5g) <a href="https://twitter.com/takex5g/status/1266716462640594944?ref_src=twsrc%5Etfw">May 30, 2020</a></blockquote>

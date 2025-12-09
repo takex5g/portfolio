@@ -4,7 +4,7 @@ slug: "toytter"
 date: "2022-12-12"
 tags: ["HARDWARE","BUZZ"]
 description: "Twitterやめれるおもちゃ"
-image: "/images/works/toytter.png"
+image: "/images/works/toytter.webp"
 ---
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">Twitter中毒をやめれるかもしれないオモチャを作りました <a href="https://t.co/aZQWAZC7aM">pic.twitter.com/aZQWAZC7aM</a></p>&mdash; ゆうもや (@takex5g) <a href="https://twitter.com/takex5g/status/1602246763737665536?ref_src=twsrc%5Etfw">December 12, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

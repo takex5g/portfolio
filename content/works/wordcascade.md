@@ -4,7 +4,7 @@ slug: "wordcascade"
 date: "2020-04-26"
 tags: ["WEB","BUZZ"]
 description: "無限に単語が流れるサイト"
-image: "/images/works/wordcascade.png"
+image: "/images/works/wordcascade.webp"
 ---
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">永遠に単語が流れ続けるサイトを公開しました。落ち着く～<a href="https://t.co/paXvEusO2R">https://t.co/paXvEusO2R</a></p>&mdash; ゆうもや (@takex5g) <a href="https://twitter.com/takex5g/status/1254075735557300225?ref_src=twsrc%5Etfw">April 25, 2020</a></blockquote> 

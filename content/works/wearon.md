@@ -4,7 +4,7 @@ slug: "wearon"
 date: "2018-07-13"
 tags: ["HARDWARE"]
 description: "ウェアラブルワイヤレス通信装置"
-image: "/images/works/wearon.png"
+image: "/images/works/wearon.webp"
 ---
 
 こちらに詳細を記載していいます。 https://mononichi.com/blog/works/wear/

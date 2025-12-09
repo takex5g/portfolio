@@ -1,6 +1,7 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import type { WorkMetadata } from '@/lib/content'
+import OptimizedImage from '@/components/OptimizedImage'
+import { RESPONSIVE_SIZES } from '@/lib/images'
 
 interface WorkCardProps {
   work: WorkMetadata
@@ -15,13 +16,12 @@ export default function WorkCard({ work, basePath = 'works' }: WorkCardProps) {
           href={`/${basePath}/${work.slug}`}
           className="block w-full h-full"
         >
-          <Image
-            src={work.image || '/images/works/default.png'}
+          <OptimizedImage
+            src={work.image}
             alt={work.title}
             fill
             className="object-cover"
-            loading="lazy"
-            sizes="(max-width: 450px) 160px, 250px"
+            sizes={RESPONSIVE_SIZES.WORK_CARD}
           />
           <div className="absolute inset-x-0 bottom-0 px-2 pt-1 bg-white/60 translate-y-[calc(100%-2.5rem)] transition-transform duration-300 group-hover:translate-y-0">
             <p className="text-lg font-bold mb-1">{work.title}</p>

@@ -4,7 +4,7 @@ slug: "wiiu"
 date: "2017-01-11"
 tags: ["HARDWARE"]
 description: "WiiUとRaspberryPiを使ったやつ"
-image: "/images/works/wiiu.png"
+image: "/images/works/wiiu.webp"
 ---
 
 左右のジョイスティックで操作、WiiUを傾けることでカメラのサーボを動かすことが出来ます。

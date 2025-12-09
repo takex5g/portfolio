@@ -4,7 +4,7 @@ slug: "wordcascadevr"
 date: "2020-06-29"
 tags: ["WEB","VR"]
 description: "全方向から単語を浴びれるWEB VR"
-image: "/images/works/wordcascadevr.png"
+image: "/images/works/wordcascadevr.webp"
 ---
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">VRで単語を浴びれるサイトを作りました。<a href="https://t.co/hBI6lrxP2u">https://t.co/hBI6lrxP2u</a> <a href="https://t.co/rJpwwo1a0K">pic.twitter.com/rJpwwo1a0K</a></p>&mdash; ゆうもや (@takex5g) <a href="https://twitter.com/takex5g/status/1277572093081575424?ref_src=twsrc%5Etfw">June 29, 2020</a></blockquote> 

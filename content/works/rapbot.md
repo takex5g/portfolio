@@ -4,7 +4,7 @@ slug: "rapbot"
 date: "2021-09-16"
 tags: ["BUZZ","SOFTWARE"]
 description: "ラップで返信するTwitterBot"
-image: "/images/works/rapbot.png"
+image: "/images/works/rapbot.webp"
 ---
 
 CoeFont の API を使って、誰でもラップができる TwitterBot を作りました。

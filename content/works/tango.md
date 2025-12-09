@@ -4,7 +4,7 @@ slug: "tango"
 date: "2018-07-08"
 tags: ["WEB"]
 description: "ランダムに単語を排出するWEBサービス"
-image: "/images/works/tango.png"
+image: "/images/works/tango.webp"
 ---
 
 <iframe 

@@ -4,7 +4,7 @@ slug: "chara"
 date: "2020-04-01"
 tags: ["WEB"]
 description: "キャラクタデザイン補助サービス"
-image: "/images/works/chara.png"
+image: "/images/works/chara.webp"
 ---
 
 <iframe 

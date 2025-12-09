@@ -1,7 +1,8 @@
 'use client'
 
-import Image from 'next/image'
 import { useState, useEffect } from 'react'
+import OptimizedImage from '@/components/OptimizedImage'
+import { IMAGES } from '@/lib/images'
 
 export default function YumoyaIcon() {
   const [animePos, setAnimePos] = useState(0)
@@ -38,10 +39,9 @@ export default function YumoyaIcon() {
       style={{ backgroundColor: '#b6d55d' }}
       onClick={doAnime}
     >
-      <Image
-        src="/images/takex5g_transparent.png"
-        width={100}
-        height={100}
+      <OptimizedImage
+        src={IMAGES.PROFILE_TRANSPARENT}
+        sizePreset="PROFILE"
         alt="ゆうもや"
         className="absolute left-0 transition-transform duration-[800ms]"
         style={{ transform: `translateY(${getTransformY()}px)` }}

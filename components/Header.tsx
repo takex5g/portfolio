@@ -1,15 +1,15 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'
 import { usePathname } from 'next/navigation'
+import OptimizedImage from '@/components/OptimizedImage'
+import { IMAGES } from '@/lib/images'
 
 export default function Header() {
   const pathname = usePathname()
   const currentPage = pathname === '/' ? 'works' : pathname?.split('/')[1] || ''
 
   const handleLogoClick = () => {
-    // ロゴクリック時の処理（必要に応じて）
     if (pathname === '/') {
       window.scrollTo({ top: 0, behavior: 'smooth' })
     }
@@ -22,10 +22,9 @@ export default function Header() {
         onClick={handleLogoClick}
         className="mr-auto mb-1.5 ml-1 cursor-pointer md:w-10 md:h-10"
       >
-        <Image
-          src="/images/monologo.png"
-          width={50}
-          height={50}
+        <OptimizedImage
+          src={IMAGES.LOGO}
+          sizePreset="LOGO"
           alt="まいにちものづくり"
         />
       </Link>

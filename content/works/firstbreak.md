@@ -4,7 +4,7 @@ slug: "firstbreak"
 date: "2019-10-30"
 tags: ["SOFTWARE","BUZZ","VR"]
 description: "一人称視点のVRブロック崩し"
-image: "/images/works/firstbreak.png"
+image: "/images/works/firstbreak.webp"
 ---
 
 <!-- <video controls="" src="https://mononichi.com/blog/wp-content/uploads/2019/11/004_Trim.mp4"></video> -->

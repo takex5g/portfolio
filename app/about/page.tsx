@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
-import Image from 'next/image'
 import { getAwards, getAwardCategories } from '@/lib/content'
 import YumoyaIcon from '@/components/YumoyaIcon'
 import AwardsFilter from '@/components/AwardsFilter'
+import { SocialIcon } from '@/components/OptimizedImage'
 
 const categoryColors: Record<string, string> = {
   受賞: 'bg-yellow-100 text-yellow-800',
@@ -64,12 +64,7 @@ export default function AboutPage() {
             rel="noopener noreferrer"
             className="flex flex-col items-center gap-2 hover:opacity-70 transition-opacity"
           >
-            <Image
-              src="/images/twitter.svg"
-              width={48}
-              height={48}
-              alt="Twitter"
-            />
+            <SocialIcon platform="twitter" size="md" />
             <span className="font-display">Twitter</span>
           </a>
           <a
@@ -78,12 +73,7 @@ export default function AboutPage() {
             rel="noopener noreferrer"
             className="flex flex-col items-center gap-2 hover:opacity-70 transition-opacity"
           >
-            <Image
-              src="/images/github.svg"
-              width={48}
-              height={48}
-              alt="GitHub"
-            />
+            <SocialIcon platform="github" size="md" />
             <span className="font-display">GitHub</span>
           </a>
         </div>

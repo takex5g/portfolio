@@ -4,7 +4,7 @@ slug: "sushidj"
 date: "2021-03-08"
 tags: ["HARDWARE"]
 description: "DJができる寿司"
-image: "/images/works/sushidj.png"
+image: "/images/works/sushidj.webp"
 ---
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">DJできるSUSHIを作りました。 <a href="https://t.co/WDfR1r4Gcg">pic.twitter.com/WDfR1r4Gcg</a></p>&mdash; ゆうもや (@takex5g) <a href="https://twitter.com/takex5g/status/1368857939839053826?ref_src=twsrc%5Etfw">March 8, 2021</a></blockquote> 

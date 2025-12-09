@@ -4,7 +4,7 @@ slug: "sinjukuneko"
 date: "2022-10-25"
 tags: ["BUZZ"]
 description: "「置くだけで新宿の3D猫っぽくなる箱」をつくりました"
-image: "/images/works/sinjukuneko.png"
+image: "/images/works/sinjukuneko.webp"
 ---
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">「置くだけでなんでも新宿の3D猫っぽくなる箱」を作った <a href="https://t.co/mQ0bfWXZkx">pic.twitter.com/mQ0bfWXZkx</a></p>&mdash; ゆうもや (@takex5g) <a href="https://twitter.com/takex5g/status/1581245821152264194?ref_src=twsrc%5Etfw">October 15, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
