@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, Suspense } from 'react'
 import { useSearchParams, useRouter } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import WorkCard from './WorkCard'
@@ -11,29 +11,39 @@ interface WorksGridProps {
   tags: string[]
 }
 
-export default function WorksGrid({ initialWorks, tags }: WorksGridProps) {
+interface TagSyncProps {
+  tags: string[]
+  onTagChange: (tag: string, isFromUrl: boolean) => void
+}
+
+function TagSync({ tags, onTagChange }: TagSyncProps) {
   const searchParams = useSearchParams()
-  const router = useRouter()
-  const [selectedTag, setSelectedTag] = useState('ALL')
-  // タグメニューからクリックして遷移した場合はtrue（ラベル非表示）
-  const [isFromMenu, setIsFromMenu] = useState(false)
   const isInitialMount = useRef(true)
 
-  // URLパラメータからタグを読み取る
   useEffect(() => {
     const tagFromUrl = searchParams?.get('tag')
     if (tagFromUrl && tags.includes(tagFromUrl)) {
-      setSelectedTag(tagFromUrl)
-      // 初回マウント時（URLから直接アクセス）はisFromMenuをfalseのままにする
-      if (isInitialMount.current) {
-        setIsFromMenu(false)
-      }
+      onTagChange(tagFromUrl, isInitialMount.current)
     } else if (!tagFromUrl) {
-      setSelectedTag('ALL')
-      setIsFromMenu(false)
+      onTagChange('ALL', false)
     }
     isInitialMount.current = false
-  }, [searchParams, tags])
+  }, [searchParams, tags, onTagChange])
+
+  return null
+}
+
+export default function WorksGrid({ initialWorks, tags }: WorksGridProps) {
+  const router = useRouter()
+  const [selectedTag, setSelectedTag] = useState('ALL')
+  const [isFromMenu, setIsFromMenu] = useState(false)
+
+  const handleTagChange = (tag: string, isFromUrl: boolean) => {
+    setSelectedTag(tag)
+    if (isFromUrl) {
+      setIsFromMenu(false)
+    }
+  }
 
   const filteredWorks =
     selectedTag === 'ALL'
@@ -42,6 +52,10 @@ export default function WorksGrid({ initialWorks, tags }: WorksGridProps) {
 
   return (
     <div className="grid grid-cols-1 grid-rows-[auto_1fr] sm:grid-cols-[auto_1fr] sm:grid-rows-1">
+      <Suspense fallback={null}>
+        <TagSync tags={tags} onTagChange={handleTagChange} />
+      </Suspense>
+
       {/* タグメニュー */}
       <div className="pr-0 font-display sm:pr-[15px]">
         <ul className="list-none pl-2.5 flex justify-around mb-4 sm:pl-0 sm:block sm:mb-0 md:pl-2.5">
@@ -58,9 +72,7 @@ export default function WorksGrid({ initialWorks, tags }: WorksGridProps) {
                 onChange={(e) => {
                   const newTag = e.target.value
                   setSelectedTag(newTag)
-                  // タグメニューからの遷移フラグを立てる
                   setIsFromMenu(true)
-                  // URLを更新
                   if (newTag === 'ALL') {
                     router.push('/')
                   } else {
