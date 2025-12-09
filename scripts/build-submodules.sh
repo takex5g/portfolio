@@ -4,6 +4,10 @@
 
 set -e
 
+# submoduleを初期化・更新
+echo "Initializing submodules..."
+git submodule update --init --recursive
+
 echo "Building twitterXmachine..."
 
 cd twitterXmachine
