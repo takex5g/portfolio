@@ -1,0 +1,3 @@
+[submodule "twitterXmachine"]
+	path = twitterXmachine
+	url = https://github.com/takex5g/twitterXmachine.git

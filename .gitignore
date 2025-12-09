@@ -90,3 +90,6 @@ sw.*
 *.swp
 
 out/*
+
+# submodule build output
+/public/twitterX

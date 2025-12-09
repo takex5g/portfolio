@@ -6,7 +6,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "bash scripts/build-submodules.sh && next build",
+    "build:next": "next build",
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
