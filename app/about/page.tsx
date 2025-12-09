@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
-import { getAwards } from '@/lib/content'
+import { getAwards, getAwardCategories } from '@/lib/content'
 import YumoyaIcon from '@/components/YumoyaIcon'
+import AwardsFilter from '@/components/AwardsFilter'
 
 const categoryColors: Record<string, string> = {
   受賞: 'bg-yellow-100 text-yellow-800',
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   const awards = getAwards()
+  const categories = getAwardCategories()
 
   return (
     <div className="container mx-auto max-w-4xl">
@@ -90,34 +92,11 @@ export default function AboutPage() {
           <h2 className="text-2xl font-bold mb-6 font-display">
             受賞・出展など
           </h2>
-          <table className="w-full">
-            <tbody>
-              {awards.map((award, index) => (
-                <tr key={index} className="border-b border-gray-200">
-                  <th className="py-3 px-2 text-left align-top font-normal text-sm whitespace-nowrap">
-                    {award.date}
-                  </th>
-                  <td className="py-3 px-2 text-sm">
-                    {award.category && (
-                      <span
-                        className={`inline-block px-2 py-0.5 text-xs rounded mr-2 ${categoryColors[award.category] || 'bg-gray-100 text-gray-800'}`}
-                      >
-                        {award.category}
-                      </span>
-                    )}
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: award.detail.replace(
-                          /\[([^\]]+)\]\(([^)]+)\)/g,
-                          '<a href="$2" class="text-blue-600 hover:underline">$1</a>'
-                        ),
-                      }}
-                    />
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          <AwardsFilter
+            awards={awards}
+            categories={categories}
+            categoryColors={categoryColors}
+          />
         </div>
       </div>
     </div>
