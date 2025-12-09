@@ -9,11 +9,51 @@
 # install dependencies
 yarn install
 
+# initialize submodules
+git submodule update --init --recursive
+
 # serve with hot reload at localhost:3000
 yarn dev
 
-# build for production
+# build for production (includes submodules)
 yarn build
+```
+
+## Submodules
+
+このリポジトリは以下のプロジェクトをsubmoduleとして含んでいます。
+
+| Submodule | パス | URL |
+|-----------|------|-----|
+| twitterXmachine | `/twitterX` | https://mononichi.com/twitterX/ |
+
+### 仕組み
+
+- `yarn build` 実行時に `scripts/build-submodules.sh` が自動実行される
+- 各submoduleがビルドされ、出力が `public/` 配下にコピーされる
+- Next.jsビルド時に静的ファイルとして含まれる
+
+### submoduleの追加方法
+
+```bash
+# 1. submoduleを追加
+git submodule add https://github.com/username/repo.git repo-name
+
+# 2. scripts/build-submodules.sh にビルド処理を追加
+
+# 3. .gitignore に出力先を追加
+echo "/public/path-name" >> .gitignore
+```
+
+### submoduleの更新
+
+```bash
+# 最新のコミットに更新
+git submodule update --remote
+
+# 変更をコミット
+git add submodule-name
+git commit -m "Update submodule-name"
 ```
 
 ## 記事の更新方法
