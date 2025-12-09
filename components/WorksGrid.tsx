@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useRef, Suspense } from 'react'
+import { useState, useEffect, useRef, Suspense, useCallback } from 'react'
 import { useSearchParams, useRouter } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import WorkCard from './WorkCard'
@@ -13,22 +13,35 @@ interface WorksGridProps {
 
 interface TagSyncProps {
   tags: string[]
-  onTagChange: (tag: string, isFromUrl: boolean) => void
+  onTagChange: (tag: string) => void
 }
 
-function TagSync({ tags, onTagChange }: TagSyncProps) {
+function TagSync({ tags, onTagChange, isFromMenu }: TagSyncProps & { isFromMenu: boolean }) {
   const searchParams = useSearchParams()
-  const isInitialMount = useRef(true)
+  const prevTagRef = useRef<string | null>(null)
 
   useEffect(() => {
-    const tagFromUrl = searchParams?.get('tag')
-    if (tagFromUrl && tags.includes(tagFromUrl)) {
-      onTagChange(tagFromUrl, isInitialMount.current)
-    } else if (!tagFromUrl) {
-      onTagChange('ALL', false)
+    const tagFromUrl = searchParams?.get('tag') || 'ALL'
+
+    // メニューからの変更の場合はスキップ（既に状態が更新されている）
+    if (isFromMenu) {
+      prevTagRef.current = tagFromUrl
+      return
     }
-    isInitialMount.current = false
-  }, [searchParams, tags, onTagChange])
+
+    // 同じタグなら何もしない
+    if (tagFromUrl === prevTagRef.current) {
+      return
+    }
+
+    prevTagRef.current = tagFromUrl
+
+    if (tagFromUrl !== 'ALL' && tags.includes(tagFromUrl)) {
+      onTagChange(tagFromUrl)
+    } else {
+      onTagChange('ALL')
+    }
+  }, [searchParams, tags, onTagChange, isFromMenu])
 
   return null
 }
@@ -38,12 +51,10 @@ export default function WorksGrid({ initialWorks, tags }: WorksGridProps) {
   const [selectedTag, setSelectedTag] = useState('ALL')
   const [isFromMenu, setIsFromMenu] = useState(false)
 
-  const handleTagChange = (tag: string, isFromUrl: boolean) => {
+  const handleTagChange = useCallback((tag: string) => {
     setSelectedTag(tag)
-    if (isFromUrl) {
-      setIsFromMenu(false)
-    }
-  }
+    setIsFromMenu(false)
+  }, [])
 
   const filteredWorks =
     selectedTag === 'ALL'
@@ -53,7 +64,7 @@ export default function WorksGrid({ initialWorks, tags }: WorksGridProps) {
   return (
     <div className="grid grid-cols-1 grid-rows-[auto_1fr] sm:grid-cols-[auto_1fr] sm:grid-rows-1">
       <Suspense fallback={null}>
-        <TagSync tags={tags} onTagChange={handleTagChange} />
+        <TagSync tags={tags} onTagChange={handleTagChange} isFromMenu={isFromMenu} />
       </Suspense>
 
       {/* タグメニュー */}
