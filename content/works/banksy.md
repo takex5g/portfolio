@@ -21,35 +21,17 @@ image: "/images/works/banksy.webp"
 オークションハンマーと額縁の通信は赤外線通信を使っています。「なぜ今の時代に赤外線リモコン？」というのは、展示会で安定的に動くようにするためです。
 
 ### メディア紹介
-TBS「あさチャン」  
-TBS「Nスタ」  
-テレビ朝日「グッド！モーニング」  
-テレビ朝日系 「ANN news」, 「ABEMA」 等  
+TBS「あさチャン」
+TBS「Nスタ」
+テレビ朝日「グッド！モーニング」
+テレビ朝日系 「ANN news」, 「ABEMA」 等
 ### 紹介記事
 
-<iframe 
-  class="hatenablogcard" 
-  style="width:100%;height:155px;max-width:680px;" 
-  title="バンクシー「風船と少女」が裁断されても元通りに……!?　“無限バンクシー装置”がずっと見ていられる" 
-  src="https://hatenablog-parts.com/embed?url=https://nlab.itmedia.co.jp/nl/articles/2109/23/news044.html" 
-  width="300" height="150" frameborder="0" scrolling="no">
-</iframe>
+https://nlab.itmedia.co.jp/nl/articles/2109/23/news044.html
 
-<iframe 
-  class="hatenablogcard" 
-  style="width:100%;height:155px;max-width:680px;" 
-  title="「何回も遊べるバンクシー作った」あのオークション騒動の衝撃が無限に楽しめる装置が爆誕「これ欲しい！」" 
-  src="https://hatenablog-parts.com/embed?url=https://maidonanews.jp/article/14446327" 
-  width="300" height="150" frameborder="0" scrolling="no">
-</iframe>
+https://maidonanews.jp/article/14446327
 
-<iframe 
-  class="hatenablogcard" 
-  style="width:100%;height:155px;max-width:680px;" 
-  title="咦？被破壞的圖復原了？DIY道具還原《氣球女孩》拍賣現場" 
-  src="https://hatenablog-parts.com/embed?url=https://news.ltn.com.tw/news/life/breakingnews/3689115" 
-  width="300" height="150" frameborder="0" scrolling="no">
-</iframe>
+https://news.ltn.com.tw/news/life/breakingnews/3689115
 
 ### 使用技術
 3D CAD(Fusion360), レーザーカッター, Arduino

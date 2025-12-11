@@ -18,13 +18,7 @@ image: "/images/works/twitterx.webp"
 
 ### 紹介記事
 
-<iframe 
-  class="hatenablogcard" 
-  style="width:100%;height:155px;max-width:680px;" 
-  title="「Twitter」と言うと「X」に訂正してくる装置が発明される　モヤッとする「エックス！」にパンチする動画が謎の爽快感" 
-  src="https://hatenablog-parts.com/embed?url=https://nlab.itmedia.co.jp/nl/articles/2308/04/news033.html" 
-  width="300" height="150" frameborder="0" scrolling="no">
-</iframe>
+https://nlab.itmedia.co.jp/nl/articles/2308/04/news033.html
 
 ### 使用技術
 Fusion360, Arduino, TypeScript, Webシリアル

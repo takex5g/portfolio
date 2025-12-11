@@ -19,15 +19,10 @@ image: "/images/works/toytter.webp"
 ABEMA「abema news」
 
 ### 紹介記事
-<iframe 
-  class="hatenablogcard" 
-  style="width:100%;height:155px;max-width:680px;" 
-  title="Twitterをひたすら更新してしまう虚無感から解放してくれそうなオモチャ　「リハビリ道具」「これだけでドーパミン出る」と話題に" 
-  src="https://hatenablog-parts.com/embed?url=https://nlab.itmedia.co.jp/nl/articles/2212/31/news018.html" 
-  width="300" height="150" frameborder="0" scrolling="no">
-</iframe>
+
+https://nlab.itmedia.co.jp/nl/articles/2212/31/news018.html
 
 ### 使用技術
-3Dプリンター, 
-レーザーカッター, 
+3Dプリンター,
+レーザーカッター,
 Arduino

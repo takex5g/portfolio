@@ -14,15 +14,8 @@ image: "/images/works/sinjukuneko.webp"
 
 3Dっぽく見える2Dディスプレイを3Dプリンターで立体にしたら意味ないやん..!っていうのがおもしろポイントです。(ちょっと難しい)
 ### 紹介記事
-<iframe 
-  class="hatenablogcard" 
-  style="width:100%;height:155px;max-width:680px;" 
-  title="モノを置くだけで“新宿の3D猫”っぽくなる箱がおもしろい　「本物の猫ちゃんが入れば完璧」「愛猫家にプレゼントしたい」" 
-  src="https://hatenablog-parts.com/embed?url=https://nlab.itmedia.co.jp/nl/articles/2210/31/news059.html" 
-  width="300" height="150" frameborder="0" scrolling="no">
-</iframe>
 
-
+https://nlab.itmedia.co.jp/nl/articles/2210/31/news059.html
 
 ### 使用技術
 3Dプリンター

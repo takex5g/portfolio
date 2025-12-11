@@ -14,11 +14,5 @@ image: "/images/works/wiiu.webp"
 
 
 ブログ内の作品集に詳しく書いてあります。作ったのがかなり昔なので今読み返すとなんか、、はい。
-<iframe 
-  class="hatenablogcard" 
-  style="width:100%;height:155px;max-width:680px;" 
-  title="WiiUとRaspberry Piを使ったラジコン" 
-  src="https://hatenablog-parts.com/embed?url=https://mononichi.com/blog/works/wiiuradiko/" 
-  width="300" height="150" frameborder="0" scrolling="no">
-</iframe>
 
+https://mononichi.com/blog/works/wiiuradiko/

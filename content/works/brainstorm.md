@@ -7,13 +7,7 @@ description: "アイデア出しや企画作りに"
 image: "/images/works/brainstorm.webp"
 ---
 
-<iframe 
-  class="hatenablogcard" 
-  style="width:100%;height:155px;max-width:680px;" 
-  title="ブレストマシン | アイデア出しや企画づくりに便利なブレインストーミングツール" 
-  src="https://hatenablog-parts.com/embed?url=https://tango-gacha.com/brainstorm/" 
-  width="300" height="150" frameborder="0" scrolling="no">
-</iframe>
+https://tango-gacha.com/brainstorm/
 
 アイデア出しや企画づくりに便利なブレインストーミングツール。
 ランダムに単語を組み合わせるモードと、特定の単語と組み合わせまくってくれるモードの二種類でアイデアを出し続けてくれます。

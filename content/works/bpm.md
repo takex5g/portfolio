@@ -7,13 +7,7 @@ description: "最高に使いやすいを目指したBPMカウンター"
 image: "/images/works/bpm.webp"
 ---
 
-<iframe 
-  class="hatenablogcard" 
-  style="width:100%;height:155px;max-width:680px;" 
-  title="リズムに合わせてタップするだけでBPMが測定できます" 
-  src="https://hatenablog-parts.com/embed?url=https://bpm.mononichi.com/" 
-  width="300" height="150" frameborder="0" scrolling="no">
-</iframe>
+https://bpm.mononichi.com/
 
 公開当時、シンプルで使いやすい、BPMを計測する WEBサイトがありませんでした。PC/モバイルで動くシンプルな BPMカウンタです。
 

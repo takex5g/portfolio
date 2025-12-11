@@ -14,7 +14,7 @@ image: "/images/works/firstbreak.webp"
 SEとBGMが動的に変わって良い感じなゲーム体験を演出しています。
 
 TBS「[THE TIME](https://www.tbs.co.jp/thetime_tbs/)」に生出演し、安住アナウンサーに一人称ブロック崩しを体験していただきました。
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">🐥VRゲームの練習風景<br><br>🐥.｡oO（リハーサルの時はうまくできたらしいw）<a href="https://twitter.com/hashtag/thetime_tbs?src=hash&amp;ref_src=twsrc%5Etfw">#thetime_tbs</a><a href="https://twitter.com/hashtag/%E3%82%A2%E3%82%BA%E3%83%9F?src=hash&amp;ref_src=twsrc%5Etfw">#アズミ</a><a href="https://twitter.com/hashtag/%E5%AE%89%E4%BD%8F%E7%B4%B3%E4%B8%80%E9%83%8E?src=hash&amp;ref_src=twsrc%5Etfw">#安住紳一郎</a> <a href="https://t.co/BRpU9su05r">pic.twitter.com/BRpU9su05r</a></p>&mdash; TBS『THE TIME, 』 (@THETIME_TBS) <a href="https://twitter.com/THETIME_TBS/status/1541652134303006720?ref_src=twsrc%5Etfw">June 28, 2022</a></blockquote> 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">🐥VRゲームの練習風景<br><br>🐥.｡oO（リハーサルの時はうまくできたらしいw）<a href="https://twitter.com/hashtag/thetime_tbs?src=hash&amp;ref_src=twsrc%5Etfw">#thetime_tbs</a><a href="https://twitter.com/hashtag/%E3%82%A2%E3%82%BA%E3%83%9F?src=hash&amp;ref_src=twsrc%5Etfw">#アズミ</a><a href="https://twitter.com/hashtag/%E5%AE%89%E4%BD%8F%E7%B4%B3%E4%B8%80%E9%83%8E?src=hash&amp;ref_src=twsrc%5Etfw">#安住紳一郎</a> <a href="https://t.co/BRpU9su05r">pic.twitter.com/BRpU9su05r</a></p>&mdash; TBS『THE TIME, 』 (@THETIME_TBS) <a href="https://twitter.com/THETIME_TBS/status/1541652134303006720?ref_src=twsrc%5Etfw">June 28, 2022</a></blockquote>
 BSフジ「プレスク」に出演した際もハマオカモトさん、甲田まひるさんに体験していただきました。
 
 
@@ -39,20 +39,14 @@ VR勉強会[xR Tech Tokyo](https://vrtokyo.connpass.com/event/151017/)に出展�
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">一人称視点のVRブロック崩しを作りました。ゲームの進度に応じてBGMがインタラクティブに変化します。 <a href="https://t.co/Fjs3SeU7o0">pic.twitter.com/Fjs3SeU7o0</a></p>&mdash; ゆうもや (@takex5g) <a href="https://twitter.com/takex5g/status/1189552453953314816?ref_src=twsrc%5Etfw">October 30, 2019</a></blockquote>
 
 ### メディア紹介
-BSフジ「プレスク」  
-TBS「THE TIME」  
-日本テレビ「スッキリ」  
+BSフジ「プレスク」
+TBS「THE TIME」
+日本テレビ「スッキリ」
 
 
 ### 紹介記事
 
-<iframe 
-  class="hatenablogcard" 
-  style="width:100%;height:155px;max-width:680px;" 
-  title="これもうスポーツだろ！　一人称視点の“VRブロック崩し”がハードすぎる" 
-  src="https://hatenablog-parts.com/embed?url=https://nlab.itmedia.co.jp/nl/articles/2207/05/news161.html" 
-  width="300" height="150" frameborder="0" scrolling="no">
-</iframe>
+https://nlab.itmedia.co.jp/nl/articles/2207/05/news161.html
 
 
 ### 使用技術

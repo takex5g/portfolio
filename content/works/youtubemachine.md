@@ -15,17 +15,11 @@ image: "/images/works/youtubemachine.webp"
 
 
 ### メディア紹介
-ABEMA「abema news」 
+ABEMA「abema news」
 
 ### 紹介記事
 
-<iframe 
-  class="hatenablogcard" 
-  style="width:100%;height:155px;max-width:680px;" 
-  title="YouTubeの再生速度をこまめに変えられる！　電車のマスコン風“自作ガジェット”がロマンの塊" 
-  src="https://hatenablog-parts.com/embed?url=https://nlab.itmedia.co.jp/nl/articles/2305/24/news155.html" 
-  width="300" height="150" frameborder="0" scrolling="no">
-</iframe>
+https://nlab.itmedia.co.jp/nl/articles/2305/24/news155.html
 
 ### 使用技術
 Fusion360, Arduino

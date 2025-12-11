@@ -1,15 +1,10 @@
 import type { Plugin } from 'unified'
-import type { Root, Html } from 'mdast'
+import type { Root, Paragraph, Link, Text } from 'mdast'
 import { visit } from 'unist-util-visit'
 import { fetchOgp, type OgpData } from './ogp'
 
-// hatenablog-parts の iframe から URL を抽出する正規表現
-const HATENA_IFRAME_REGEX =
-  /<iframe[^>]*class="hatenablogcard"[^>]*src="https:\/\/hatenablog-parts\.com\/embed\?url=([^"]+)"[^>]*>[\s\S]*?<\/iframe>/g
-
 // OGPデータからブログカードHTMLを生成
 function createBlogCardHtml(ogp: OgpData): string {
-  // サイトが利用不可の場合
   if (ogp.isUnavailable) {
     return `<div class="blogcard blogcard-unavailable">
   <div class="blogcard-content">
@@ -51,18 +46,50 @@ function escapeHtml(str: string): string {
     .replace(/"/g, '&quot;')
 }
 
-// Markdown内のすべてのhatena iframe URLを抽出
+// URLのみの行かどうかを判定
+function isStandaloneUrl(node: Paragraph): string | null {
+  // 子要素が1つだけ
+  if (node.children.length !== 1) return null
+
+  const child = node.children[0]
+
+  // Linkノードの場合（autolink形式: <https://...>）
+  if (child.type === 'link') {
+    const link = child as Link
+    // リンクテキストがURLと同じ（自動リンク）
+    if (
+      link.children.length === 1 &&
+      link.children[0].type === 'text' &&
+      (link.children[0] as Text).value === link.url
+    ) {
+      return link.url
+    }
+  }
+
+  // Textノードの場合（生のURL）
+  if (child.type === 'text') {
+    const text = (child as Text).value.trim()
+    if (/^https?:\/\/[^\s]+$/.test(text)) {
+      return text
+    }
+  }
+
+  return null
+}
+
+// Markdown内のすべてのブログカードURLを抽出
 export function extractBlogcardUrls(content: string): string[] {
   const urls: string[] = []
+  // URLのみの行を検出（行頭から行末まで）
+  const urlRegex = /^https?:\/\/[^\s]+$/gm
   let match
-  const regex = new RegExp(HATENA_IFRAME_REGEX.source, 'g')
-  while ((match = regex.exec(content)) !== null) {
-    urls.push(decodeURIComponent(match[1]))
+  while ((match = urlRegex.exec(content)) !== null) {
+    urls.push(match[0])
   }
   return urls
 }
 
-// ビルド時にOGPを事前取得してキャッシュに保存
+// ビルド時にOGPを事前取得
 export async function prefetchOgpData(
   urls: string[]
 ): Promise<Map<string, OgpData>> {
@@ -77,11 +104,11 @@ export async function prefetchOgpData(
   return results
 }
 
-// Twitter埋め込みからscriptタグを除去する正規表現
+// Twitter埋め込みからscriptタグを除去
 const TWITTER_SCRIPT_REGEX =
   /<script[^>]*src="https:\/\/platform\.twitter\.com\/widgets\.js"[^>]*><\/script>/g
 
-// remarkプラグイン: hatena iframe をブログカードHTMLに変換 + Twitter scriptタグ除去
+// remarkプラグイン: URLのみの行をブログカードに変換
 export const remarkBlogcard: Plugin<
   [{ ogpCache: Map<string, OgpData> }],
   Root
@@ -89,28 +116,25 @@ export const remarkBlogcard: Plugin<
   const { ogpCache } = options
 
   return (tree) => {
-    visit(tree, 'html', (node: Html) => {
-      let newValue = node.value
-
-      // hatena iframe をブログカードに変換
-      let match
-      const regex = new RegExp(HATENA_IFRAME_REGEX.source, 'g')
-
-      while ((match = regex.exec(node.value)) !== null) {
-        const fullMatch = match[0]
-        const url = decodeURIComponent(match[1])
+    // Paragraph内のURL-onlyをブログカードに変換
+    visit(tree, 'paragraph', (node: Paragraph, index, parent) => {
+      const url = isStandaloneUrl(node)
+      if (url && parent && typeof index === 'number') {
         const ogp = ogpCache.get(url)
-
         if (ogp) {
           const blogcardHtml = createBlogCardHtml(ogp)
-          newValue = newValue.replace(fullMatch, blogcardHtml)
+          // ParagraphをHTMLノードに置き換え
+          ;(parent.children as unknown[])[index] = {
+            type: 'html',
+            value: blogcardHtml,
+          }
         }
       }
+    })
 
-      // Twitter widgets.js の script タグを除去（クライアント側で動的に読み込む）
-      newValue = newValue.replace(TWITTER_SCRIPT_REGEX, '')
-
-      node.value = newValue
+    // Twitter widgets.js の script タグを除去
+    visit(tree, 'html', (node: { value: string }) => {
+      node.value = node.value.replace(TWITTER_SCRIPT_REGEX, '')
     })
   }
 }
