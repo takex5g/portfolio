@@ -63,10 +63,14 @@ export async function fetchOgp(url: string): Promise<OgpData> {
   try {
     const { result } = await ogs({ url })
 
+    const description = result.ogDescription || result.dcDescription
     const ogpData: OgpData = {
       url,
       title: result.ogTitle || result.dcTitle || url,
-      description: result.ogDescription || result.dcDescription || '',
+      description:
+        description && description !== 'null' && description !== 'undefined'
+          ? description
+          : '',
       image: result.ogImage?.[0]?.url || '',
       siteName: result.ogSiteName || new URL(url).hostname,
       favicon: getFaviconUrl(url),
