@@ -9,6 +9,7 @@ export interface OgpData {
   image: string
   siteName: string
   favicon: string
+  isUnavailable?: boolean
 }
 
 const CACHE_DIR = path.join(process.cwd(), '.cache/ogp')
@@ -78,17 +79,20 @@ export async function fetchOgp(url: string): Promise<OgpData> {
   } catch (error) {
     console.error(`Failed to fetch OGP for ${url}:`, error)
 
-    // エラー時のフォールバック
+    // エラー時のフォールバック（サイトが利用不可）
     const fallback: OgpData = {
       url,
-      title: url,
-      description: '',
+      title: new URL(url).hostname,
+      description: 'このサイトは404の可能性があります',
       image: '',
       siteName: new URL(url).hostname,
       favicon: getFaviconUrl(url),
+      isUnavailable: true,
     }
+
+    // エラー時もキャッシュに保存（再取得を防ぐ）
+    saveToCache(url, fallback)
 
     return fallback
   }
 }
-

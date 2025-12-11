@@ -9,6 +9,19 @@ const HATENA_IFRAME_REGEX =
 
 // OGPデータからブログカードHTMLを生成
 function createBlogCardHtml(ogp: OgpData): string {
+  // サイトが利用不可の場合
+  if (ogp.isUnavailable) {
+    return `<div class="blogcard blogcard-unavailable">
+  <div class="blogcard-content">
+    <div class="blogcard-title">${escapeHtml(ogp.title)}</div>
+    <div class="blogcard-description">${escapeHtml(ogp.description)}</div>
+    <div class="blogcard-meta">
+      <span class="blogcard-site">${escapeHtml(ogp.url)}</span>
+    </div>
+  </div>
+</div>`
+  }
+
   const imageHtml = ogp.image
     ? `<div class="blogcard-image"><img src="${ogp.image}" alt="" loading="lazy" /></div>`
     : ''
