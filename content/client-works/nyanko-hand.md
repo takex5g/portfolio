@@ -3,7 +3,7 @@ title: 'にゃんこハンド'
 date: '2024-04-25'
 tags: ['HARDWARE']
 description: '運転中のイライラ解消するためマシン'
-image: '/images/client-works/nyanko-hand.png'
+image: '/images/client-works/nyanko-hand.webp'
 ---
 
 ## 概要

@@ -36,7 +36,7 @@ export default function AboutPage() {
           <p>
             様々なソフトウェアやハードウェア、時には最先端技術を使って創作を行い、
             <br className="hidden md:inline" />
-            ユーモアセンスの溢れる面白いモノを作ります
+            想像力溢れる面白いモノを作ります
           </p>
         </div>
 
