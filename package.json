@@ -16,6 +16,7 @@
     "optimize-images": "node scripts/optimize-images.mjs"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.5.19",
     "framer-motion": "^12.23.25",
     "gray-matter": "^4.0.3",
     "next": "16",
