@@ -9,6 +9,9 @@ image: '/images/works/ponmashine.webp'
 
 卒業式の筒を使って演奏するマシンです。
 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">卒業式の筒で演奏する「ポンマシーン」を開発しました <a href="https://t.co/QsziejoXVd">pic.twitter.com/QsziejoXVd</a></p>&mdash; ゆうもや (@takex5g) <a href="https://twitter.com/takex5g/status/1974351101316206599?ref_src=twsrc%5Etfw">October 4, 2025</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ### 仕組み
 
 システムは以下のような構成になっています：
@@ -34,8 +37,11 @@ image: '/images/works/ponmashine.webp'
 
 https://github.com/takex5g/PON-MACHINE
 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">リアルタイムでカメラ3台のスイッチングをしてて機材も大量で、ブース裏が配線ですごいことになってます <a href="https://t.co/ShE5FYiXeS">https://t.co/ShE5FYiXeS</a> <a href="https://t.co/Xa375TNSMF">pic.twitter.com/Xa375TNSMF</a></p>&mdash; ゆうもや (@takex5g) <a href="https://twitter.com/takex5g/status/1974489921667895706?ref_src=twsrc%5Etfw">October 4, 2025</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ### 使用技術
 
 **ハードウェア**: 3D CAD(Fusion360), 3Dプリンター, Arduino, ステッピングモーター, STEP400
 
-**ソフトウェア**: Electron 38, React 19, TypeScript, Ableton Live, Node.js, ATEM SDK, OSC (UDP), Web MIDI API
+**ソフトウェア**: Electron React, TypeScript, Ableton Live, Node.js, ATEM SDK, OSC , Web MIDI API
