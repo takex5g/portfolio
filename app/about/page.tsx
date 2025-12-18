@@ -68,6 +68,15 @@ export default function AboutPage() {
             <span className="font-display">Twitter</span>
           </a>
           <a
+            href="https://www.instagram.com/takex5g"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col items-center gap-2 hover:opacity-70 transition-opacity"
+          >
+            <SocialIcon platform="instagram" size="md" />
+            <span className="font-display">Instagram</span>
+          </a>
+          <a
             href="https://github.com/takex5g"
             target="_blank"
             rel="noopener noreferrer"

@@ -7,14 +7,14 @@ title: '受賞・掲載歴'
 ## 2025/10/04
 
 category: イベント出展
-Maker Faire Tokyo 2025にて、[卒業式の筒で演奏するマシン](/works/sotsugyoshiki-tube)を展示しました。
+Maker Faire Tokyo 2025にて、[卒業式の筒で演奏するマシン](/works/ponmashine)を展示しました。
 
 ## 2024/11/19
 
 category: 受賞
 モバイルアプリハッカソン「SPAJAM2024」予選通過、本戦で最優秀賞を受賞しました。
 
-## 2024//09/21
+## 2024/09/21
 
 category: イベント出展
 Maker Faire Tokyo 2024にて、[刺身にタンポポを乗せ続けるマシン](/works/sashimitanpopo)を展示しました。

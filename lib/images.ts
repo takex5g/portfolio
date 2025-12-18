@@ -19,6 +19,7 @@ export const IMAGES = {
   GITHUB: '/images/github.svg',
   TIKTOK: '/images/tiktok.svg',
   NOTE: '/images/note.png',
+  INSTAGRAM: '/images/instagram.svg',
 
   // その他アイコン
   CLOCK: '/images/clock.svg',

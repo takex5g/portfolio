@@ -73,7 +73,7 @@ export default function OptimizedImage({
 
 // SNSアイコン専用コンポーネント
 interface SocialIconProps {
-  platform: 'twitter' | 'github' | 'tiktok' | 'note'
+  platform: 'twitter' | 'github' | 'tiktok' | 'note' | 'instagram'
   size?: 'sm' | 'md' | 'lg'
   className?: string
 }
@@ -83,6 +83,7 @@ const SOCIAL_ICONS = {
   github: IMAGES.GITHUB,
   tiktok: IMAGES.TIKTOK,
   note: IMAGES.NOTE,
+  instagram: IMAGES.INSTAGRAM,
 } as const
 
 const SOCIAL_SIZES = {

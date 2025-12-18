@@ -98,27 +98,53 @@ export function getAllTags(): string[] {
 
 // Client Works 関連の関数
 export function getAllClientWorks(): WorkMetadata[] {
-  if (!fs.existsSync(clientWorksDirectory)) {
-    return []
-  }
-  const fileNames = fs.readdirSync(clientWorksDirectory)
-  const allWorks = fileNames
-    .filter((fileName) => fileName.endsWith('.md'))
-    .map((fileName) => {
-      const slug = fileName.replace(/\.md$/, '')
-      const fullPath = path.join(clientWorksDirectory, fileName)
-      const fileContents = fs.readFileSync(fullPath, 'utf8')
-      const { data } = matter(fileContents)
+  const allWorks: WorkMetadata[] = []
 
-      return {
-        slug,
-        title: data.title,
-        date: data.date,
-        tags: data.tags || [],
-        description: data.description,
-        image: data.image,
-      } as WorkMetadata
-    })
+  // client-worksディレクトリから取得
+  if (fs.existsSync(clientWorksDirectory)) {
+    const fileNames = fs.readdirSync(clientWorksDirectory)
+    fileNames
+      .filter((fileName) => fileName.endsWith('.md'))
+      .forEach((fileName) => {
+        const slug = fileName.replace(/\.md$/, '')
+        const fullPath = path.join(clientWorksDirectory, fileName)
+        const fileContents = fs.readFileSync(fullPath, 'utf8')
+        const { data } = matter(fileContents)
+
+        allWorks.push({
+          slug,
+          title: data.title,
+          date: data.date,
+          tags: data.tags || [],
+          description: data.description,
+          image: data.image,
+        } as WorkMetadata)
+      })
+  }
+
+  // worksディレクトリからshowInClientWorks: trueのものを取得
+  if (fs.existsSync(worksDirectory)) {
+    const fileNames = fs.readdirSync(worksDirectory)
+    fileNames
+      .filter((fileName) => fileName.endsWith('.md'))
+      .forEach((fileName) => {
+        const slug = fileName.replace(/\.md$/, '')
+        const fullPath = path.join(worksDirectory, fileName)
+        const fileContents = fs.readFileSync(fullPath, 'utf8')
+        const { data } = matter(fileContents)
+
+        if (data.showInClientWorks) {
+          allWorks.push({
+            slug,
+            title: data.title,
+            date: data.date,
+            tags: data.tags || [],
+            description: data.description,
+            image: data.image,
+          } as WorkMetadata)
+        }
+      })
+  }
 
   return allWorks.sort((a, b) => {
     if (a.date < b.date) {
@@ -130,8 +156,22 @@ export function getAllClientWorks(): WorkMetadata[] {
 }
 
 export async function getClientWorkBySlug(slug: string): Promise<Work | null> {
+  // まずclient-worksディレクトリを探す
+  let fullPath = path.join(clientWorksDirectory, `${slug}.md`)
+
+  // 見つからなければworksディレクトリでshowInClientWorksがtrueのものを探す
+  if (!fs.existsSync(fullPath)) {
+    const worksPath = path.join(worksDirectory, `${slug}.md`)
+    if (fs.existsSync(worksPath)) {
+      const fileContents = fs.readFileSync(worksPath, 'utf8')
+      const { data } = matter(fileContents)
+      if (data.showInClientWorks) {
+        fullPath = worksPath
+      }
+    }
+  }
+
   try {
-    const fullPath = path.join(clientWorksDirectory, `${slug}.md`)
     const fileContents = fs.readFileSync(fullPath, 'utf8')
     const { data, content } = matter(fileContents)
 
