@@ -6,7 +6,7 @@ set -e
 
 # submoduleを初期化・更新
 echo "Initializing submodules..."
-git submodule update --init --recursive
+git submodule update --init --recursive --remote
 
 echo "Building twitterXmachine..."
 
