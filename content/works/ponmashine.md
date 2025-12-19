@@ -1,9 +1,9 @@
 ---
-title: '卒業式の筒で演奏するポンマシーン'
+title: 'ポンマシーン'
 slug: 'ponmashine'
 date: '2025-09-22'
 tags: ['HARDWARE']
-description: '筒でポンポン演奏するマシン'
+description: '卒業式の筒のポンッで演奏するマシン'
 image: '/images/works/ponmashine.webp'
 ---
 
