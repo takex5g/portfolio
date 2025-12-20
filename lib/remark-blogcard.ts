@@ -6,7 +6,7 @@ import { fetchOgp, type OgpData } from './ogp'
 // OGPデータからブログカードHTMLを生成
 function createBlogCardHtml(ogp: OgpData): string {
   if (ogp.isUnavailable) {
-    return `<div class="blogcard blogcard-unavailable">
+    return `<div class="blogcard blogcard-unavailable not-prose">
   <div class="blogcard-content">
     <div class="blogcard-title">${escapeHtml(ogp.title)}</div>
     <div class="blogcard-description">${escapeHtml(ogp.description)}</div>
@@ -25,7 +25,7 @@ function createBlogCardHtml(ogp: OgpData): string {
     ? `<div class="blogcard-description">${escapeHtml(ogp.description)}</div>`
     : ''
 
-  return `<a href="${ogp.url}" class="blogcard" target="_blank" rel="noopener noreferrer">
+  return `<a href="${ogp.url}" class="blogcard not-prose" target="_blank" rel="noopener noreferrer">
   ${imageHtml}
   <div class="blogcard-content">
     <div class="blogcard-title">${escapeHtml(ogp.title)}</div>
