@@ -1,5 +1,5 @@
 ---
-title: '振動スピーカーでプリンを揺らしてみる'
+title: '振動でプリン揺らしてみる'
 slug: 'vibration-speaker-pudding'
 date: '2025-10-27'
 tags: ['HARDWARE', 'BUZZ']
