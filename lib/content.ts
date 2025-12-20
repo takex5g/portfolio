@@ -93,7 +93,17 @@ export function getAllTags(): string[] {
   allWorks.forEach((work) => {
     work.tags.forEach((tag) => tags.add(tag))
   })
-  return Array.from(tags).sort()
+
+  // カスタム順序: OTHRを最後に
+  const tagOrder = ['HARDWARE', 'WEB', 'BUZZ', 'OTHR']
+  return Array.from(tags).sort((a, b) => {
+    const indexA = tagOrder.indexOf(a)
+    const indexB = tagOrder.indexOf(b)
+    // tagOrderにないタグはOTHRの前に
+    const orderA = indexA === -1 ? tagOrder.length - 1 : indexA
+    const orderB = indexB === -1 ? tagOrder.length - 1 : indexB
+    return orderA - orderB
+  })
 }
 
 // Client Works 関連の関数

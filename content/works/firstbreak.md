@@ -2,7 +2,7 @@
 title: "一人称ブロック崩し"
 slug: "firstbreak"
 date: "2019-10-30"
-tags: ["SOFTWARE","BUZZ","VR"]
+tags: ["OTHR","BUZZ"]
 description: "一人称視点のVRブロック崩し"
 image: "/images/works/firstbreak.webp"
 ---

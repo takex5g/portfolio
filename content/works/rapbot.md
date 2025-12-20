@@ -2,7 +2,7 @@
 title: "ラップBot"
 slug: "rapbot"
 date: "2021-09-16"
-tags: ["BUZZ","SOFTWARE"]
+tags: ["OTHR","BUZZ"]
 description: "ラップで返信するTwitterBot"
 image: "/images/works/rapbot.webp"
 ---

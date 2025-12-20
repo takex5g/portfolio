@@ -2,7 +2,7 @@
 title: "本格派うんこ"
 slug: "unko"
 date: "2020-05-05"
-tags: ["etc.."]
+tags: ["OTHR"]
 description: "3Dプリンターでウンコ型を作ってチョコ作りました。"
 image: "/images/works/unko.webp"
 ---

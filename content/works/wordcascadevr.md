@@ -2,7 +2,7 @@
 title: "Word Cascade VR"
 slug: "wordcascadevr"
 date: "2020-06-29"
-tags: ["WEB","VR"]
+tags: ["WEB","OTHR"]
 description: "全方向から単語を浴びれるWEB VR"
 image: "/images/works/wordcascadevr.webp"
 ---

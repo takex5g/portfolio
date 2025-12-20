@@ -2,7 +2,7 @@
 title: "デーモンコア風ゼリー"
 slug: "demoncore"
 date: "2021-03-08"
-tags: ["etc.."]
+tags: ["OTHR"]
 description: "スプーンを抜いたらヤバいやつ"
 image: "/images/works/demoncore.webp"
 ---
