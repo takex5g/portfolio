@@ -64,7 +64,7 @@ export default function AboutPage() {
             rel="noopener noreferrer"
             className="flex flex-col items-center gap-2 hover:opacity-70 transition-opacity"
           >
-            <SocialIcon platform="twitter" size="md" />
+            <SocialIcon platform="twitter" size="sm" />
             <span className="font-display">Twitter</span>
           </a>
           <a
@@ -73,7 +73,7 @@ export default function AboutPage() {
             rel="noopener noreferrer"
             className="flex flex-col items-center gap-2 hover:opacity-70 transition-opacity"
           >
-            <SocialIcon platform="instagram" size="md" />
+            <SocialIcon platform="instagram" size="sm" />
             <span className="font-display">Instagram</span>
           </a>
           <a
@@ -82,7 +82,7 @@ export default function AboutPage() {
             rel="noopener noreferrer"
             className="flex flex-col items-center gap-2 hover:opacity-70 transition-opacity"
           >
-            <SocialIcon platform="github" size="md" />
+            <SocialIcon platform="github" size="sm" />
             <span className="font-display">GitHub</span>
           </a>
         </div>

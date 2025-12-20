@@ -54,6 +54,11 @@ category: メディア掲載
 category: メディア掲載
 [ねとらぼ](https://nlab.itmedia.co.jp/nl/articles/2308/04/news033.html)にて、[Twitter訂正Xパンチ装置](/works/twitterx)が紹介されました。
 
+## 2023/06/01
+
+category: 受賞
+第63回ACC TOKYO CREATIVITY AWARDSにて、[おしゃべりひろゆきメーカー](/client-works/oshaberi-hiroyuki-maker)がブランデッド・コミュニケーション部門Cカテゴリー（ソーシャル・インフルーエンス）で総務大臣賞/ACCグランプリ、Aカテゴリー（デジタル・エクスペリエンス）でACCシルバーを受賞しました。
+
 ## 2023/05/29
 
 category: テレビ出演
@@ -68,6 +73,11 @@ category: メディア掲載
 
 category: 企業コラボ
 [イーデザイン損保 アンディーの企画に参加](https://twitter.com/edesign_ande/status/1651134156758470658)し、[誰でもDJマシン](/works/asobelt)を製作しました。
+
+## 2023/04/07
+
+category: 受賞
+第10回 JAAA若手大賞（2022-2023）にて、[おしゃべりひろゆきメーカー](/client-works/oshaberi-hiroyuki-maker)が優秀賞を受賞しました。
 
 ## 2023/02/20
 
