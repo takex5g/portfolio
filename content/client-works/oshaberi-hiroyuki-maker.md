@@ -12,7 +12,9 @@ image: '/images/client-works/oshaberi-hiroyuki-maker.webp'
 CoeFontの立ち上げから携わり、本企画ではバズ施策とフロントエンド実装を担当しました。
 大きな反響を呼び、ACC / JAAA若手大賞などのアワードを受賞しています。
 
-https://hiroyuki.coefont.cloud/hiroyuki/
+現在もこちらのサイトで公開しています。(作った当時からコード改修され、当時ほどのバズのUXはなくなってます)
+
+https://coefont.cloud/maker/hiroyuki
 
 ## 受賞歴
 
