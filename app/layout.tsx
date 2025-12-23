@@ -16,6 +16,7 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://mononichi.com'),
   title: 'まいにちものづくり | Portfolio',
   description: 'まいにちものづくりのポートフォリオサイト',
   icons: {
