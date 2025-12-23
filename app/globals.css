@@ -135,6 +135,42 @@ h6 {
   text-overflow: ellipsis;
 }
 
+@media (prefers-color-scheme: dark) {
+  .blogcard {
+    border-color: #2d2d2d;
+    background: #111111;
+  }
+
+  .blogcard:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  }
+
+  .blogcard-unavailable {
+    background: #1a1a1a;
+    border-color: #333;
+  }
+
+  .blogcard-unavailable .blogcard-title {
+    color: #a3a3a3;
+  }
+
+  .blogcard-unavailable .blogcard-description {
+    color: #8a8a8a;
+  }
+
+  .blogcard-title {
+    color: #e5e5e5;
+  }
+
+  .blogcard-description {
+    color: #b5b5b5;
+  }
+
+  .blogcard-site {
+    color: #9a9a9a;
+  }
+}
+
 @media (max-width: 480px) {
   .blogcard {
     flex-direction: column;

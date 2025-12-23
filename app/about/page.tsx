@@ -5,12 +5,12 @@ import AwardsFilter from '@/components/AwardsFilter'
 import { SocialIcon } from '@/components/OptimizedImage'
 
 const categoryColors: Record<string, string> = {
-  受賞: 'bg-yellow-100 text-yellow-800',
-  テレビ出演: 'bg-red-100 text-red-800',
-  メディア掲載: 'bg-blue-100 text-blue-800',
-  イベント出展: 'bg-green-100 text-green-800',
-  企業コラボ: 'bg-purple-100 text-purple-800',
-  リリース: 'bg-gray-100 text-gray-800',
+  受賞: 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/40 dark:text-yellow-200',
+  テレビ出演: 'bg-red-100 text-red-800 dark:bg-red-900/40 dark:text-red-200',
+  メディア掲載: 'bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200',
+  イベント出展: 'bg-green-100 text-green-800 dark:bg-green-900/40 dark:text-green-200',
+  企業コラボ: 'bg-purple-100 text-purple-800 dark:bg-purple-900/40 dark:text-purple-200',
+  リリース: 'bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-100',
 }
 
 export const metadata: Metadata = {
@@ -40,16 +40,16 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <div className="bg-gray-50 p-6 rounded-lg mb-8">
+        <div className="bg-gray-50 p-6 rounded-lg mb-8 dark:bg-neutral-900/60">
           <p className="font-semibold mb-2">メール</p>
           <p className="font-display mb-2">takex5g@mononichi.com</p>
-          <p className="text-sm text-gray-600">
+          <p className="text-sm text-gray-600 dark:text-gray-400">
             （
             <a
               href="https://twitter.com/takex5g"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 hover:underline"
+              className="text-blue-600 hover:underline dark:text-blue-400 dark:hover:text-blue-300"
             >
               Twitter
             </a>

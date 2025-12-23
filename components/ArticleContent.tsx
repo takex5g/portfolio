@@ -65,7 +65,7 @@ export default function ArticleContent({ html }: ArticleContentProps) {
   return (
     <div
       ref={containerRef}
-      className="prose prose-lg max-w-none"
+      className="prose prose-lg max-w-none dark:prose-invert"
       dangerouslySetInnerHTML={{ __html: html }}
     />
   )

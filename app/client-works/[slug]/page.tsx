@@ -51,8 +51,8 @@ export default async function ClientWorkPage({ params }: ClientWorkPageProps) {
     <article className="max-w-4xl mx-auto py-8">
       <header className="mb-8">
         <h1 className="text-4xl font-bold mb-4 font-display">{work.title}</h1>
-        <p className="text-gray-600 mb-2">{work.description}</p>
-        <time className="text-sm text-gray-500">{work.date}</time>
+        <p className="text-gray-600 mb-2 dark:text-gray-300">{work.description}</p>
+        <time className="text-sm text-gray-500 dark:text-gray-400">{work.date}</time>
       </header>
 
       <ArticleContent html={work.contentHtml} />

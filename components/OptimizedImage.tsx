@@ -100,6 +100,7 @@ export function SocialIcon({
   const src = SOCIAL_ICONS[platform]
   const { width, height } = SOCIAL_SIZES[size]
   const alt = platform.charAt(0).toUpperCase() + platform.slice(1)
+  const resolvedClassName = ['dark:invert', className].filter(Boolean).join(' ')
 
   return (
     <Image
@@ -107,7 +108,7 @@ export function SocialIcon({
       width={width}
       height={height}
       alt={alt}
-      className={className}
+      className={resolvedClassName}
     />
   )
 }

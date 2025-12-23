@@ -19,13 +19,13 @@ export default function ClientWorksPage() {
         <ClientWorksGridWrapper />
       </Suspense>
 
-      <div className="mt-12 bg-gray-200 rounded-2xl p-8 flex flex-col sm:flex-row items-center gap-6 sm:gap-10">
+      <div className="mt-12 bg-gray-200 rounded-2xl p-8 flex flex-col sm:flex-row items-center gap-6 sm:gap-10 dark:bg-neutral-800">
         <div className="flex-shrink-0">
           <OptimizedImage
             src={IMAGES.KAYAC}
             alt="面白法人カヤック"
             sizePreset="COMPANY_LOGO"
-            className="w-[200px] sm:w-[250px]"
+            className="w-[200px] sm:w-[250px] dark:invert"
           />
         </div>
         <div className="text-center sm:text-left">
@@ -38,7 +38,7 @@ export default function ClientWorksPage() {
             href="https://www.kayac.com/team/hirokawa-takemaru"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-6 py-3 bg-neutral-600 text-white rounded-lg hover:bg-neutral-700 transition-colors"
+            className="inline-block px-6 py-3 bg-neutral-600 text-white rounded-lg hover:bg-neutral-700 transition-colors dark:bg-neutral-200 dark:text-neutral-900 dark:hover:bg-neutral-100"
           >
             カヤックでの制作実績
           </a>

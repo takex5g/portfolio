@@ -23,7 +23,7 @@ export default function WorkCard({ work, basePath = 'works' }: WorkCardProps) {
             className="object-cover"
             sizes={RESPONSIVE_SIZES.WORK_CARD}
           />
-          <div className="absolute inset-x-0 bottom-0 px-2 pt-1 bg-white/60">
+          <div className="absolute inset-x-0 bottom-0 px-2 pt-1 bg-white/60 text-black dark:bg-black/60 dark:text-white">
             <p className="text-lg font-bold mb-1">{work.title}</p>
             <div className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-300">
               <p className="overflow-hidden opacity-0 pb-2 transition-opacity duration-300 ease-out group-hover:opacity-100">
