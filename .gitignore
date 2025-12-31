@@ -96,3 +96,4 @@ out/*
 
 # submodule build output
 /public/twitterX
+/public/edo-run

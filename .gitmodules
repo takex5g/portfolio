@@ -1,3 +1,6 @@
 [submodule "twitterXmachine"]
 	path = twitterXmachine
 	url = https://github.com/takex5g/twitterXmachine.git
+[submodule "edo-rum"]
+	path = edo-rum
+	url = https://github.com/takex5g/edo-rum.git

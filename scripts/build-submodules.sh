@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# twitterXmachineをビルドしてpublic/twitterXにコピー
+# twitterXmachineとedo-rumをビルドしてpublic/にコピー
 
 set -e
 
@@ -20,3 +20,16 @@ rm -rf public/twitterX
 cp -r twitterXmachine/dist public/twitterX
 
 echo "Done! twitterXmachine built and copied to public/twitterX"
+
+echo "Building edo-rum..."
+
+cd edo-rum
+npm install --include=dev
+npm run build
+cd ..
+
+# public/edo-runを作成してビルドファイルをコピー
+rm -rf public/edo-run
+cp -r edo-rum/dist public/edo-run
+
+echo "Done! edo-rum built and copied to public/edo-run"
