@@ -85,6 +85,15 @@ export default function AboutPage() {
             <SocialIcon platform="github" size="sm" />
             <span className="font-display">GitHub</span>
           </a>
+          <a
+            href="https://note.com/takex5g"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col items-center gap-2 hover:opacity-70 transition-opacity"
+          >
+            <SocialIcon platform="note" size="sm" />
+            <span className="font-display">note</span>
+          </a>
         </div>
 
         <div>
