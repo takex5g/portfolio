@@ -17,30 +17,30 @@
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.19",
-    "framer-motion": "^12.23.25",
+    "framer-motion": "^12.29.2",
     "gray-matter": "^4.0.3",
-    "next": "16",
+    "next": "16.1.6",
     "open-graph-scraper": "^6.11.0",
-    "react": "^19.2.1",
-    "react-dom": "^19.2.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
-    "unist-util-visit": "^5.0.0"
+    "unist-util-visit": "^5.1.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.3",
-    "@tailwindcss/postcss": "^4.1.17",
-    "@types/node": "^20.0.0",
-    "@types/react": "^19.2.7",
+    "@tailwindcss/postcss": "^4.1.18",
+    "@types/node": "^25.1.0",
+    "@types/react": "^19.2.10",
     "@types/react-dom": "^19.2.3",
-    "eslint": "9",
-    "eslint-config-next": "16",
+    "eslint": "9.39.2",
+    "eslint-config-next": "16.1.6",
     "eslint-plugin-react": "^7.37.5",
     "postcss": "^8.4.0",
-    "prettier": "^3.1.0",
+    "prettier": "^3.8.1",
     "sharp": "^0.34.5",
-    "tailwindcss": "4",
+    "tailwindcss": "4.1.18",
     "typescript": "^5.3.0",
-    "typescript-eslint": "^8.49.0"
+    "typescript-eslint": "^8.54.0"
   }
 }

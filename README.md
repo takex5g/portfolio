@@ -26,6 +26,7 @@ yarn build
 | Submodule | パス | URL |
 |-----------|------|-----|
 | twitterXmachine | `/twitterX` | https://mononichi.com/twitterX/ |
+| edo-rum | `/edo-run` | https://mononichi.com/edo-run/ |
 
 ### 仕組み
 
