@@ -17,14 +17,17 @@
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.19",
+    "@types/mdast": "^4.0.4",
     "framer-motion": "^12.29.2",
     "gray-matter": "^4.0.3",
+    "mdast": "^2.3.2",
     "next": "16.1.6",
     "open-graph-scraper": "^6.11.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
+    "unified": "^11.0.5",
     "unist-util-visit": "^5.1.0"
   },
   "devDependencies": {
