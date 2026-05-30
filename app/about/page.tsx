@@ -7,9 +7,12 @@ import { SocialIcon } from '@/components/OptimizedImage'
 const categoryColors: Record<string, string> = {
   受賞: 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/40 dark:text-yellow-200',
   テレビ出演: 'bg-red-100 text-red-800 dark:bg-red-900/40 dark:text-red-200',
-  メディア掲載: 'bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200',
-  イベント出展: 'bg-green-100 text-green-800 dark:bg-green-900/40 dark:text-green-200',
-  企業コラボ: 'bg-purple-100 text-purple-800 dark:bg-purple-900/40 dark:text-purple-200',
+  メディア掲載:
+    'bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200',
+  イベント出展:
+    'bg-green-100 text-green-800 dark:bg-green-900/40 dark:text-green-200',
+  企業コラボ:
+    'bg-purple-100 text-purple-800 dark:bg-purple-900/40 dark:text-purple-200',
   リリース: 'bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-100',
 }
 

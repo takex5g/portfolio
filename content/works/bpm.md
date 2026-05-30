@@ -1,10 +1,10 @@
 ---
-title: "BPMカウンター"
-slug: "bpm"
-date: "2020-05-05"
-tags: ["WEB"]
-description: "最高に使いやすいを目指したBPMカウンター"
-image: "/images/works/bpm.webp"
+title: 'BPMカウンター'
+slug: 'bpm'
+date: '2020-05-05'
+tags: ['WEB']
+description: '最高に使いやすいを目指したBPMカウンター'
+image: '/images/works/bpm.webp'
 ---
 
 https://bpm.mononichi.com/

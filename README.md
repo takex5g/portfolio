@@ -23,10 +23,10 @@ yarn build
 
 このリポジトリは以下のプロジェクトをsubmoduleとして含んでいます。
 
-| Submodule | パス | URL |
-|-----------|------|-----|
+| Submodule       | パス        | URL                             |
+| --------------- | ----------- | ------------------------------- |
 | twitterXmachine | `/twitterX` | https://mononichi.com/twitterX/ |
-| edo-rum | `/edo-run` | https://mononichi.com/edo-run/ |
+| edo-rum         | `/edo-run`  | https://mononichi.com/edo-run/  |
 
 ### 仕組み
 
@@ -65,12 +65,12 @@ git commit -m "Update submodule-name"
 
 ```markdown
 ---
-title: "作品タイトル"
-slug: "file-name"
-date: "2024-01-01"
-tags: ["HARDWARE", "Web"]
-description: "作品の説明文"
-image: "/images/works/sample.png"
+title: '作品タイトル'
+slug: 'file-name'
+date: '2024-01-01'
+tags: ['HARDWARE', 'Web']
+description: '作品の説明文'
+image: '/images/works/sample.png'
 ---
 
 本文をここに書きます。
@@ -85,11 +85,11 @@ image: "/images/works/sample.png"
 
 ```markdown
 ---
-title: "プロジェクト名"
-date: "2024-01-01"
-tags: ["Web", "AI"]
-description: "プロジェクトの説明文"
-image: "/images/client-works/sample.png"
+title: 'プロジェクト名'
+date: '2024-01-01'
+tags: ['Web', 'AI']
+description: 'プロジェクトの説明文'
+image: '/images/client-works/sample.png'
 ---
 
 本文をここに書きます。

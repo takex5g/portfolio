@@ -1,10 +1,10 @@
 ---
-title: "無限バンクシー"
-slug: "banksy"
-date: "2021-09-21"
-tags: ["HARDWARE","BUZZ"]
-description: "何回も遊べるバンクシー"
-image: "/images/works/banksy.webp"
+title: '無限バンクシー'
+slug: 'banksy'
+date: '2021-09-21'
+tags: ['HARDWARE', 'BUZZ']
+description: '何回も遊べるバンクシー'
+image: '/images/works/banksy.webp'
 ---
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">何回も遊べるバンクシー作った <a href="https://t.co/Y3Hjd4u2T2">pic.twitter.com/Y3Hjd4u2T2</a></p>&mdash; ゆうもや (@takex5g) <a href="https://twitter.com/takex5g/status/1440244409052794893?ref_src=twsrc%5Etfw">September 21, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -21,10 +21,12 @@ image: "/images/works/banksy.webp"
 オークションハンマーと額縁の通信は赤外線通信を使っています。「なぜ今の時代に赤外線リモコン？」というのは、展示会で安定的に動くようにするためです。
 
 ### メディア紹介
+
 TBS「あさチャン」
 TBS「Nスタ」
 テレビ朝日「グッド！モーニング」
 テレビ朝日系 「ANN news」, 「ABEMA」 等
+
 ### 紹介記事
 
 https://nlab.itmedia.co.jp/nl/articles/2109/23/news044.html
@@ -34,4 +36,5 @@ https://maidonanews.jp/article/14446327
 https://news.ltn.com.tw/news/life/breakingnews/3689115
 
 ### 使用技術
+
 3D CAD(Fusion360), レーザーカッター, Arduino

@@ -8,7 +8,9 @@ interface ClientWorksGridProps {
   initialWorks: WorkMetadata[]
 }
 
-export default function ClientWorksGrid({ initialWorks }: ClientWorksGridProps) {
+export default function ClientWorksGrid({
+  initialWorks,
+}: ClientWorksGridProps) {
   return (
     <div className="mx-auto w-full grid gap-[15px] grid-cols-[repeat(auto-fill,minmax(160px,1fr))] auto-rows-[200px] sm:grid-cols-[repeat(auto-fill,minmax(250px,1fr))]">
       <AnimatePresence mode="popLayout">

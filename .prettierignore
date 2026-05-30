@@ -11,6 +11,11 @@ coverage
 out/
 build
 dist
+next-env.d.ts
+
+# git submodules (managed in their own repos)
+edo-rum
+twitterXmachine
 
 # misc
 .DS_Store

@@ -1,10 +1,10 @@
 ---
-title: "Wear ON!!"
-slug: "wearon"
-date: "2018-07-13"
-tags: ["HARDWARE"]
-description: "ウェアラブルワイヤレス通信装置"
-image: "/images/works/wearon.webp"
+title: 'Wear ON!!'
+slug: 'wearon'
+date: '2018-07-13'
+tags: ['HARDWARE']
+description: 'ウェアラブルワイヤレス通信装置'
+image: '/images/works/wearon.webp'
 ---
 
 こちらに詳細を記載していいます。 https://mononichi.com/blog/works/wear/
@@ -17,4 +17,5 @@ image: "/images/works/wearon.webp"
 <video src="https://mononichi.com/blog/wp-content/uploads/2018/07/wearON_Trim.mp4" controls></video>
 
 ## 使用技術
+
 Android, Arduino, 基板設計

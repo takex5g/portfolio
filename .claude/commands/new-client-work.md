@@ -22,11 +22,11 @@
 
 ```markdown
 ---
-title: "プロジェクト名"
-date: "YYYY-MM-DD"
-tags: ["タグ1", "タグ2"]
-description: "プロジェクトの説明文"
-image: "/images/client-works/slug.png"
+title: 'プロジェクト名'
+date: 'YYYY-MM-DD'
+tags: ['タグ1', 'タグ2']
+description: 'プロジェクトの説明文'
+image: '/images/client-works/slug.png'
 ---
 
 ## 概要

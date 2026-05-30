@@ -6,7 +6,14 @@ import reactHooksPlugin from "eslint-plugin-react-hooks";
 
 export default defineConfig([
   {
-    ignores: [".next/**", "node_modules/**", "twitterXmachine/**", "out/**", "public/**/assets/**"],
+    ignores: [
+      ".next/**",
+      "node_modules/**",
+      "twitterXmachine/**",
+      "edo-rum/**",
+      "out/**",
+      "public/**/assets/**",
+    ],
   },
   ...tseslint.configs.recommended,
   {

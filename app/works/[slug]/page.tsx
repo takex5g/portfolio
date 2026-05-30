@@ -63,8 +63,12 @@ export default async function WorkPage({ params }: WorkPageProps) {
             </Link>
           ))}
         </div>
-        <p className="text-gray-600 mb-2 dark:text-gray-300">{work.description}</p>
-        <time className="text-sm text-gray-500 dark:text-gray-400">{work.date}</time>
+        <p className="text-gray-600 mb-2 dark:text-gray-300">
+          {work.description}
+        </p>
+        <time className="text-sm text-gray-500 dark:text-gray-400">
+          {work.date}
+        </time>
       </header>
 
       <ArticleContent html={work.contentHtml} />

@@ -11,7 +11,6 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
 const CONTENT_DIR = path.join(__dirname, '..', 'content')
-const PUBLIC_DIR = path.join(__dirname, '..', 'public', 'images')
 
 // WebPファイルが存在するかチェック
 function webpExists(imagePath) {
@@ -27,7 +26,7 @@ function processMarkdownFile(filePath) {
 
   // front-matter内のimage: フィールドを更新
   const imageRegex = /^(image:\s*)(["']?)([^"'\n]+\.(png|jpg|jpeg))(["']?)/gim
-  content = content.replace(imageRegex, (match, prefix, openQuote, imagePath, ext, closeQuote) => {
+  content = content.replace(imageRegex, (match, prefix, openQuote, imagePath) => {
     if (webpExists(imagePath)) {
       modified = true
       const newPath = imagePath.replace(/\.(png|jpg|jpeg)$/i, '.webp')

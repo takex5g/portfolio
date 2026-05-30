@@ -39,7 +39,9 @@ export default function Header() {
         href="/client-works"
         className="py-3 px-3 transition-all duration-300 relative inline-block no-underline hover:bg-black/[0.075] dark:hover:bg-white/10 sm:px-4 md:px-5"
       >
-        <div className={`whitespace-nowrap ${currentPage === 'client-works' ? 'font-bold' : ''}`}>
+        <div
+          className={`whitespace-nowrap ${currentPage === 'client-works' ? 'font-bold' : ''}`}
+        >
           Client Works
         </div>
       </Link>

@@ -16,7 +16,11 @@ interface TagSyncProps {
   onTagChange: (tag: string) => void
 }
 
-function TagSync({ tags, onTagChange, isFromMenu }: TagSyncProps & { isFromMenu: boolean }) {
+function TagSync({
+  tags,
+  onTagChange,
+  isFromMenu,
+}: TagSyncProps & { isFromMenu: boolean }) {
   const searchParams = useSearchParams()
   const prevTagRef = useRef<string | null>(null)
 
@@ -64,7 +68,11 @@ export default function WorksGrid({ initialWorks, tags }: WorksGridProps) {
   return (
     <div className="grid grid-cols-1 grid-rows-[auto_1fr] sm:grid-cols-[auto_1fr] sm:grid-rows-1">
       <Suspense fallback={null}>
-        <TagSync tags={tags} onTagChange={handleTagChange} isFromMenu={isFromMenu} />
+        <TagSync
+          tags={tags}
+          onTagChange={handleTagChange}
+          isFromMenu={isFromMenu}
+        />
       </Suspense>
 
       {/* タグメニュー */}

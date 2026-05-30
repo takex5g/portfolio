@@ -54,7 +54,10 @@ export default function AwardsFilter({
       <table className="w-full">
         <tbody>
           {filteredAwards.map((award, index) => (
-            <tr key={index} className="border-b border-gray-200 dark:border-gray-700">
+            <tr
+              key={index}
+              className="border-b border-gray-200 dark:border-gray-700"
+            >
               <th className="py-3 px-2 text-left align-top font-normal text-sm whitespace-nowrap">
                 {award.date}
               </th>
