@@ -4,7 +4,18 @@
       "Bash(node scripts/migrate-awards.js:*)",
       "Bash(yarn build:*)",
       "Bash(yarn add:*)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "mcp__playwright__browser_console_messages",
+      "mcp__playwright__browser_evaluate",
+      "mcp__playwright__browser_navigate",
+      "Bash(npm run build:next:*)",
+      "mcp__playwright__browser_run_code",
+      "Bash(yarn outdated:*)",
+      "WebFetch(domain:x.com)",
+      "WebFetch(domain:nitter.net)",
+      "WebFetch(domain:api.fxtwitter.com)",
+      "Bash(git pull:*)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []
