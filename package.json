@@ -20,7 +20,6 @@
     "@types/mdast": "^4.0.4",
     "framer-motion": "^12.40.0",
     "gray-matter": "^4.0.3",
-    "mdast": "^2.3.2",
     "next": "16.2.6",
     "open-graph-scraper": "^6.11.0",
     "react": "^19.2.6",
@@ -45,5 +44,14 @@
     "tailwindcss": "4.3.0",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.60.0"
+  },
+  "resolutions": {
+    "brace-expansion": "^2.0.2",
+    "flatted": "^3.4.0",
+    "undici": "^7.24.0",
+    "picomatch": "^4.0.4",
+    "braces": "^3.0.3",
+    "micromatch": "^4.0.8",
+    "postcss": "^8.5.15"
   }
 }
